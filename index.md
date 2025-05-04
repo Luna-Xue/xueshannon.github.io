@@ -4,6 +4,12 @@ title: Xiaochan Xue
 subtitle: Stevens Institute of Technology
 ---
 
+## <img src="../img/contact.png" height="50px"> Contact
+
+```
+Email: xxue2[at]stevens[dot]edu
+```
+
 ## <img src="../img/news.png" height="50px"> News
 - <img src="../img/fireworks.png" height="30px"> Nirmal Roy is the final PhD student to successfully defend his thesis [Exploring the effects of interactive interfaces on user search behaviour](https://research.tudelft.nl/en/publications/exploring-the-effects-of-interactive-interfaces-on-user-search-be). Thus, as of June 2024 every member of my former lab at TU Delft has graduated. 
 - <img src="../img/fireworks.png" height="30px"> We are nearing the end of my former TU Delft lab. Another PhD is in the books: Arthur Barbosa Câmara did an amazing job and defended his thesis [Designing Search-as-Learning Systems](https://doi.org/10.4233/uuid:0fe3a6bb-1bc1-40e2-86b0-ec3d3aef9c77).
@@ -26,11 +32,6 @@ In the past, I have worked on a variety of topics in the fields of information r
 including query performance prediction (the topic of [my PhD thesis](../documents/publications/thesis.pdf)), 
 social search, collaborative search, learning analytics, search as learning and IR for specific user groups.
 
-## <img src="../img/contact.png" height="50px"> Contact
-
-```
-Email: xxue2[at]stevens[dot]edu
-```
 
 ## Past members of my TU Delft lab
 **With the last member graduating in June 2024, the lab is now closed down.**
