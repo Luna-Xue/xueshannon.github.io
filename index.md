@@ -28,25 +28,7 @@ I received my Bachelor's Degree from [Jilin University](https://www.jlu.edu.cn/)
 - **[Aug, 2023]** <img src="../img/award.png" height="30px"> I received <span style="color:orange;">**Excellence Doctoral Fellowship**</span>, SIT
 
 
-## Past members of my TU Delft lab
-**With the last member graduating in June 2024, the lab is now closed down.**
-- Nirmal Roy defended his PhD thesis [Exploring the effects of interactive interfaces on user search behaviour](https://research.tudelft.nl/en/publications/exploring-the-effects-of-interactive-interfaces-on-user-search-be) in 2024.
-- Arthur Barbosa Câmara defended his PhD thesis [Designing Search-as-Learning Systems](https://doi.org/10.4233/uuid:0fe3a6bb-1bc1-40e2-86b0-ec3d3aef9c77) in 2024.
-- Peide Zhu graduated in 2024 with a PhD thesis on [Towards Robust Automatic Question Generation For Learning](https://doi.org/10.4233/uuid:4e23fb2f-6539-44b7-bab2-6c6b2fd7ce8d).
-- [Gustavo Penha](https://guzpenha.github.io/guzblog/) graduated in 2023 with a PhD thesis on [Designing and Diagnosing Models for Conversational Search and Recommendation](https://doi.org/10.4233/uuid:acdfb704-6310-4b28-b884-4bd3e78b3f84).
-- Postdoc David Maxwell worked on a range of interactive IR problems (2020-2022).
-- Felipe Moraes graduated in 2022 with a PhD thesis on [Examining the Effectiveness of Collaborative Search Engines](https://doi.org/10.4233/uuid:9f8f9ffc-c3d9-4583-8903-25889233a95b).
-- Dan Davis graduated in 2019 with a PhD thesis on the topic of [Large-Scale Learning Analytics: Modeling Learner Behavior & Improving Learning Outcomes in Massive Open Online Courses](https://doi.org/10.4233/uuid:b8be8302-84a0-4b29-a6fe-761a3f872420).
-- [Guanliang Chen](https://angusglchen.github.io/) graduated in 2019 with a PhD thesis on the topic of [MOOC Analytics: Learner Modeling and Content Generation](https://doi.org/10.4233/uuid:dd213d9b-e621-442d-8d11-4cd8b6e19635).
-- Yue Zhao graduated with a PhD in 2019 on the topic of [Learning Analytics Technology to Understand Learner Behavioral Engagement in MOOCs](http://resolver.tudelft.nl/uuid:2aff1a7e-45eb-4d10-9944-8e06ef12b9fa).
-- Research engineer Manuel Valle Torre (sponsored by Delft Data Science, 2019-2021) worked on tooling for MOOC data analysis.
-- Postdoc Dimitrios Bountouridis worked on fairness in the news recommender domain (2018-19).
-- Research engineer Mónica Marrero worked on fairness in the news recommender domain and online evaluation (2017-18).
-- Ke Tao graduated with a PhD in 2014 on the topic of [Social Web Data Analytics: Relevance, Redundancy, Diversity](https://doi.org/10.4233/uuid:1af94380-1414-4497-bfc6-a67b213de050).
-
-
-
-## <img src="../img/software.png" height="50px"> TU Delft lab software
+## <img src="../img/software.png" height="50px"> Software & Hardware
 
 - [LogUI](https://github.com/logui-framework): A contemporary, framework-agnostic JavaScript library for logging user interactions on webpages. Lead developer is David Maxwell.
 - [ELAT](https://mvallet91.github.io/ELAT/): EdX Logfile Analysis Tool that is browser-based, and a fully local processing tool. No server needed, no programming knowledge needed, no setup costs. Lead developer is Manuel Valle Torre. 
