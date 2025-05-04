@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Staff Research Scientist
-subtitle: Spotify
+title: Xiaochan Xue
+subtitle: Stevens Institute of Technology
 ---
 
 ## <img src="../img/news.png" height="50px"> News
