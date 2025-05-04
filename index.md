@@ -30,11 +30,12 @@ I received my Bachelor's Degree from [Jilin University](https://www.jlu.edu.cn/)
 
 ## <img src="../img/software.png" height="50px"> Software & Hardware
 
-- [LogUI](https://github.com/logui-framework): A contemporary, framework-agnostic JavaScript library for logging user interactions on webpages. Lead developer is David Maxwell.
-- [ELAT](https://mvallet91.github.io/ELAT/): EdX Logfile Analysis Tool that is browser-based, and a fully local processing tool. No server needed, no programming knowledge needed, no setup costs. Lead developer is Manuel Valle Torre. 
-- [SearchX](https://github.com/searchx-framework/) is a scalable collaborative search system, developed to research large-scale search and sensemaking experiments. Lead developer is Felipe Moraes.
-- [APONE](https://marrerom.github.io/APONE/) is an academic environment for online experiments, that we have used in our research and teaching. Lead developer is Mónica Marrero.
-- [SIREN](https://github.com/dbountouridis/siren) is a simulation framework for understanding the effects of recommender systems in online news environments. Lead developer is Dimitrios Bountouridis.
+- [srsRAN](https://github.com/srsran): A contemporary, framework-agnostic JavaScript library for logging user interactions on webpages. Lead developer is David Maxwell.
+- [GNURadio](https://www.gnuradio.org/): EdX Logfile Analysis Tool that is browser-based, and a fully local processing tool. No server needed, no programming knowledge needed, no setup costs. Lead developer is Manuel Valle Torre. 
+- [LabVIEW NXG](https://www.ni.com/en/shop/labview/labview-nxg.html?srsltid=AfmBOooRMjXDsDt3MoBw6HAy78LZgCFT6jQMkNi6huSX1wQfY4or-gMy) is a scalable collaborative search system, developed to research large-scale search and sensemaking experiments. Lead developer is Felipe Moraes.
+- [MATLAB](https://www.mathworks.com/products/matlab.html) is an academic environment for online experiments, that we have used in our research and teaching. Lead developer is Mónica Marrero.
+- [USRP SDR](https://www.ettus.com/products/)
+- [mmWave Frontend]
 
 ## <img src="../img/money.png" height="50px"> Grants
 - NWO Aspasia grant (**100,000€**) as a top-up of my NWO VIDI (50K for my research, 50K for diversity measures in the faculty), September 2018.
