@@ -27,9 +27,12 @@ avatar: "/img/og_claudia.png"
 
 # List of links in the navigation bar
 navbar-links:
+  Home: "http://xueshannon.github.io"
   Publications: "publications"
-  Blog: "blog"
   Teaching: "teaching"
+  CV: ""
+  People: ""
+  Blog: "blog"
   #Datasets: "datasets"
   
  
