@@ -25,7 +25,7 @@ I received my Bachelor's Degree from [Jilin University](https://www.jlu.edu.cn/)
 - **[Jan, 2025]** <span style="color:red;">I am open to a POSTDOC position!</span>
 - **[Jan, 2025]** <img src="../img/fireworks.png" height="30px"> New paper submited!
 - **[Aug, 2024]** I am hired as Lecture Instructor, SIT.
-- **[Aug, 2023]** <img src="../img/award.png" height="30px"> I received <span style="color:#eb9316;">**Excellence Doctoral Fellowship**</span>, SIT
+- **[Aug, 2023]** <img src="../img/award.png" height="30px"> I received <span style="color:#f0ad4e;">**Excellence Doctoral Fellowship**</span>, SIT
 
 
 ## <img src="../img/software.png" height="50px"> Software & Hardware
@@ -38,14 +38,7 @@ I received my Bachelor's Degree from [Jilin University](https://www.jlu.edu.cn/)
 - [mmWave Frontend]
 
 ## <img src="../img/money.png" height="50px"> Grants
-- NWO Aspasia grant (**100,000€**) as a top-up of my NWO VIDI (50K for my research, 50K for diversity measures in the faculty), September 2018.
-- [NWA Startimpulsprogramma](https://www.nwo.nl/actueel/nieuws/2017/nwo-honoreert-aanvragen-startimpuls-nationale-wetenschapsagenda.html) VWData (**325,000€**) awarded together with 2 co-PIS. A two-year Postdoc position will be funded within a work package that considers fairness in news recommenders.
-- NWO VIDI grant (**800,000€**) for my proposal *SearchX: Integrating search and sensemaking into large-scale open online  learning*, May 2017 (personal grant, 15% acceptance rate)
-- [NWO TOP grant](http://www.nwo.nl/en/funding/our-funding-instruments/nwo/top-grants/top-grants-physical-sciences/index.html) (**226,000€**) to conduct "innovative or high-risk scientific research that addresses questions of high quality and urgency;" specifically [I will push the boundaries of large-scale collaborative search](http://chauff.github.io/2016-11-27-lacrosse/), November 2016 (personal grant, 23% acceptance rate)
-- Grant (**33,000€**) from the Leiden-Delft-Erasmus Centre for Education and Learning to conduct research on the benefits of eyetracking in massive open online learning, November 2016
-- TU Delft Education Research tender (**2,500€**, 1 co-PI) to bring real-time teaching and learning analytics into the classroom, July 2016
-- TU Delft Study Success tender (**3,000€**, 1 co-PI) to further improve teaching in the Bachelor, September 2015 
-- TU Delft Blended Education tender (**10,000€**, 1 co-PI) to improve teaching in the Bachelor, September 2014
+
 
 ## <img src="../img/orga.png" height="50px"> Organizational duties and activities
 - Program co-chair of ECIR 2025
