@@ -3,7 +3,11 @@ layout: page
 title: Teaching
 ---
 
-## BSc and MSc thesis supervision
+## Graduate LEcture
+
+## Undergraduate Lecture
+
+## Undergraduate Lab
 
 I have supervised more than 45 BSc and MSc projects in the broad areas of *information retrieval*, *natural language processing* and *data science*. A few examples can be found below:
 
