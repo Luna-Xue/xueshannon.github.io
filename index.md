@@ -19,7 +19,7 @@ I received my Bachelor's Degree from [Jilin University](https://www.jlu.edu.cn/)
 - **[May, 2025]** See you at **1st iCNS/ECE Symposium on AI Research and Innovations (DuckAI 2025)** at Stevens!
 - **[Apr, 2025]** I am invited by **University of Hawaii Manoa ECE** to give a seminar talk on my excited topic about O-RAN/AI-RAN for next generation communication.
 - **[Apr, 2025]** I am at **Illinois State University**.
-- **[Feb, 2025]** <img src="../img/award.png" height="30px"> Selected as <strong><a href="https://cps-vo.org/group/CPSRisingStarsWorkshop25">2025 NSF CPS (Cyber-Physical Systems) Rising Star</a></strong></span> (17%)
+- **[Feb, 2025]** <img src="../img/award.png" height="30px"> Selected as **[2025 NSF CPS (Cyber-Physical Systems) Rising Star](https://cps-vo.org/group/CPSRisingStarsWorkshop25)** (17%)
 - **[Feb, 2025]** I am invited to give a [Seminar Talk](./assets/files/Enhancing Security and Privacy in Distributed Wireless Networks Through Physical Layer Techniques _ Stevens Institute of Technology.html) at SIT 
 - **[Jan, 2025]** <span style="color:red;">I am on Job Market NOW! Please contact me if you interest!</span>
 - **[Jan, 2025]** <span style="color:red;">I am open to a POSTDOC position!</span>
