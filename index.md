@@ -16,20 +16,16 @@ For a brief and compact overview, take a look at my 1-page [CV](../documents/Hau
 I received my Bachelor's Degree from [Jilin University](https://www.jlu.edu.cn/), department of [Communication Engineering](https://dce.jlu.edu.cn/). Then I finished my Master's Degree at [Stevens Institute of Technology](https://www.stevens.edu/), department of Electrical Engineering. I joined [AISecLab](https://www.stevens.edu/icns-center-for-innovative-computing-and-networked-systems/aiseclab) at SIT, and been supervised by Prof. Shucheng Yu.
 
 ## <img src="../img/news.png" height="50px"> News
-- <img src="../img/fireworks.png" height="30px"> Nirmal Roy is the final PhD student to successfully defend his thesis [Exploring the effects of interactive interfaces on user search behaviour](https://research.tudelft.nl/en/publications/exploring-the-effects-of-interactive-interfaces-on-user-search-be). Thus, as of June 2024 every member of my former lab at TU Delft has graduated. 
-- <img src="../img/fireworks.png" height="30px"> We are nearing the end of my former TU Delft lab. Another PhD is in the books: Arthur Barbosa Câmara did an amazing job and defended his thesis [Designing Search-as-Learning Systems](https://doi.org/10.4233/uuid:0fe3a6bb-1bc1-40e2-86b0-ec3d3aef9c77).
-- <img src="../img/award.png" height="30px"> 11 (+1) information retrieval researchers discussing the future of IR evaluation at Dagstuhl turned into a [best paper award](https://arxiv.org/abs/2304.09161) at ICTIR 2023! [Photo](https://twitter.com/CharlotteHase/status/1683290714145447936) as proof!
-
 - **[May, 2025]** See you at 1st **iCNS/ECE Symposium on AI Research and Innovations (DuckAI 2025)** at Stevens!
-- **[April, 2025]** I am invited by University of Hawaii Manoa ECE to give a seminar talk on my excited topic about O-RAN/AI-RAN for next generation communication.
-- **[April, 2025]** I am at Illinois.
-- **[Feb, 2025]** <img src="../img/award.png" height="30px"> <span style="color:green;">Selected as [2025 NSF CPS (Cyber-Physical Systems) Rising Star](https://cps-vo.org/group/CPSRisingStarsWorkshop25)</span> (17%)
+- **[April, 2025]** I am invited by **University of Hawaii Manoa ECE** to give a seminar talk on my excited topic about O-RAN/AI-RAN for next generation communication.
+- **[April, 2025]** I am at **Illinois State University**.
+- **[Feb, 2025]** <img src="../img/award.png" height="30px"> Selected as **[2025 NSF CPS (Cyber-Physical Systems) Rising Star]**(https://cps-vo.org/group/CPSRisingStarsWorkshop25)</span> (17%)
 - **[Feb, 2025]** I am invited to give a [Seminar Talk](./assets/files/Enhancing Security and Privacy in Distributed Wireless Networks Through Physical Layer Techniques _ Stevens Institute of Technology.html) at SIT 
 - **[Jan, 2025]** <span style="color:red;">I am on Job Market NOW! Please contact me if you interest!</span>
 - **[Jan, 2025]** <span style="color:red;">I am open to a POSTDOC position!</span>
 - **[Jan, 2025]** <img src="../img/fireworks.png" height="30px"> New paper submited!
 - **[Aug, 2024]** I am hired as Lecture Instructor, SIT.
-- **[Aug, 2023]** <img src="../img/award.png" height="30px"> I received <span style="color:green;">Excellence Doctoral Fellowship</span>, SIT
+- **[Aug, 2023]** <img src="../img/award.png" height="30px"> I received <span style="color:orange;">**Excellence Doctoral Fellowship**</span>, SIT
 
 
 ## Past members of my TU Delft lab
