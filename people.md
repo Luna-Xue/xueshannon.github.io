@@ -4,4 +4,4 @@ title: People
 ---
 
 ## 🤝 Collaborators
-## 🎓 BSc and MSc thesis supervision
+## 🎓 BSc and MSc Mentorships
