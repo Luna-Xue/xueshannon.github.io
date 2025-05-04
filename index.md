@@ -17,6 +17,13 @@ Currently, I work on Integrated Sensing and Communication (ISAC) for real-time, 
 
 I received my Bachelor's Degree from [Jilin University](https://www.jlu.edu.cn/), department of [Communication Engineering](https://dce.jlu.edu.cn/). Then I finished my Master's Degree at [Stevens Institute of Technology](https://www.stevens.edu/), department of Electrical Engineering. I joined [AISecLab](https://www.stevens.edu/icns-center-for-innovative-computing-and-networked-systems/aiseclab) at SIT, and been supervised by Prof. Shucheng Yu.
 
+## 🔍 Research Interests
+
+- **Wireless Communication:** 5G, Sub-6G, Next-G, O-RAN, AI-RAN
+- **Integrated Sensing and Communication** Sensing for healthcare, Smart city, UAVs, and Vehicles. Distributed devices in cutting-edge network systems
+- **Machine Learning:** Applied area, Federated Learning
+- **Security:** Physical Layer Security, Privacy preserving, Distributed security
+
 ## <img src="../img/news.png" height="50px"> News
 - **[May, 2025]** See you at **1st iCNS/ECE Symposium on AI Research and Innovations (DuckAI 2025)** at Stevens!
 - **[Apr, 2025]** I am invited by **University of Hawaii Manoa ECE** to give a seminar talk on my excited topic about O-RAN/AI-RAN for next generation communication.
