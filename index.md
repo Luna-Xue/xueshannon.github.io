@@ -25,7 +25,7 @@ I received my Bachelor's Degree from [Jilin University](https://www.jlu.edu.cn/)
 - **[Jan, 2025]** <span style="color:red;">I am open to a POSTDOC position!</span>
 - **[Jan, 2025]** <img src="../img/fireworks.png" height="30px"> New paper submited!
 - **[Aug, 2024]** I am hired as Lecture Instructor, SIT.
-- **[Aug, 2023]** <img src="../img/award.png" height="30px"> I received <span style="color:border-color;">**Excellence Doctoral Fellowship**</span>, SIT
+- **[Aug, 2023]** <img src="../img/award.png" height="30px"> I received <span style="color:#eb9316;">**Excellence Doctoral Fellowship**</span>, SIT
 
 
 ## <img src="../img/software.png" height="50px"> Software & Hardware
