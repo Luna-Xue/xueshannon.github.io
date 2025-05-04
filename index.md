@@ -29,7 +29,7 @@ social search, collaborative search, learning analytics, search as learning and 
 ## <img src="../img/contact.png" height="50px"> Contact
 
 ```
-Email: claudia.hauff[at]gmail.com
+Email: xxue2[at]stevens[dot]edu
 ```
 
 ## Past members of my TU Delft lab
