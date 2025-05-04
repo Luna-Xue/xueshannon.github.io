@@ -25,11 +25,16 @@ I received my Bachelor's Degree from [Jilin University](https://www.jlu.edu.cn/)
 - **[Jan, 2025]** <span style="color:red;">I am open to a POSTDOC position!</span>
 - **[Jan, 2025]** <img src="../img/fireworks.png" height="30px"> New paper submited!
 - **[Aug, 2024]** I am hired as Lecture Instructor, SIT.
-- **[Aug, 2023]** <img src="../img/award.png" height="30px"> I received <span style="color:#f0ad4e;">**Excellence Doctoral Fellowship**</span>, SIT
+- **[Aug, 2023]** <img src="../img/award.png" height="30px"> I received <span style="color:orange;">**Excellence Doctoral Fellowship**</span>, SIT
+
+
+## <img src="../img/money.png" height="50px"> Grants
+
+
+## <img src="../img/orga.png" height="50px"> Organizational duties and activities
 
 
 ## <img src="../img/software.png" height="50px"> Software & Hardware
-
 - [srsRAN](https://github.com/srsran): A contemporary, framework-agnostic JavaScript library for logging user interactions on webpages. Lead developer is David Maxwell.
 - [GNURadio](https://www.gnuradio.org/): EdX Logfile Analysis Tool that is browser-based, and a fully local processing tool. No server needed, no programming knowledge needed, no setup costs. Lead developer is Manuel Valle Torre. 
 - [LabVIEW NXG](https://www.ni.com/en/shop/labview/labview-nxg.html?srsltid=AfmBOooRMjXDsDt3MoBw6HAy78LZgCFT6jQMkNi6huSX1wQfY4or-gMy) is a scalable collaborative search system, developed to research large-scale search and sensemaking experiments. Lead developer is Felipe Moraes.
@@ -37,7 +42,3 @@ I received my Bachelor's Degree from [Jilin University](https://www.jlu.edu.cn/)
 - [USRP SDR](https://www.ettus.com/products/)
 - [mmWave Beamforming]()
 
-## <img src="../img/money.png" height="50px"> Grants
-
-
-## <img src="../img/orga.png" height="50px"> Organizational duties and activities
