@@ -35,7 +35,7 @@ I received my Bachelor's Degree from [Jilin University](https://www.jlu.edu.cn/)
 - [LabVIEW NXG](https://www.ni.com/en/shop/labview/labview-nxg.html?srsltid=AfmBOooRMjXDsDt3MoBw6HAy78LZgCFT6jQMkNi6huSX1wQfY4or-gMy) is a scalable collaborative search system, developed to research large-scale search and sensemaking experiments. Lead developer is Felipe Moraes.
 - [MATLAB](https://www.mathworks.com/products/matlab.html) is an academic environment for online experiments, that we have used in our research and teaching. Lead developer is Mónica Marrero.
 - [USRP SDR](https://www.ettus.com/products/)
-- [mmWave Frontend]
+- [mmWave Frontend]()
 
 ## <img src="../img/money.png" height="50px"> Grants
 
