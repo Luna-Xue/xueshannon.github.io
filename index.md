@@ -10,27 +10,15 @@ subtitle: Stevens Institute of Technology
 Email: xxue2[at]stevens[dot]edu
 ```
 
+## <img src="../img/career.png" height="50px"> My career
+For a brief and compact overview, take a look at my 1-page [CV](../documents/Hauff_shortCV.pdf). 
+
+I received my Bachelor's Degree from [Jilin University](https://www.jlu.edu.cn/), department of [Communication Engineering](https://dce.jlu.edu.cn/). Then I finished my Master's Degree at [Stevens Institute of Technology](https://www.stevens.edu/), department of Electrical Engineering. I joined [AISecLab](https://www.stevens.edu/icns-center-for-innovative-computing-and-networked-systems/aiseclab) at SIT, and been supervised by Prof. Shucheng Yu.
+
 ## <img src="../img/news.png" height="50px"> News
 - <img src="../img/fireworks.png" height="30px"> Nirmal Roy is the final PhD student to successfully defend his thesis [Exploring the effects of interactive interfaces on user search behaviour](https://research.tudelft.nl/en/publications/exploring-the-effects-of-interactive-interfaces-on-user-search-be). Thus, as of June 2024 every member of my former lab at TU Delft has graduated. 
 - <img src="../img/fireworks.png" height="30px"> We are nearing the end of my former TU Delft lab. Another PhD is in the books: Arthur Barbosa Câmara did an amazing job and defended his thesis [Designing Search-as-Learning Systems](https://doi.org/10.4233/uuid:0fe3a6bb-1bc1-40e2-86b0-ec3d3aef9c77).
 - <img src="../img/award.png" height="30px"> 11 (+1) information retrieval researchers discussing the future of IR evaluation at Dagstuhl turned into a [best paper award](https://arxiv.org/abs/2304.09161) at ICTIR 2023! [Photo](https://twitter.com/CharlotteHase/status/1683290714145447936) as proof!
-
-## <img src="../img/career.png" height="50px"> My career
-For a brief and compact overview, take a look at my 1-page [CV](../documents/Hauff_shortCV.pdf). 
-
-I joined Spotify in August 2021, initially for a sabbatical from my academic job but then switched to a permanent role as a staff research scientist in April 2022.
-
-After a 2-year stint as a Postdoc, I worked as a faculty member at the [Web Information Systems group](http://www.wis.ewi.tudelft.nl/), [Delft University of Technology](http://www.tudelft.nl/) between 2013 and 2023. In 2016 and 2017 I received two prestigious personal grants from the Netherlands Organisation for Scientific Research (NWO) with a total funding of more than 1 million euros; this translated into several PhD/postdoc positions in the developing "search as learning" research area. Take a look at the [Dagstuhl Seminar](https://www.dagstuhl.de/en/program/calendar/semhp/?semnr=17092) I co-organized on the topic to get an idea of what it was all about. 
-
-I received my PhD in 2010 from the [University of Twente](https://www.utwente.nl/), where I worked in the 
-[Human Media Interaction group](http://hmi.ewi.utwente.nl/).
-
-The [Otto-von-Guericke University of Magdeburg](https://www.uni-magdeburg.de/) in Germany was 
-my home during my undergraduate years as a student in computer science.
-
-In the past, I have worked on a variety of topics in the fields of information retrieval & data science, 
-including query performance prediction (the topic of [my PhD thesis](../documents/publications/thesis.pdf)), 
-social search, collaborative search, learning analytics, search as learning and IR for specific user groups.
 
 
 ## Past members of my TU Delft lab
