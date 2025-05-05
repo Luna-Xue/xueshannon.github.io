@@ -22,7 +22,7 @@ Phone:
   <img src="https://img.icons8.com/color/48/orcid.png" alt="ORCID" width="32">
 </a>
 <a href="https://linkedin.com/in/你的ID" target="_blank">
-  <img src="https://img.icons8.com/color/48/linkedin.png" alt="LinkedIn" width="32">
+  <img src="/Users/xuexiaochan/xueshannon.github.io/img/linkedin.png" alt="LinkedIn" width="32">
 </a>
 <a href="https://github.com/你的ID" target="_blank">
   <img src="https://img.icons8.com/ios-glyphs/48/github.png" alt="GitHub" width="32">
