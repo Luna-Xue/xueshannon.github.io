@@ -15,6 +15,21 @@ Phone:
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0A66C2?logo=linkedin)](https://www.linkedin.com/in/xiaochan-xue-2b7b75227/)
 [![GitHub](https://img.shields.io/badge/-GitHub-181717?logo=github)](https://github.com/xueshannon)
 [![CV Download](https://img.shields.io/badge/-CV%20PDF-FF6B6B?logo=adobe-acrobat-reader)](/Users/xuexiaochan/xueshannon.github.io/files/CV_Xiaochan.pdf)
+<a href="https://scholar.google.com/你的ID" target="_blank">
+  <img src="https://img.icons8.com/color/48/google-scholar--v3.png" alt="Scholar" width="32">
+</a>
+<a href="https://orcid.org/你的ID" target="_blank">
+  <img src="https://img.icons8.com/color/48/orcid.png" alt="ORCID" width="32">
+</a>
+<a href="https://linkedin.com/in/你的ID" target="_blank">
+  <img src="https://img.icons8.com/color/48/linkedin.png" alt="LinkedIn" width="32">
+</a>
+<a href="https://github.com/你的ID" target="_blank">
+  <img src="https://img.icons8.com/ios-glyphs/48/github.png" alt="GitHub" width="32">
+</a>
+<a href="path/to/your-cv.pdf" download>
+  <img src="https://img.icons8.com/ios-filled/48/export-pdf.png" alt="CV" width="32">
+</a>
 
 ## <img src="../img/career.png" height="50px"> About Me
 My research focuses on advancing wireless communication by integrating Artificial Intelligence (AI) and Machine Learning (ML) with 5G, Sub-6G, NextG, and beyond. I specialize in enhancing security and efficiency in next-generation networks through Physical Layer Security (PLS), millimeter wave (mmWave) sensing, and AI-driven techniques.
