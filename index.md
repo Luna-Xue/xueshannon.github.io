@@ -80,7 +80,6 @@ I received my Bachelor's Degree from [Jilin University](https://www.jlu.edu.cn/)
       [Aug, 2024] I am hired as Lecture Instructor, SIT.
     </div>
     <div class="grant-item">
-      <img src="../img/award.png" height="20px"> 
       [Aug, 2023] <img src="../img/award.png" height="30px"> I received <span style="color:orange;">Excellence Doctoral Fellowship</span>, SIT
     </div>
   </div>
