@@ -47,7 +47,7 @@ I received my Bachelor's Degree from [Jilin University](https://www.jlu.edu.cn/)
   <div class="news-scroll">
     <!-- 项目列表 -->
     <div class="new-item">
-      [May, 2025] See you soon at **University of Hawaii Manoa**, 2025 Fall.
+      [May, 2025] See you soon at University of Hawaii Manoa, 2025 Fall.
     </div>
     <div class="new-item">
       [May, 2025] Planning my doctoral defense in June.
@@ -59,13 +59,13 @@ I received my Bachelor's Degree from [Jilin University](https://www.jlu.edu.cn/)
       [Apr, 2025] I am invited by <strong>University of Hawaii Manoa ECE</strong> to give a seminar talk on my excited topic about O-RAN/AI-RAN for next generation communication.
     </div>
     <div class="new-item">
-      [Apr, 2025] I am at **Illinois State University**.
+      [Apr, 2025] I am at Illinois State University.
     </div>
     <div class="new-item">
-      [Feb, 2025] <img src="../img/award.png" height="30px"> Selected as <strong>[2025 NSF CPS (Cyber-Physical Systems) Rising Star](https://cps-vo.org/group/CPSRisingStarsWorkshop25)</strong> (17%)
+      [Feb, 2025] <img src="../img/award.png" height="30px"> Selected as <strong><a href="https://cps-vo.org/group/CPSRisingStarsWorkshop25">2025 NSF CPS (Cyber-Physical Systems) Rising Star</a></strong> (17%)
     </div>
     <div class="new-item">
-      [Feb, 2025] I am invited to give a [Seminar Talk](./files/Enhancing Security and Privacy in Distributed Wireless Networks Through Physical Layer Techniques _ Stevens Institute of Technology.html) at SIT 
+      [Feb, 2025] I am invited to give a <a href="./files/Enhancing Security and Privacy in Distributed Wireless Networks Through Physical Layer Techniques _ Stevens Institute of Technology.html">Seminar Talk</a> at SIT  
     </div>
     <div class="new-item">
       [Jan, 2025] <span style="color:red;">I am on Job Market NOW! Please contact me if you interest!</span>
