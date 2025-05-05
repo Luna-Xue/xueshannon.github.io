@@ -77,8 +77,6 @@ I received my Bachelor's Degree from [Jilin University](https://www.jlu.edu.cn/)
     <div class="grant-item">
       - **[Feb, 2025]** <img src="../img/award.png" height="30px"> Selected as **[2025 NSF CPS (Cyber-Physical Systems) Rising Star](https://cps-vo.org/group/CPSRisingStarsWorkshop25)** (17%)
     </div>
-
-
     <div class="grant-item">
       - **[Feb, 2025]** I am invited to give a [Seminar Talk](./files/Enhancing Security and Privacy in Distributed Wireless Networks Through Physical Layer Techniques _ Stevens Institute of Technology.html) at SIT 
     </div>
@@ -88,8 +86,6 @@ I received my Bachelor's Degree from [Jilin University](https://www.jlu.edu.cn/)
     <div class="grant-item">
       - **[Jan, 2025]** <span style="color:red;">I am open to a POSTDOC position!</span>
     </div>
-
-
     <div class="grant-item">
       - [Jan, 2025] <img src="../img/fireworks.png" height="30px"> New paper submited!
     </div>
