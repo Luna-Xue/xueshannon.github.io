@@ -3,26 +3,11 @@ layout: page
 title: Xiaochan Xue
 subtitle: Stevens Institute of Technology
 ---
-
-## <img src="../img/contact.png" height="50px"> Contact
-
-```
-Email: xxue2[at]stevens[dot]edu
-Phone: 
-```
-[![Google Scholar](https://img.shields.io/badge/Google%20Scholar-4285F4?logo=google-scholar&logoColor=white)](https://github.com/XueShannon)
-[![ORCID](https://img.shields.io/badge/ORCID-A6CE39?logo=orcid&logoColor=white)](https://orcid.org/0000-0003-0432-0581)
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0A66C2?logo=linkedin)](https://www.linkedin.com/in/xiaochan-xue-2b7b75227/)
-[![GitHub](https://img.shields.io/badge/-GitHub-181717?logo=github)](https://github.com/xueshannon)
-[![CV Download](https://img.shields.io/badge/-CV%20PDF-FF6B6B?logo=adobe-acrobat-reader)](/Users/xuexiaochan/xueshannon.github.io/files/CV_Xiaochan.pdf)
-<a href="https://scholar.google.com/你的ID" target="_blank">
+<a href="https://scholar.google.com/citations?user=rhcjOdQAAAAJ&hl=en" target="_blank">
   <img src="./img/google-scholar.png" alt="Google Scholar" width="32" class="social-icon">
 </a>
 <a href="https://orcid.org/0000-0003-0432-0581" target="_blank">
   <img src="./img/orcid.png" alt="ORCID" width="32" class="social-icon">
-</a>
-<a href="https://www.linkedin.com/in/xiaochan-xue-2b7b75227/" target="_blank">
-  <img src="./img/linkedin.png" alt="LinkedIn" width="32" class="social-icon">
 </a>
 <a href="https://github.com/XueShannon" target="_blank">
   <img src="./img/github.png" alt="GitHub" width="32" class="social-icon">
@@ -30,6 +15,22 @@ Phone:
 <a href="./files/CV_Xiaochan.pdf" download class="cv-download">
   <img src="./img/cv.png" alt="CV" width="32" class="social-icon">
 </a>
+<a href="https://www.linkedin.com/in/xiaochan-xue-2b7b75227/" target="_blank">
+  <img src="./img/linkedin.png" alt="LinkedIn" width="32" class="social-icon">
+</a>
+
+## <img src="../img/contact.png" height="50px"> Contact
+
+```
+Email: xxue2[at]stevens[dot]edu
+Phone: 
+```
+[![Google Scholar](https://img.shields.io/badge/Google%20Scholar-4285F4?logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=rhcjOdQAAAAJ&hl=en)
+[![ORCID](https://img.shields.io/badge/ORCID-A6CE39?logo=orcid&logoColor=white)](https://orcid.org/0000-0003-0432-0581)
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0A66C2?logo=linkedin)](https://www.linkedin.com/in/xiaochan-xue-2b7b75227/)
+[![GitHub](https://img.shields.io/badge/-GitHub-181717?logo=github)](https://github.com/xueshannon)
+[![CV Download](https://img.shields.io/badge/-CV%20PDF-FF6B6B?logo=adobe-acrobat-reader)](/Users/xuexiaochan/xueshannon.github.io/files/CV_Xiaochan.pdf)
+
 
 ## <img src="../img/career.png" height="50px"> About Me
 My research focuses on advancing wireless communication by integrating Artificial Intelligence (AI) and Machine Learning (ML) with 5G, Sub-6G, NextG, and beyond. I specialize in enhancing security and efficiency in next-generation networks through Physical Layer Security (PLS), millimeter wave (mmWave) sensing, and AI-driven techniques.
