@@ -12,7 +12,7 @@ title: People
 - **[Prof. K.P. (Suba) Subbalakshmi](https://www.stevens.edu/profile/ksubbala)** - Professor, Stevens Institute of Technology
 - **[Prof. Ying Wang](https://www.stevens.edu/profile/ywang6)** - Associate Professor, Stevens Institute of Technology
 
-## 🎓 BSc and MSc Mentorships
+## 🎓 Mentorships
 - **[2024-2025 AFRL Software Design Radio (SDR) Challenge](https://wbi-innovates.zohobackstage.com/afrlsdr)** 
     - Members (Undergraduate): Shaun George, Lenny Yanza, Karen Caguana, Xiangxi (Mall) Wang
     - Member (High School): Akshat Santhana Gopalan
