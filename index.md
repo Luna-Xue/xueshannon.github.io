@@ -86,36 +86,44 @@ I received my Bachelor's Degree from [Jilin University](https://www.jlu.edu.cn/)
 </div>
 
 <style>
-/* 容器样式 */
+/* 固定容器 */
 .news-container {
-  border: 2px solid #e0e0e0;
-  border-radius: 10px;
-  padding: 15px;
-  margin: 20px 0;
-  background: #f9f9f9;
-}
-
-/* 横向滚动区域 */
-.news-scroll {
-  display: flex;        /* 弹性布局 */
-  gap: 20px;            /* 项目间距 */
-  overflow-x: auto;     /* 横向滚动 */
-  padding-bottom: 10px; /* 避免滚动条遮挡 */
-}
-
-/* 单个项目样式 */
-.new-item {
-  min-width: 300px;     /* 确保项目最小宽度 */
-  padding: 15px;
-  background: white;
+  border: 2px solid #eee;
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  flex-shrink: 0;       /* 禁止项目挤压变形 */
+  margin: 20px 0;
+}
+
+/* 滚动区域 */
+.news-scroll {
+  max-height: 250px;       /* 固定高度 */
+  overflow-y: auto;        /* 垂直滚动 */
+  padding: 15px;
+}
+
+/* 单个项目 - 强制保持内容完整 */
+.new-item {
+  display: flex;           /* 图标与文字同行 */
+  align-items: center;
+  margin-bottom: 12px;     /* 项目间距 */
+  padding: 10px;
+  background: #f5f5f5;
+  border-radius: 6px;
+  break-inside: avoid;     /* 防止内容断开 */
 }
 
 .new-text {
-  white-space: normal;  /* 允许文字自然换行 */
-  line-height: 1.6;
+  white-space: normal;     /* 允许文字换行 */
+  word-break: keep-all;    /* 保持单词完整 */
+  line-height: 1.5;
+}
+
+/* 滚动条美化 */
+.news-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+.news-scroll::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
 }
 </style>
 

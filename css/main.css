@@ -419,7 +419,7 @@ table tr td :last-child {
 }
 
 @media (max-width: 768px) {
-  .grant-item {
+  .new-item {
     min-width: 250px; /* 手机端缩小项目宽度 */
   }
 }
