@@ -32,7 +32,8 @@ navbar-links:
   Teaching: "teaching"
   CV: ""
   People: "people"
-  Blog: "blog"
+  Life: "life"
+  #Blog: "blog"
   #Datasets: "datasets"
   
  

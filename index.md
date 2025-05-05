@@ -9,6 +9,8 @@ subtitle: Stevens Institute of Technology
 ```
 Email: xxue2[at]stevens[dot]edu
 ```
+[![Google Scholar](https://img.shields.io/badge/Google%20Scholar-4285F4?logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=你的ID)
+[![ORCID](https://img.shields.io/badge/ORCID-A6CE39?logo=orcid&logoColor=white)](https://orcid.org/你的ORCID-ID)
 
 ## <img src="../img/career.png" height="50px"> About Me
 My research focuses on advancing wireless communication by integrating Artificial Intelligence (AI) and Machine Learning (ML) with 5G, Sub-6G, NextG, and beyond. I specialize in enhancing security and efficiency in next-generation networks through Physical Layer Security (PLS), millimeter wave (mmWave) sensing, and AI-driven techniques.
