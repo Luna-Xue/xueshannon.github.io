@@ -16,20 +16,19 @@ Phone:
 [![GitHub](https://img.shields.io/badge/-GitHub-181717?logo=github)](https://github.com/xueshannon)
 [![CV Download](https://img.shields.io/badge/-CV%20PDF-FF6B6B?logo=adobe-acrobat-reader)](/Users/xuexiaochan/xueshannon.github.io/files/CV_Xiaochan.pdf)
 <a href="https://scholar.google.com/你的ID" target="_blank">
-  <img src="./images/scholar.png" alt="Google Scholar" class="social-icon">
+  <img src="./img/google-scholar.png" alt="Google Scholar" width="32" class="social-icon">
 </a>
-<a href="https://orcid.org/你的ID" target="_blank">
-  <img src="./images/orcid.png" alt="ORCID" class="social-icon">
+<a href="https://orcid.org/0000-0003-0432-0581" target="_blank">
+  <img src="./img/orcid.png" alt="ORCID" width="32" class="social-icon">
 </a>
-<a href="https://linkedin.com/in/你的ID" target="_blank">
-  <img src="./img/linkedin.png" alt="LinkedIn" class="social-icon">
+<a href="https://www.linkedin.com/in/xiaochan-xue-2b7b75227/" target="_blank">
+  <img src="./img/linkedin.png" alt="LinkedIn" width="32" class="social-icon">
 </a>
-<a href="https://github.com/你的ID" target="_blank">
-  <img src="./images/github.png" alt="GitHub" class="social-icon">
+<a href="https://github.com/XueShannon" target="_blank">
+  <img src="./img/github.png" alt="GitHub" width="32" class="social-icon">
 </a>
-<a href="./docs/cv.pdf" download class="cv-download">
-  <img src="./img/pdf-icon.png" alt="CV" class="social-icon">
-  <span class="download-arrow">↓</span>
+<a href="./files/CV_Xiaochan.pdf" download class="cv-download">
+  <img src="./img/cv.png" alt="CV" width="32" class="social-icon">
 </a>
 
 ## <img src="../img/career.png" height="50px"> About Me
