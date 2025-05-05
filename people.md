@@ -13,27 +13,11 @@ title: People
 - **[Prof. Ying Wang](https://www.stevens.edu/profile/ywang6)** - Associate Professor, Stevens Institute of Technology
 
 ## 🎓 BSc and MSc Mentorships
-                <strong>2024-2025 AFRL Software Design Radio (SDR) Challenge</strong><br>
-                <strong>Members (Undergraduate):</strong> Shaun George, Lenny Yanza, Karen Caguana, Xiangxi (Mall) Wang<br>
-                <strong>Member (High School):</strong> Akshat Santhana Gopalan<br>
-                <a href="https://wbi-innovates.zohobackstage.com/afrlsdr" target="_blank">Profile</a>
-            </div>
-            <div class="person">
-                <strong>Saurabh Raman Parkar</strong> - Master, AI Integrated Sensing<br>
-                <a href="https://github.com/nexuseli18" target="_blank">Profile</a>
-            </div>
-            <div class="person">
-                <strong>Ruoxi Li</strong> - Master, AI Integrated Sensing<br>
-                <a href="https://example.com" target="_blank">Profile</a>
-            </div>
-            <div class="person">
-                <strong>Beula Jose</strong> - Master, Wireless Security<br>
-                <a href="https://example.com" target="_blank">Profile</a>
-            </div>
-            <div class="person">
-                <strong>Zhifan Jiang</strong> - Master, SDR<br>
-                <a href="https://example.com" target="_blank">Profile</a>
-            </div>
-            <div class="person">
-                <strong>Jiapeng Xiao</strong> - Master, SDR<br>
-                <a href="https://example.com" target="_blank">Profile</a>
+- **[2024-2025 AFRL Software Design Radio (SDR) Challenge](https://wbi-innovates.zohobackstage.com/afrlsdr)** 
+    - Members (Undergraduate): Shaun George, Lenny Yanza, Karen Caguana, Xiangxi (Mall) Wang
+    - Member (High School): Akshat Santhana Gopalan
+- **[Saurabh Raman Parkar](https://github.com/nexuseli18)** - Master, AI Integrated Sensing
+- **[Ruoxi Li]()** - Master, AI Integrated Sensing
+- **[Beula Jose]()** - Master, Wireless Security
+- **[Zhifan Jiang]()** - Master, SDR
+- **[Jiapeng Xiao]()** - Master, SDR
