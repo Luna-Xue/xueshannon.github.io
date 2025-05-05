@@ -44,21 +44,22 @@ navbar-links:
 author:
   name: Xiaochan Xue
   email: "xxue2 (at) stevens (dot) com"
-  googlescholar: "rhcjOdQAAAAJ"
-  orcid: "0000-0003-0432-0581"
-  linkedin: "xiaochan-xue-2b7b75227"
-  github: "xueshannon"
-  cv: "CV_Xiaochan.pdf"
+  github: xueshannon    # eg. daattali
+  twitter:    # eg. daattali
+  og_image: "/img/XXC_1.png"
+  linkedin: https://www.linkedin.com/in/xiaochan-xue-2b7b75227/
+  google_scholar: https://scholar.google.com/
   
 
 # Select which links to show in the footer
 footer-links-active:
   rss: false
-  googlescholar: true
-  orcid: true
-  linkedin: true
+  facebook: true
+  email: true
+  twitter: false
   github: true
-  cv: true
+  linkedin: true
+  Google: true
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
