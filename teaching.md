@@ -3,7 +3,7 @@ layout: page
 title: Teaching
 ---
 
-## Graduate LEcture
+## Graduate Lecture
 
 ## Undergraduate Lecture
 
