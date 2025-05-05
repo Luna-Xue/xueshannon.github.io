@@ -80,7 +80,7 @@ timezone: "America/New_York"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
-paginate: 5
+#paginate: 5
 
 # Default YAML values (more information on Jekyll's site)
 defaults:
@@ -155,5 +155,5 @@ prose:
 # 2fc73a3a967e97599c9763d05e564189
 
 # Markdown emoji plugin
-gems:
-  - jemoji
+#gems:
+ # - jemoji
