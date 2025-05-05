@@ -55,7 +55,6 @@ I received my Bachelor's Degree from [Jilin University](https://www.jlu.edu.cn/)
 - **[Aug, 2023]** <img src="../img/award.png" height="30px"> I received <span style="color:orange;">**Excellence Doctoral Fellowship**</span>, SIT
 
 
-## <img src="../img/money.png" height="50px"> Grants
-
-
 ## <img src="../img/orga.png" height="50px"> Organizational duties and activities
+
+## <img src="../img/money.png" height="50px"> Grants
