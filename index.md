@@ -43,6 +43,8 @@ I received my Bachelor's Degree from [Jilin University](https://www.jlu.edu.cn/)
 - **Security:** Physical Layer Security, Privacy preserving, Distributed security
 
 ## <img src="../img/news.png" height="50px"> News
+- **[May, 2025]** See you soon at **University of Hawaii Manoa**, 2025 Fall.
+- **[May, 2025]** Planning my doctoral defense in June.
 - **[May, 2025]** See you at **1st iCNS/ECE Symposium on AI Research and Innovations (DuckAI 2025)** at Stevens!
 - **[Apr, 2025]** I am invited by **University of Hawaii Manoa ECE** to give a seminar talk on my excited topic about O-RAN/AI-RAN for next generation communication.
 - **[Apr, 2025]** I am at **Illinois State University**.
