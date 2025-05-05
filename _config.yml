@@ -27,7 +27,7 @@ avatar: "/img/XXC_1.png"
 
 # List of links in the navigation bar
 navbar-links:
-  Blog: "blog"
+  Projects: "project"
   Teaching: "teaching"
   #Datasets: "datasets"
   Publications: "publications"
