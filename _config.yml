@@ -27,6 +27,7 @@ avatar: "/img/XXC_1.png"
 
 # List of links in the navigation bar
 navbar-links:
+  Home: "http://xueshannon.github.io"
   Projects: "blog"
   Teaching: "teaching"
   #Datasets: "datasets"
