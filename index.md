@@ -59,6 +59,3 @@ I received my Bachelor's Degree from [Jilin University](https://www.jlu.edu.cn/)
 
 
 ## <img src="../img/orga.png" height="50px"> Organizational duties and activities
-
-本站访问量：<span id="busuanzi_value_site_pv"></span> 次
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
