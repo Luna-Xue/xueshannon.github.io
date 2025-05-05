@@ -57,3 +57,56 @@ I received my Bachelor's Degree from [Jilin University](https://www.jlu.edu.cn/)
 - **[Aug, 2023]** <img src="../img/award.png" height="30px"> I received <span style="color:orange;">**Excellence Doctoral Fellowship**</span>, SIT
 
 ## <img src="../img/money.png" height="50px"> Grants
+
+<div class="grants-box">
+  <div class="grants-scroll">
+    <!-- 资助项目列表 -->
+    <div class="grant-item">
+      <img src="../img/award.png" height="20px"> 
+      <strong>NSF CPS Rising Star Grant</strong> (2025) - $50,000
+    </div>
+    <div class="grant-item">
+      <img src="../img/award.png" height="20px"> 
+      Stevens Doctoral Fellowship (2023-2025) - $120,000
+    </div>
+    <!-- 更多项目... -->
+  </div>
+</div>
+
+<style>
+/* 固定高度滚动框样式 */
+.grants-box {
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 20px 0;
+  background: #f9f9f9;
+}
+
+.grants-scroll {
+  max-height: 250px;  /* 固定高度 */
+  overflow-y: auto;   /* 垂直滚动条 */
+  padding-right: 10px;
+}
+
+/* 单个资助项目样式 */
+.grant-item {
+  padding: 12px;
+  margin: 8px 0;
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* 滚动条美化 */
+.grants-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+.grants-scroll::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 4px;
+}
+</style>
