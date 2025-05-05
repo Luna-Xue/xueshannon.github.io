@@ -46,48 +46,48 @@ I received my Bachelor's Degree from [Jilin University](https://www.jlu.edu.cn/)
 <div class="news-box">
   <div class="news-scroll">
     <!-- 项目列表 -->
-    <div class="grant-item">
+    <div class="new-item">
       [May, 2025] See you soon at **University of Hawaii Manoa**, 2025 Fall.
     </div>
-    <div class="grant-item">
+    <div class="new-item">
       [May, 2025] Planning my doctoral defense in June.
     </div>
-    <div class="grant-item">
+    <div class="new-item">
       [May, 2025] See you at <strong>1st iCNS/ECE Symposium on AI Research and Innovations (DuckAI 2025)</strong> at Stevens!
     </div>
-    <div class="grant-item">
+    <div class="new-item">
       [Apr, 2025] I am invited by <strong>University of Hawaii Manoa ECE</strong> to give a seminar talk on my excited topic about O-RAN/AI-RAN for next generation communication.
     </div>
-    <div class="grant-item">
+    <div class="new-item">
       [Apr, 2025] I am at **Illinois State University**.
     </div>
-    <div class="grant-item">
+    <div class="new-item">
       [Feb, 2025] <img src="../img/award.png" height="30px"> Selected as <strong>[2025 NSF CPS (Cyber-Physical Systems) Rising Star](https://cps-vo.org/group/CPSRisingStarsWorkshop25)</strong> (17%)
     </div>
-    <div class="grant-item">
+    <div class="new-item">
       [Feb, 2025] I am invited to give a [Seminar Talk](./files/Enhancing Security and Privacy in Distributed Wireless Networks Through Physical Layer Techniques _ Stevens Institute of Technology.html) at SIT 
     </div>
-    <div class="grant-item">
+    <div class="new-item">
       [Jan, 2025] <span style="color:red;">I am on Job Market NOW! Please contact me if you interest!</span>
     </div>
-    <div class="grant-item">
+    <div class="new-item">
       [Jan, 2025] <span style="color:red;">I am open to a POSTDOC position!</span>
     </div>
-    <div class="grant-item">
+    <div class="new-item">
       [Jan, 2025] <img src="../img/fireworks.png" height="30px"> New paper submited!
     </div>
-    <div class="grant-item">
+    <div class="new-item">
       [Aug, 2024] I am hired as Lecture Instructor, SIT.
     </div>
-    <div class="grant-item">
+    <div class="new-item">
       [Aug, 2023] <img src="../img/award.png" height="30px"> I received <span style="color:orange;">Excellence Doctoral Fellowship</span>, SIT
     </div>
   </div>
 </div>
 
 <style>
-/* 固定高度滚动框样式 */
-.news-box {
+/* 容器样式 */
+.news-container {
   border: 2px solid #e0e0e0;
   border-radius: 10px;
   padding: 15px;
@@ -95,31 +95,27 @@ I received my Bachelor's Degree from [Jilin University](https://www.jlu.edu.cn/)
   background: #f9f9f9;
 }
 
+/* 横向滚动区域 */
 .news-scroll {
-  max-height: 400px;  /* 固定高度 */
-  overflow-y: auto;   /* 垂直滚动条 */
-  padding-right: 10px;
+  display: flex;        /* 弹性布局 */
+  gap: 20px;            /* 项目间距 */
+  overflow-x: auto;     /* 横向滚动 */
+  padding-bottom: 10px; /* 避免滚动条遮挡 */
 }
 
-/* 单个资助项目样式 */
-.grant-item {
-  padding: 12px;
-  margin: 8px 0;
+/* 单个项目样式 */
+.new-item {
+  min-width: 300px;     /* 确保项目最小宽度 */
+  padding: 15px;
   background: white;
-  border-radius: 6px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  display: flex;
-  align-items: center;
-  gap: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  flex-shrink: 0;       /* 禁止项目挤压变形 */
 }
 
-/* 滚动条美化 */
-.news-scroll::-webkit-scrollbar {
-  width: 8px;
-}
-.news-scroll::-webkit-scrollbar-thumb {
-  background: #888; 
-  border-radius: 4px;
+.new-text {
+  white-space: normal;  /* 允许文字自然换行 */
+  line-height: 1.6;
 }
 </style>
 
