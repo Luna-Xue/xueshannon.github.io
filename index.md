@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Xiaochan Xue
-subtitle: Stevens Institute of Technology
+subtitle: Ph.D. Candidate
 ---
 <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
 <a href="https://scholar.google.com/citations?user=rhcjOdQAAAAJ&hl=en" target="_blank">
