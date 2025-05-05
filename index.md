@@ -56,10 +56,8 @@ I received my Bachelor's Degree from [Jilin University](https://www.jlu.edu.cn/)
 - **[Aug, 2024]** I am hired as Lecture Instructor, SIT.
 - **[Aug, 2023]** <img src="../img/award.png" height="30px"> I received <span style="color:orange;">**Excellence Doctoral Fellowship**</span>, SIT
 
-## <img src="../img/money.png" height="50px"> Grants
-
-<div class="grants-box">
-  <div class="grants-scroll">
+<div class="news-box">
+  <div class="news-scroll">
     <!-- 资助项目列表 -->
     <div class="grant-item">
       <img src="../img/award.png" height="20px"> 
@@ -69,13 +67,16 @@ I received my Bachelor's Degree from [Jilin University](https://www.jlu.edu.cn/)
       <img src="../img/award.png" height="20px"> 
       Stevens Doctoral Fellowship (2023-2025) - $120,000
     </div>
-    <!-- 更多项目... -->
+    <div class="grant-item">
+      <img src="../img/award.png" height="20px"> 
+      - [Aug, 2023] <img src="../img/award.png" height="30px"> I received <span style="color:orange;">Excellence Doctoral Fellowship</span>, SIT
+    </div>
   </div>
 </div>
 
 <style>
 /* 固定高度滚动框样式 */
-.grants-box {
+.news-box {
   border: 2px solid #e0e0e0;
   border-radius: 10px;
   padding: 15px;
@@ -83,7 +84,7 @@ I received my Bachelor's Degree from [Jilin University](https://www.jlu.edu.cn/)
   background: #f9f9f9;
 }
 
-.grants-scroll {
+.news-scroll {
   max-height: 250px;  /* 固定高度 */
   overflow-y: auto;   /* 垂直滚动条 */
   padding-right: 10px;
@@ -102,11 +103,13 @@ I received my Bachelor's Degree from [Jilin University](https://www.jlu.edu.cn/)
 }
 
 /* 滚动条美化 */
-.grants-scroll::-webkit-scrollbar {
+.news-scroll::-webkit-scrollbar {
   width: 8px;
 }
-.grants-scroll::-webkit-scrollbar-thumb {
+.news-scroll::-webkit-scrollbar-thumb {
   background: #888; 
   border-radius: 4px;
 }
 </style>
+
+## <img src="../img/money.png" height="50px"> Grants
