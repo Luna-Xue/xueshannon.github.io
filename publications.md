@@ -24,7 +24,7 @@ M. K. Hasan, <strong>X. Xue</strong>, S. Yu and M. Song, "Cooperative NOMA-Based
 <img src="../img/conference-paper.png" height="20px"> 
 H. Wu, Y. Zou, J. Zhu, <strong>X. Xue</strong> and T. Tsiftsis, "Secrecy Performance of Hybrid Satellite-Terrestrial Relay Systems with Hardware Impairments," ICC 2019 - 2019 IEEE International Conference on Communications (ICC), Shanghai, China. [[Paper&#8594;]](https://ieeexplore.ieee.org/abstract/document/8761231)
 
-## Title
+## Categories
 <img src="../img/conference-paper.png" height="20px">
 <img src="../img/conference-short-paper.png" height="20px">
 <img src="../img/workshop-paper.png" height="20px">
@@ -34,6 +34,4 @@ H. Wu, Y. Zou, J. Zhu, <strong>X. Xue</strong> and T. Tsiftsis, "Secrecy Perform
 <img src="../img/honorable.png" height="30px">
 <img src="../img/award.png" height="30px">
 <img src="../img/editor.png" height="20px"> 
-
-Gustavo Penha, Alexandru Balan and Claudia Hauff, *Introducing MANtIS: a novel Multi-Domain Information Seeking Dialogues Dataset*, 2019. [[arXiv Preprint&#8594;]](https://arxiv.org/abs/1912.04639) [[Dataset&#8594;]](https://guzpenha.github.io/MANtIS/)
 
