@@ -11,7 +11,7 @@ I can also be found on [Google Scholar](https://scholar.google.com/citations?use
 <img src="../img/journal-article.png" height="20px">
 M. K. Hasan, <strong>X. Xue</strong>, S. Yu and M. Song, "Cooperative NOMA-Based Spectrum Leasing With Multiple Secondary Users," in IEEE Transactions on Vehicular Technology, vol. 72, no. 11, pp. 14543-14558, Nov. 2023. [[Paper&#8594;]](https://ieeexplore.ieee.org/abstract/document/10160162)
 
-<img src="../img/journal-article.png" height="20px">
+<img src="../img/conference-paper.png" height="20px">
 <strong>X. Xue</strong>, S. Yu and M. Song, "Secure Device Trust Bootstrapping Against Collaborative Signal Modification Attacks," <strong>IEEE INFOCOM 2023</strong> - IEEE Conference on Computer Communications, New York City, NY, USA.[[Paper&#8594;]](https://ieeexplore.ieee.org/abstract/document/10229007)
 
 
