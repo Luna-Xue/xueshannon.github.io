@@ -3,6 +3,7 @@ layout: page
 title: Xiaochan Xue
 subtitle: Stevens Institute of Technology
 ---
+<div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
 <a href="https://scholar.google.com/citations?user=rhcjOdQAAAAJ&hl=en" target="_blank">
   <img src="./img/google-scholar.png" alt="Google Scholar" width="32" class="social-icon">
 </a>
@@ -18,6 +19,7 @@ subtitle: Stevens Institute of Technology
 <a href="https://www.linkedin.com/in/xiaochan-xue-2b7b75227/" target="_blank">
   <img src="./img/linkedin.png" alt="LinkedIn" width="32" class="social-icon">
 </a>
+</div>
 
 ## <img src="../img/contact.png" height="50px"> Contact
 
