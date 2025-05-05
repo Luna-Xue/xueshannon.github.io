@@ -19,6 +19,11 @@ subtitle: Stevens Institute of Technology
 <a href="https://www.linkedin.com/in/xiaochan-xue-2b7b75227/" target="_blank">
   <img src="./img/linkedin.png" alt="LinkedIn" width="32" class="social-icon">
 </a>
+[![Google Scholar](https://img.shields.io/badge/Google%20Scholar-4285F4?logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=rhcjOdQAAAAJ&hl=en)
+[![ORCID](https://img.shields.io/badge/ORCID-A6CE39?logo=orcid&logoColor=white)](https://orcid.org/0000-0003-0432-0581)
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0A66C2?logo=linkedin)](https://www.linkedin.com/in/xiaochan-xue-2b7b75227/)
+[![GitHub](https://img.shields.io/badge/-GitHub-181717?logo=github)](https://github.com/xueshannon)
+[![CV Download](https://img.shields.io/badge/-CV%20PDF-FF6B6B?logo=adobe-acrobat-reader)](/Users/xuexiaochan/xueshannon.github.io/files/CV_Xiaochan.pdf)
 </div>
 
 ## <img src="../img/contact.png" height="50px"> Contact
@@ -27,12 +32,6 @@ subtitle: Stevens Institute of Technology
 Email: xxue2[at]stevens[dot]edu
 Phone: 
 ```
-[![Google Scholar](https://img.shields.io/badge/Google%20Scholar-4285F4?logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=rhcjOdQAAAAJ&hl=en)
-[![ORCID](https://img.shields.io/badge/ORCID-A6CE39?logo=orcid&logoColor=white)](https://orcid.org/0000-0003-0432-0581)
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0A66C2?logo=linkedin)](https://www.linkedin.com/in/xiaochan-xue-2b7b75227/)
-[![GitHub](https://img.shields.io/badge/-GitHub-181717?logo=github)](https://github.com/xueshannon)
-[![CV Download](https://img.shields.io/badge/-CV%20PDF-FF6B6B?logo=adobe-acrobat-reader)](/Users/xuexiaochan/xueshannon.github.io/files/CV_Xiaochan.pdf)
-
 
 ## <img src="../img/career.png" height="50px"> About Me
 My research focuses on advancing wireless communication by integrating Artificial Intelligence (AI) and Machine Learning (ML) with 5G, Sub-6G, NextG, and beyond. I specialize in enhancing security and efficiency in next-generation networks through Physical Layer Security (PLS), millimeter wave (mmWave) sensing, and AI-driven techniques.
