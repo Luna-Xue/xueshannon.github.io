@@ -8,6 +8,7 @@ subtitle: Stevens Institute of Technology
 
 ```
 Email: xxue2[at]stevens[dot]edu
+Phone: 
 ```
 [![Google Scholar](https://img.shields.io/badge/Google%20Scholar-4285F4?logo=google-scholar&logoColor=white)](https://github.com/XueShannon)
 [![ORCID](https://img.shields.io/badge/ORCID-A6CE39?logo=orcid&logoColor=white)](https://orcid.org/0000-0003-0432-0581)
