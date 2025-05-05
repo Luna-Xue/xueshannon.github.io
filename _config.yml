@@ -27,14 +27,12 @@ avatar: "/img/XXC_1.png"
 
 # List of links in the navigation bar
 navbar-links:
-  Home: "http://xueshannon.github.io"
-  Publications: "publications"
+  Blog: "blog"
   Teaching: "teaching"
+  #Datasets: "datasets"
+  Publications: "publications"
   People: "people"
   Life: "life"
-  #Blog: "blog"
-  #Datasets: "datasets"
-  
  
 # --- Footer options --- #
 
@@ -42,12 +40,10 @@ navbar-links:
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
   name: Xiaochan Xue
-  email: "xxue2 (at) stevens (dot) com"
+  email: "xxue2@stevens.edu"
   github: xueshannon    # eg. daattali
   twitter:    # eg. daattali
   og_image: "/img/XXC_1.png"
-  linkedin: https://www.linkedin.com/in/xiaochan-xue-2b7b75227/
-  
 
 # Select which links to show in the footer
 footer-links-active:
@@ -83,7 +79,7 @@ timezone: "America/New_York"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
-#paginate: 5
+paginate: 5
 
 # Default YAML values (more information on Jekyll's site)
 defaults:
@@ -158,5 +154,5 @@ prose:
 # 2fc73a3a967e97599c9763d05e564189
 
 # Markdown emoji plugin
-#gems:
-#  - jemoji
+gems:
+  - jemoji
