@@ -43,58 +43,45 @@ I received my Bachelor's Degree from [Jilin University](https://www.jlu.edu.cn/)
 - **Security:** Physical Layer Security, Privacy preserving, Distributed security
 
 ## <img src="../img/news.png" height="50px"> News
-- **[May, 2025]** See you soon at **University of Hawaii Manoa**, 2025 Fall.
-- **[May, 2025]** Planning my doctoral defense in June.
-- **[May, 2025]** See you at **1st iCNS/ECE Symposium on AI Research and Innovations (DuckAI 2025)** at Stevens!
-- **[Apr, 2025]** I am invited by **University of Hawaii Manoa ECE** to give a seminar talk on my excited topic about O-RAN/AI-RAN for next generation communication.
-- **[Apr, 2025]** I am at **Illinois State University**.
-- **[Feb, 2025]** <img src="../img/award.png" height="30px"> Selected as **[2025 NSF CPS (Cyber-Physical Systems) Rising Star](https://cps-vo.org/group/CPSRisingStarsWorkshop25)** (17%)
-- **[Feb, 2025]** I am invited to give a [Seminar Talk](./files/Enhancing Security and Privacy in Distributed Wireless Networks Through Physical Layer Techniques _ Stevens Institute of Technology.html) at SIT 
-- **[Jan, 2025]** <span style="color:red;">I am on Job Market NOW! Please contact me if you interest!</span>
-- **[Jan, 2025]** <span style="color:red;">I am open to a POSTDOC position!</span>
-- **[Jan, 2025]** <img src="../img/fireworks.png" height="30px"> New paper submited!
-- **[Aug, 2024]** I am hired as Lecture Instructor, SIT.
-- **[Aug, 2023]** <img src="../img/award.png" height="30px"> I received <span style="color:orange;">**Excellence Doctoral Fellowship**</span>, SIT
-
 <div class="news-box">
   <div class="news-scroll">
     <!-- 项目列表 -->
     <div class="grant-item">
-      - **[May, 2025]** See you soon at **University of Hawaii Manoa**, 2025 Fall.
+      [May, 2025] See you soon at **University of Hawaii Manoa**, 2025 Fall.
     </div>
     <div class="grant-item">
-      - **[May, 2025]** Planning my doctoral defense in June.
+      [May, 2025] Planning my doctoral defense in June.
     </div>
     <div class="grant-item">
-      - **[May, 2025]** See you at **1st iCNS/ECE Symposium on AI Research and Innovations (DuckAI 2025)** at Stevens!
+      [May, 2025] See you at <strong>1st iCNS/ECE Symposium on AI Research and Innovations (DuckAI 2025)</strong> at Stevens!
     </div>
     <div class="grant-item">
-      - **[Apr, 2025]** I am invited by **University of Hawaii Manoa ECE** to give a seminar talk on my excited topic about O-RAN/AI-RAN for next generation communication.
+      [Apr, 2025] I am invited by <strong>University of Hawaii Manoa ECE</strong> to give a seminar talk on my excited topic about O-RAN/AI-RAN for next generation communication.
     </div>
     <div class="grant-item">
-      - **[Apr, 2025]** I am at **Illinois State University**.
+      [Apr, 2025] I am at **Illinois State University**.
     </div>
     <div class="grant-item">
-      - **[Feb, 2025]** <img src="../img/award.png" height="30px"> Selected as **[2025 NSF CPS (Cyber-Physical Systems) Rising Star](https://cps-vo.org/group/CPSRisingStarsWorkshop25)** (17%)
+      [Feb, 2025] <img src="../img/award.png" height="30px"> Selected as <strong>[2025 NSF CPS (Cyber-Physical Systems) Rising Star](https://cps-vo.org/group/CPSRisingStarsWorkshop25)</strong> (17%)
     </div>
     <div class="grant-item">
-      - **[Feb, 2025]** I am invited to give a [Seminar Talk](./files/Enhancing Security and Privacy in Distributed Wireless Networks Through Physical Layer Techniques _ Stevens Institute of Technology.html) at SIT 
+      [Feb, 2025] I am invited to give a [Seminar Talk](./files/Enhancing Security and Privacy in Distributed Wireless Networks Through Physical Layer Techniques _ Stevens Institute of Technology.html) at SIT 
     </div>
     <div class="grant-item">
-      - **[Jan, 2025]** <span style="color:red;">I am on Job Market NOW! Please contact me if you interest!</span>
+      [Jan, 2025] <span style="color:red;">I am on Job Market NOW! Please contact me if you interest!</span>
     </div>
     <div class="grant-item">
-      - **[Jan, 2025]** <span style="color:red;">I am open to a POSTDOC position!</span>
+      [Jan, 2025] <span style="color:red;">I am open to a POSTDOC position!</span>
     </div>
     <div class="grant-item">
-      - [Jan, 2025] <img src="../img/fireworks.png" height="30px"> New paper submited!
+      [Jan, 2025] <img src="../img/fireworks.png" height="30px"> New paper submited!
     </div>
     <div class="grant-item">
-      - [Aug, 2024] I am hired as Lecture Instructor, SIT.
+      [Aug, 2024] I am hired as Lecture Instructor, SIT.
     </div>
     <div class="grant-item">
       <img src="../img/award.png" height="20px"> 
-      - [Aug, 2023] <img src="../img/award.png" height="30px"> I received <span style="color:orange;">Excellence Doctoral Fellowship</span>, SIT
+      [Aug, 2023] <img src="../img/award.png" height="30px"> I received <span style="color:orange;">Excellence Doctoral Fellowship</span>, SIT
     </div>
   </div>
 </div>
@@ -110,7 +97,7 @@ I received my Bachelor's Degree from [Jilin University](https://www.jlu.edu.cn/)
 }
 
 .news-scroll {
-  max-height: 250px;  /* 固定高度 */
+  max-height: 400px;  /* 固定高度 */
   overflow-y: auto;   /* 垂直滚动条 */
   padding-right: 10px;
 }
