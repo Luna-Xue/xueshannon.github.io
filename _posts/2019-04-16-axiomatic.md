@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ECIR 2019 Paper
+title: ECIR 2019 Paper test
 thumbnail: "/img/og-axiomatic.png"
 description: An Axiomatic Approach to Diagnosing Neural IR Models
 ---
