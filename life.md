@@ -18,7 +18,7 @@ subtitle:
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
 <!-- 地图容器 -->
-<div id="travel-map" style="height: 480px; margin: 20px 0; border: 1px solid #ccc; border-radius: 8px;"></div>
+<div id="travel-map" style="height: 300px; margin: 20px 0; border: 1px solid #ccc; border-radius: 8px;"></div>
 
 <script>
 // 初始化地图并设置中心点和缩放等级
