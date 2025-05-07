@@ -95,7 +95,7 @@ I received my Bachelor's Degree from [Jilin University](https://www.jlu.edu.cn/)
 
 /* 滚动区域 */
 .news-scroll {
-  max-height: 250px;       /* 固定高度 */
+  max-height: 300px;       /* 固定高度 */
   overflow-y: auto;        /* 垂直滚动 */
   padding: 15px;
 }
