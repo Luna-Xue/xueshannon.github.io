@@ -46,10 +46,10 @@ I received my Bachelor's Degree from [Jilin University](https://www.jlu.edu.cn/)
 <div class="news-box">
   <div class="news-scroll">
     <!-- 项目列表 -->
-    <div class="new-item">[May, 2025] See you soon at University of Hawaii Manoa, 2025 Fall.</div> 
+    <div class="new-item">[May, 2025] See you soon at University of Hawaii Mānoa, 2025 Fall.</div> 
     <div class="new-item">[May, 2025] Planning my doctoral defense in June.</div>
     <div class="new-item">[May, 2025] See you at <strong>1st iCNS / ECE Symposium on AI Research and Innovations <span style="color:orange;">(DuckAI 2025)</span></strong> at Stevens!</div>
-    <div class="new-item">[Apr, 2025] I am invited by University of Hawaii Manoa ECE to give a <a href="/Users/xuexiaochan/xueshannon.github.io/files/ECE Seminars ｜ UH Electrical & Computer Engineering (5_6_2025 8：53：11 PM).html">seminar talk</a> on my exciting topic about O-RAN/AI-RAN for next generation communication.</div>
+    <div class="new-item">[Apr, 2025] I am invited by University of Hawaii Mānoa ECE to give a <a href="/Users/xuexiaochan/xueshannon.github.io/files/ECE Seminars ｜ UH Electrical & Computer Engineering (5_6_2025 8：53：11 PM).html">seminar talk</a> on my exciting topic about O-RAN/AI-RAN for next generation communication.</div>
     <div class="new-item">[Apr, 2025] I am at Illinois State University.</div>
     <div class="new-item">[Feb, 2025] <img src="../img/award.png" height="30px"> Selected as <strong><a href="https://cps-vo.org/group/CPSRisingStarsWorkshop25">2025 NSF CPS Rising Star</a></strong> (17%).</div>
     <div class="new-item">[Feb, 2025] I am invited to give a <a href="./files/Enhancing Security and Privacy in Distributed Wireless Networks Through Physical Layer Techniques _ Stevens Institute of Technology.html">Seminar Talk</a> at SIT.</div>
