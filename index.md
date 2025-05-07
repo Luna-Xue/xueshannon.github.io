@@ -61,7 +61,7 @@ I received my Bachelor's Degree from [Jilin University](https://www.jlu.edu.cn/)
     <div class="new-item">
       [Apr, 2025] I am at Illinois State University.
     </div>
-    <div class="new-item">
+    <div class="new-item" style="white-space: pre-wrap">
       [Feb, 2025] <img src="../img/award.png" height="30px"> Selected as <a href="https://cps-vo.org/group/CPSRisingStarsWorkshop25"> 2025 NSF CPS (Cyber-Physical Systems) Rising Star </a> (17%)
     </div>
     <div class="new-item">
@@ -80,7 +80,7 @@ I received my Bachelor's Degree from [Jilin University](https://www.jlu.edu.cn/)
       [Aug, 2024] I am hired as Lecture Instructor, SIT.
     </div>
     <div class="new-item">
-      [Aug, 2023] <img src="../img/award.png" height="30px"> I received <span style="color:orange;"> Excellence Doctoral Fellowship </span>, SIT
+      [Aug, 2023] <img src="../img/award.png" height="30px"> I received <span style="color:orange;"> Excellence Doctoral Fellowship </span> , SIT
     </div>
     <div class="new-item">
   [Feb, 2025] 
