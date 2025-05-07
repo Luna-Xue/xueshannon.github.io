@@ -424,12 +424,45 @@ table tr td :last-child {
   }
 }
 
+.news-section {
+  margin-top: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.news-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 .news-box {
   max-height: 300px;
-  overflow-y: auto;   /* 启用垂直滚轮 */
-  border: 1px solid #ccc;
-  padding: 10px;
-  background: #fafafa;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  background-color: #ffffff;
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* 美化滚动条 - Chrome/Edge/WebKit */
+.news-box::-webkit-scrollbar {
+  width: 8px;
+}
+.news-box::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 8px;
+}
+.news-box::-webkit-scrollbar-thumb {
+  background-color: #bbb;
+  border-radius: 8px;
+}
+.news-box::-webkit-scrollbar-thumb:hover {
+  background-color: #888;
 }
 
 .news-scroll {
@@ -439,8 +472,13 @@ table tr td :last-child {
 
 .new-item {
   padding: 10px 0;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #eee;
   font-size: 14px;
   line-height: 1.6;
+  transition: background-color 0.2s;
 }
+.new-item:hover {
+  background-color: #f9f9f9;
+}
+
 
