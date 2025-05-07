@@ -4,7 +4,8 @@ title: Leisure Life
 subtitle: 
 ---
 ## Game
-- Game Developer(Unity)
+- <img src="../img/unity.png" alt="Unity" style="height: 20px; vertical-align: middle;"> Game Developer (Unity)
+
 
 ## Live
 - <img src="../img/obs-studio.png" alt="OBS" style="height: 20px; vertical-align: middle;"> OBS
