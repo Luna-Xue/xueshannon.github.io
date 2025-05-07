@@ -22,8 +22,12 @@ subtitle:
 .carousel {
   display: flex;
   gap: 1rem;
-  transition: transform 0.3s ease-in-out;
+  overflow-x: auto;
   scroll-behavior: smooth;
+  padding: 10px 0;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
 }
 
 .carousel-item {
@@ -31,7 +35,7 @@ subtitle:
   height: 200px;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 .carousel-item img {
   width: 100%;
@@ -40,55 +44,60 @@ subtitle:
   display: block;
 }
 
-/* 美化箭头按钮 */
+/* 更现代的按钮样式 */
 .carousel-btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: linear-gradient(145deg, #ffffff, #e6e6e6);
-  border: 1px solid #ccc;
-  font-size: 20px;
+  background: #ffffff;
+  border: none;
   color: #333;
-  padding: 10px 14px;
-  cursor: pointer;
+  font-size: 28px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-  transition: all 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.25);
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   z-index: 10;
 }
 .carousel-btn:hover {
-  background: linear-gradient(145deg, #f0f0f0, #dcdcdc);
+  background: #f2f2f2;
   transform: translateY(-50%) scale(1.1);
 }
-.carousel-btn.prev {
-  left: 10px;
-}
-.carousel-btn.next {
-  right: 10px;
-}
+.carousel-btn.prev { left: 10px; }
+.carousel-btn.next { right: 10px; }
 </style>
 
 <div class="carousel-wrapper">
-  <button class="carousel-btn prev" onclick="scrollCarousel(-1)">&#10094;</button>
+  <button class="carousel-btn prev" id="btnPrev">&#10094;</button>
   <div class="carousel" id="imageCarousel">
     <div class="carousel-item"><img src="img/travel1.jpg" alt="Travel 1"></div>
     <div class="carousel-item"><img src="img/travel2.jpg" alt="Travel 2"></div>
     <div class="carousel-item"><img src="img/travel3.jpg" alt="Travel 3"></div>
     <div class="carousel-item"><img src="img/travel4.jpg" alt="Travel 4"></div>
   </div>
-  <button class="carousel-btn next" onclick="scrollCarousel(1)">&#10095;</button>
+  <button class="carousel-btn next" id="btnNext">&#10095;</button>
 </div>
 
 <script>
-function scrollCarousel(direction) {
+document.addEventListener("DOMContentLoaded", function () {
   const carousel = document.getElementById('imageCarousel');
-  const scrollAmount = 320; // adjust depending on item width + gap
-  carousel.scrollBy({
-    left: direction * scrollAmount,
-    behavior: 'smooth'
+  const scrollAmount = 320;
+
+  document.getElementById('btnPrev').addEventListener('click', () => {
+    carousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
   });
-}
+
+  document.getElementById('btnNext').addEventListener('click', () => {
+    carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+  });
+});
 </script>
+
 
 
 
