@@ -75,10 +75,13 @@ subtitle:
 <div class="carousel-wrapper">
   <button class="carousel-btn prev" id="btnPrev">&#10094;</button>
   <div class="carousel" id="imageCarousel">
-    <div class="carousel-item"><img src="img/travel1.jpg" alt="Travel 1"></div>
-    <div class="carousel-item"><img src="img/travel2.jpg" alt="Travel 2"></div>
-    <div class="carousel-item"><img src="img/travel3.jpg" alt="Travel 3"></div>
-    <div class="carousel-item"><img src="img/travel4.jpg" alt="Travel 4"></div>
+    <div class="carousel-item"><img src="img/trip/1.jpg" alt="Travel 1"></div>
+    <div class="carousel-item"><img src="img/trip/2.jpg" alt="Travel 2"></div>
+    <div class="carousel-item"><img src="img/trip/3.jpg" alt="Travel 3"></div>
+    <div class="carousel-item"><img src="img/trip/4.jpg" alt="Travel 4"></div>
+    <div class="carousel-item"><img src="img/trip/5.jpg" alt="Travel 4"></div>
+    <div class="carousel-item"><img src="img/trip/6.jpg" alt="Travel 4"></div>
+    <div class="carousel-item"><img src="img/trip/7.jpg" alt="Travel 4"></div>
   </div>
   <button class="carousel-btn next" id="btnNext">&#10095;</button>
 </div>
