@@ -7,8 +7,9 @@ subtitle:
 - Game Developer(Unity)
 
 ## Live
-- OBS
-- Studio One
+- <img src="../img/obs-studio.png" alt="OBS" style="height: 20px; vertical-align: middle;"> OBS
+- <img src="../img/studio-one.png" alt="Studio One" style="height: 20px; vertical-align: middle;"> Studio One
+- <img src="../img/audio-interface.png" alt="Audio Interface" style="height: 20px; vertical-align: middle;"> Audio Interface
 
 ## Photos
 <style>
