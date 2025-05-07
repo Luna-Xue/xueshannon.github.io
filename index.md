@@ -53,7 +53,7 @@ I received my Bachelor's Degree from [Jilin University](https://www.jlu.edu.cn/)
       [May, 2025] Planning my doctoral defense in June.
     </div>
     <div class="new-item">
-      [May, 2025] See you at <strong>1st iCNS/ECE Symposium on AI Research and Innovations (DuckAI 2025)</strong> at Stevens!
+      [May, 2025] See you at <a><strong>1st iCNS/ECE Symposium on AI Research and Innovations (DuckAI 2025)</strong></a> at Stevens!
     </div>
     <div class="new-item">
       [Apr, 2025] I am invited by <strong>University of Hawaii Manoa ECE</strong> to give a seminar talk on my excited topic about O-RAN/AI-RAN for next generation communication.
