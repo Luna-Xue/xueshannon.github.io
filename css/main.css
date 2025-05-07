@@ -423,3 +423,9 @@ table tr td :last-child {
     min-width: 250px; /* 手机端缩小项目宽度 */
   }
 }
+
+.new-item img,
+.new-item a,
+.new-item span {
+  margin-right: 0.3em;  /* 模拟空格宽度 */
+}
