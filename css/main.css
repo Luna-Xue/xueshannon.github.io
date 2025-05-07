@@ -424,8 +424,23 @@ table tr td :last-child {
   }
 }
 
-.new-item img,
-.new-item a,
-.new-item span {
-  margin-right: 0.3em;  /* 模拟空格宽度 */
+.news-box {
+  max-height: 300px;
+  overflow-y: auto;   /* 启用垂直滚轮 */
+  border: 1px solid #ccc;
+  padding: 10px;
+  background: #fafafa;
 }
+
+.news-scroll {
+  display: flex;
+  flex-direction: column;
+}
+
+.new-item {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
