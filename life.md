@@ -5,6 +5,7 @@ subtitle:
 ---
 ## Game
 - <img src="../img/unity.png" alt="Unity" style="height: 20px; vertical-align: middle;"> Game Developer (Unity)
+- <img src="../img/steam.png" alt="Steam" style="height: 20px; vertical-align: middle;"> Steam
 
 
 ## Live
