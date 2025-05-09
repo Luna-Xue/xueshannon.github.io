@@ -4,17 +4,17 @@ title: Leisure Life
 subtitle: 
 ---
 ## Game
-- <img src="../img/unity.png" alt="Unity" style="height: 20px; vertical-align: middle;"> Game Developer (Unity)
-- <img src="../img/steam.png" alt="Steam" style="height: 20px; vertical-align: middle;"> Steam
-- <img src="../img/nintendo-switch.png" alt="Switch" style="height: 20px; vertical-align: middle;"> Switch
-- <img src="../img/ps.png" alt="Play Station" style="height: 20px; vertical-align: middle;"> Play Station
-- <img src="../img/epic.png" alt="EPIC" style="height: 20px; vertical-align: middle;"> EPIC
+- <img src="/img/unity.png" alt="Unity" style="height: 20px; vertical-align: middle;"> Game Developer (Unity)
+- <img src="/img/steam.png" alt="Steam" style="height: 20px; vertical-align: middle;"> Steam
+- <img src="/img/nintendo-switch.png" alt="Switch" style="height: 20px; vertical-align: middle;"> Switch
+- <img src="/img/ps.png" alt="Play Station" style="height: 20px; vertical-align: middle;"> Play Station
+- <img src="/img/epic.png" alt="EPIC" style="height: 20px; vertical-align: middle;"> EPIC
 
 
 ## Live
-- <img src="../img/obs-studio.png" alt="OBS" style="height: 20px; vertical-align: middle;"> OBS
-- <img src="../img/studio-one.png" alt="Studio One" style="height: 20px; vertical-align: middle;"> Studio One
-- <img src="../img/audio-interface.png" alt="Audio Interface" style="height: 20px; vertical-align: middle;"> Audio Interface
+- <img src="/img/obs-studio.png" alt="OBS" style="height: 20px; vertical-align: middle;"> OBS
+- <img src="/img/studio-one.png" alt="Studio One" style="height: 20px; vertical-align: middle;"> Studio One
+- <img src="/img/audio-interface.png" alt="Audio Interface" style="height: 20px; vertical-align: middle;"> Audio Interface
 
 ## Photos
 <style>
@@ -81,13 +81,13 @@ subtitle:
 <div class="carousel-wrapper">
   <button class="carousel-btn prev" id="btnPrev">&#10094;</button>
   <div class="carousel" id="imageCarousel">
-    <div class="carousel-item"><img src="../img/trip/1.jpg" alt="Travel 1"></div>
-    <div class="carousel-item"><img src="../img/trip/2.jpg" alt="Travel 2"></div>
-    <div class="carousel-item"><img src="../img/trip/3.jpg" alt="Travel 3"></div>
-    <div class="carousel-item"><img src="../img/trip/4.jpg" alt="Travel 4"></div>
-    <div class="carousel-item"><img src="../img/trip/5.jpg" alt="Travel 5"></div>
-    <div class="carousel-item"><img src="../img/trip/6.jpg" alt="Travel 6"></div>
-    <div class="carousel-item"><img src="../img/trip/7.jpg" alt="Travel 7"></div>
+    <div class="carousel-item"><img src="/img/trip/1.jpg" alt="Travel 1"></div>
+    <div class="carousel-item"><img src="/img/trip/2.jpg" alt="Travel 2"></div>
+    <div class="carousel-item"><img src="/img/trip/3.jpg" alt="Travel 3"></div>
+    <div class="carousel-item"><img src="/img/trip/4.jpg" alt="Travel 4"></div>
+    <div class="carousel-item"><img src="/img/trip/5.jpg" alt="Travel 5"></div>
+    <div class="carousel-item"><img src="/img/trip/6.jpg" alt="Travel 6"></div>
+    <div class="carousel-item"><img src="/img/trip/7.jpg" alt="Travel 7"></div>
   </div>
   <button class="carousel-btn next" id="btnNext">&#10095;</button>
 </div>
