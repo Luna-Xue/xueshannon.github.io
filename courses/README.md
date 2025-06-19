@@ -1,1 +1,1 @@
-https://qrcodecreator.com/dashboard
+[QR Code Generator](https://qrcodecreator.com/dashboard)
