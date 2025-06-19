@@ -1,0 +1,1 @@
+https://qrcodecreator.com/dashboard
