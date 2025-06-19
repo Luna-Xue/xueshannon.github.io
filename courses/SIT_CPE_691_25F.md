@@ -58,4 +58,4 @@ Location: POST 302
 
 ---
 
-[← Back to Teaching Overview](/teaching.md)
+[← Back to Teaching Overview](../teaching.md)
