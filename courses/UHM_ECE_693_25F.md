@@ -1,14 +1,13 @@
 ---
 layout: page
-title: ECE 693
+title: ECE 693 Open Radio Access Networks (O-RAN):Architecture, Security, and Future Networks
 ---
 
-# EE 4XX – Introduction to Wireless Security  
 **Fall 2025 – University of Hawaii at Manoa**  
 Instructor: Dr. Xiaochan Xue  
-Email: xiaochan@hawaii.edu  
-Lecture Time: Mon & Wed 10:30–11:45am  
-Location: POST 302
+Email: 
+Lecture Time:  
+Location: 
 
 ---
 
