@@ -57,4 +57,4 @@ Location:
 
 ---
 
-[← Back to Teaching Overview](/teaching.md)
+[← Back to Teaching Overview](../teaching.md)
