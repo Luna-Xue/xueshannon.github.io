@@ -1,10 +1,10 @@
 ---
 layout: page
-title: ECE 693
+title: CPE/EE 691
 ---
 
-# EE 4XX – Introduction to Wireless Security  
-**Fall 2025 – University of Hawaii at Manoa**  
+# Infomation System Security 
+**Fall 2025 – Stevens Institute of Technology**  
 Instructor: Dr. Xiaochan Xue  
 Email: xiaochan@hawaii.edu  
 Lecture Time: Mon & Wed 10:30–11:45am  

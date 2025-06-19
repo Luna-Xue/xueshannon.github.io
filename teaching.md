@@ -2,7 +2,7 @@
 layout: page
 title: Teaching
 ---
-## University of Hawaiʻi at Mānoa
+## University of Hawaii at Mānoa
 - [ECE 693 - 2025 Fall](courses/UHM_ECE_693_25F.md)
 
 ## Stevens Institute of Technology
