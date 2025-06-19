@@ -6,12 +6,12 @@ title: Teaching
 - [ECE 693 - 2025 Fall](courses/UHM_ECE_693_25F.md)
 
 ## Stevens Institute of Technology
-- [CPE/EE 691 Infomation System Security - 2025 Fall](courses/SIT_CPE_691_25F.md) (WebCampus)
-- [CPE/EE 691 Infomation System Security](https://stevens.smartcatalogiq.com/en/2021-2022/academic-catalog/courses/cpe-computer-engineering/600/cpe-691/) (On-Site & WebCampus)
-- [CPE/EE/AAI 595/695 Applied Machine Learning](https://stevens.smartcatalogiq.com/en/2024-2025/academic-catalog/courses/aai-applied-artificial-intelligence/500/aai-595/)
-- [CPE/EE 517 Digital and Computer Systems Architecture](https://stevens.smartcatalogiq.com/en/2023-2024/academic-catalog/courses/cpe-computer-engineering/500/cpe-517/)
-- [EE 603 Linear System Theory](https://stevens.smartcatalogiq.com/en/2023-2024/academic-catalog/courses/ee-electrical-engineering/600/ee-603/)
-- [CPE/EE 548 Digital Signal Processing](https://stevens.smartcatalogiq.com/en/2024-2025/academic-catalog/courses/cpe-computer-engineering/500/cpe-548/)
+- [CPE/EE 691 - Infomation System Security - 2025 Fall](courses/SIT_CPE_691_25F.md) (WebCampus)
+- [CPE/EE 691 - Infomation System Security](https://stevens.smartcatalogiq.com/en/2021-2022/academic-catalog/courses/cpe-computer-engineering/600/cpe-691/) (On-Site & WebCampus)
+- [CPE/EE/AAI - 595/695 Applied Machine Learning](https://stevens.smartcatalogiq.com/en/2024-2025/academic-catalog/courses/aai-applied-artificial-intelligence/500/aai-595/)
+- [CPE/EE 517 - Digital and Computer Systems Architecture](https://stevens.smartcatalogiq.com/en/2023-2024/academic-catalog/courses/cpe-computer-engineering/500/cpe-517/)
+- [EE 603 - Linear System Theory](https://stevens.smartcatalogiq.com/en/2023-2024/academic-catalog/courses/ee-electrical-engineering/600/ee-603/)
+- [CPE/EE - 548 Digital Signal Processing](https://stevens.smartcatalogiq.com/en/2024-2025/academic-catalog/courses/cpe-computer-engineering/500/cpe-548/)
 
 ## Lab
 - Engineering Design (IV)
