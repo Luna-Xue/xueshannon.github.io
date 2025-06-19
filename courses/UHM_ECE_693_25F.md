@@ -1,8 +1,9 @@
 ---
 layout: page
-title: ECE 693 Open Radio Access Networks (O-RAN):Architecture, Security, and Future Networks
+title: ECE 693 
 ---
 
+# Open Radio Access Networks (O-RAN): Architecture, Security, and Future Networks
 **Fall 2025 – University of Hawaii at Manoa**  
 Instructor: Dr. Xiaochan Xue  
 Email: 
