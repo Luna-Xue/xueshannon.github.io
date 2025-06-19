@@ -3,7 +3,8 @@ layout: page
 title: Teaching
 ---
 ## University of Hawaiʻi at Mānoa
-- [ECE 693](courses/UHM_ECE_693_25F.md)
+- [ECE 693 - 2025 Fall](courses/UHM_ECE_693_25F.md)
+
 ## Stevens Institute of Technology
 - [CPE/EE 691 Infomation System Security](https://stevens.smartcatalogiq.com/en/2021-2022/academic-catalog/courses/cpe-computer-engineering/600/cpe-691/) (On-Site & WebCampus)
 - [CPE/EE/AAI 595/695 Applied Machine Learning](https://stevens.smartcatalogiq.com/en/2024-2025/academic-catalog/courses/aai-applied-artificial-intelligence/500/aai-595/)
