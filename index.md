@@ -50,29 +50,14 @@ I received my Bachelor's Degree from [Jilin University](https://www.jlu.edu.cn/)
 
 ## 📣 Ph.D. Students Wanted
 
-I am actively recruiting **highly motivated Ph.D. students** to join my group at the University of Hawaiʻi at Mānoa, starting in **Fall 2025**.
-
-If you are interested in working on cutting-edge topics related to:
-
-- Wireless communication for 6G and beyond  
-- Physical-layer and cross-layer security  
-- AI/ML for O-RAN and intelligent RAN systems  
-- ISAC-based sensing and privacy-preserving wireless networks  
-
-please email me with:
-
+I am actively recruiting **highly motivated Ph.D. students** to join my group at the University of Hawaiʻi at Mānoa, starting in **Fall 2025**. Please email me with:
 - Your **CV**  
 - A brief **statement of research interests**  
 - Any relevant publications or project experience (if available)
-
 > 📧 **Email subject requirement:**  
 Please use the following subject line:  
 **`PhD Application Fall 2025 – Your Name – [Research Area]`**  
-(e.g., `PhD Application Fall 2025 – Jane Doe – ISAC & AI-RAN`)
-
 Applications without this subject line may not be considered.
-
-Fully funded positions are available. International applicants are welcome.
 
 ---
 
