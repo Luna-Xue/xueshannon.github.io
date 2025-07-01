@@ -54,8 +54,8 @@ I am actively recruiting **highly motivated Ph.D. students** to join my group at
 - Any relevant publications or project experience (if available)
 > 📧 **Email subject requirement:**  
 Please use the following subject line:  
-**`PhD Application Fall 2025 – Your Name – [Research Area]`**  
-Applications without this subject line may not be considered.
+**`PhD Application – Your Name – [Research Area]`**  
+Emails without this subject format are likely to be missed during filtering.
 
 ---
 
