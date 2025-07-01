@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -69,6 +68,7 @@
     .countdown.red { color: var(--red); }
     a { color: var(--accent); text-decoration: none; }
     a:hover { text-decoration: underline; }
+    .strikethrough { text-decoration: line-through; }
   </style>
 </head>
 <body>
@@ -78,14 +78,22 @@
   <input type="text" id="search" placeholder="Search by name...">
   <button data-sub="ALL">All</button>
   <button data-sub="Wireless">Wireless</button>
-  <button data-sub="ML">ML</button>
-  <button data-sub="ISAC">ISAC</button>
-  <button data-sub="O-RAN">O-RAN</button>
+  <button data-sub="Security">Security</button>
+  <button data-sub="Networking">Networking</button>
+  <button data-sub="Performance">Performance</button>
+  <button data-sub="Reliability">Reliability</button>
 </div>
 
 <table>
   <thead>
-    <tr><th>Conference</th><th>Location</th><th>Abstract Deadline</th><th>Submission Deadline</th><th>Noticification</th><th>Time Left</th></tr>
+    <tr>
+      <th>Conference</th>
+      <th>Location</th>
+      <th>Abstract Deadline</th>
+      <th>Submission Deadline</th>
+      <th>Notification</th>
+      <th>Time Left</th>
+    </tr>
   </thead>
   <tbody id="conf-body"></tbody>
 </table>
@@ -100,24 +108,58 @@ async function fetchData() {
   render();
 }
 
+function formatDate(dateStr) {
+  if (!dateStr) return '';
+  if (dateStr.includes('<strike>')) return `<span class="strikethrough">${dateStr.replace(/<\/?strike>/g, '')}</span>`;
+  
+  try {
+    const date = new Date(dateStr);
+    return isNaN(date) ? dateStr : date.toISOString().slice(0, 16).replace('T', ' ');
+  } catch {
+    return dateStr;
+  }
+}
+
 function render() {
   const tbody = document.getElementById("conf-body");
   const query = document.getElementById("search").value.toLowerCase();
   const now = new Date();
   tbody.innerHTML = "";
 
-  confs.filter(c =>
-    (currentSub === "ALL" || c.sub === currentSub) &&
-    c.name.toLowerCase().includes(query)
-  ).forEach(c => {
-    const ddl = new Date(c.deadline);
-    const days = Math.floor((ddl - now)/(864e5));
-    const cls = days < 0 ? "red" : days <= 20 ? "red" : days <= 60 ? "orange" : "green";
+  confs.filter(c => {
+    const name = c.name || c.Conference || '';
+    const sub = c.sub || '';
+    return (currentSub === "ALL" || sub.includes(currentSub)) &&
+           name.toLowerCase().includes(query);
+  }).forEach(c => {
+    // Determine which deadline to use for countdown
+    let deadline = c.deadline;
+    let deadlineText = c['Submission Deadline'] || '';
+    
+    // Try to extract date from deadline text if no direct deadline
+    if (!deadline && deadlineText) {
+      const dateMatch = deadlineText.match(/(\w{3} \d{1,2} \d{4})/);
+      if (dateMatch) {
+        deadline = new Date(dateMatch[0]).toISOString();
+      }
+    }
+    
+    // Calculate days left
+    let days = -1;
+    let cls = "red";
+    if (deadline) {
+      const ddl = new Date(deadline);
+      days = Math.floor((ddl - now) / 864e5);
+      cls = days < 0 ? "red" : days <= 20 ? "red" : days <= 60 ? "orange" : "green";
+    }
+    
     const row = `
       <tr>
-        <td><a href="${c.link}" target="_blank">${c.name}</a></td>
-        <td>${c.sub}</td>
-        <td>${ddl.toISOString().slice(0,16).replace("T"," ")}</td>
+        <td><a href="${c.link || '#'}" target="_blank">${c.name || c.Conference}</a></td>
+        <td>${c.Location || ''}</td>
+        <td>${formatDate(c['Abstract Deadline'] || '')}</td>
+        <td>${formatDate(c['Submission Deadline'] || formatDate(deadline))}</td>
+        <td>${formatDate(c.Notification || '')}</td>
         <td class="countdown ${cls}">${days >= 0 ? days + " days" : "Closed"}</td>
       </tr>`;
     tbody.insertAdjacentHTML("beforeend", row);

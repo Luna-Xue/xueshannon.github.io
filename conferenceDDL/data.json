@@ -72,7 +72,7 @@
     "Submission Deadline": "<strike>Oct 10 2024 (AOE)</strike>",
     "Notification": "Jan 27 2025",
     "Time Left": "",
-    "Tag": ""
+    "sub": ""
   },
   {
     "Conference": "IEEE ICC",
@@ -81,7 +81,7 @@
     "Submission Deadline": "<strike>Oct 11 2024</strike>",
     "Notification": "Jan 17 2025",
     "Time Left": "",
-    "Tag": ""
+    "sub": ""
   },
   {
     "Conference": "ACM WiSec - Cycle 1",
@@ -90,7 +90,7 @@
     "Submission Deadline": "<strike>Nov 21 2024 (AOE)</strike>",
     "Notification": "Jan 15 2025",
     "Time Left": "",
-    "Tag": ""
+    "sub": ""
   },
   {
     "Conference": "IEEE DSN",
@@ -99,7 +99,7 @@
     "Submission Deadline": "<strike>Dec 04 2024; 11:59 PM (AOE)</strike>",
     "Notification": "Mar 19 2025",
     "Time Left": "",
-    "Tag": ""
+    "sub": ""
   },
   {
     "Conference": "ACM MobiSys",
@@ -108,7 +108,7 @@
     "Submission Deadline": "<strike>Dec 09 2024; 11:59 PM (AOE)</strike>",
     "Notification": "Mar 07 2025",
     "Time Left": "",
-    "Tag": ""
+    "sub": ""
   },
   {
     "Conference": "IEEE ICDCS",
@@ -117,7 +117,7 @@
     "Submission Deadline": "<strike>Dec 11 2024</strike>",
     "Notification": "Apr 09 2025",
     "Time Left": "",
-    "Tag": ""
+    "sub": ""
   },
   {
     "Conference": "ACM CCS - Cycle 1",
@@ -126,7 +126,7 @@
     "Submission Deadline": "<strike>Jan 09 2025 (AOE)</strike>",
     "Notification": "Mar 27 2025",
     "Time Left": "",
-    "Tag": ""
+    "sub": ""
   },
   {
     "Conference": "ESORICS - Cycle 1",
@@ -135,7 +135,7 @@
     "Submission Deadline": "<strike>Jan 10 2025 (AOE)</strike>",
     "Notification": "Mar 21 2025",
     "Time Left": "",
-    "Tag": ""
+    "sub": ""
   },
   {
     "Conference": "ACM AsiaCCS - Cycle 2",
@@ -144,7 +144,7 @@
     "Submission Deadline": "<strike>Jan 20 2025; 11:59 PM (AOE)</strike>",
     "Notification": "Apr 19 2025",
     "Time Left": "",
-    "Tag": ""
+    "sub": ""
   },
   {
     "Conference": "ACM SIGMETRICS",
@@ -153,7 +153,7 @@
     "Submission Deadline": "<strike>Jan 22 2025</strike>",
     "Notification": "Mar 18 2025",
     "Time Left": "",
-    "Tag": ""
+    "sub": ""
   },
   {
     "Conference": "USENIX Security - Cycle 2",
@@ -162,7 +162,7 @@
     "Submission Deadline": "<strike>Jan 22 2025 (AOE)</strike>",
     "Notification": "Apr 30 2025",
     "Time Left": "",
-    "Tag": ""
+    "sub": ""
   },
   {
     "Conference": "ACM SIGCOMM",
@@ -171,6 +171,6 @@
     "Submission Deadline": "<strike>Jan 31 2025; 11:59 PM (UTC)</strike>",
     "Notification": "Apr 29 2025",
     "Time Left": "",
-    "Tag": ""
+    "sub": ""
   }
 ]
