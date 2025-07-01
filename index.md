@@ -1,8 +1,9 @@
 ---
 layout: page
 title: Xiaochan Xue
-subtitle: Ph.D. Candidate
+subtitle: Assistant Professor
 ---
+
 <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
 <a href="https://scholar.google.com/citations?user=rhcjOdQAAAAJ&hl=en" target="_blank">
   <img src="./img/google-scholar.png" alt="Google Scholar" width="32" class="social-icon">
@@ -23,14 +24,19 @@ subtitle: Ph.D. Candidate
 
 ## <img src="../img/contact.png" height="50px"> Contact
 
+
 ```
 Email: xxue2[at]stevens[dot]edu
-Phone: 
+Phone: (TBD)
 ```
 
 ## <img src="../img/career.png" height="50px"> About Me
-My research focuses on advancing wireless communication by integrating Artificial Intelligence (AI) and Machine Learning (ML) with 5G, Sub-6G, NextG, and beyond. I specialize in enhancing security and efficiency in next-generation networks through Physical Layer Security (PLS), millimeter wave (mmWave) sensing, and AI-driven techniques.
-Currently, I work on Integrated Sensing and Communication (ISAC) for real-time, contactless applications and privacy-preserving distributed IoT systems using confidential computing. Additionally, I explore innovations in O-RAN networks, focusing on AI/ML workflows, security challenges, and standardization. My goal is to improve the resilience, reliability, and trustworthiness of future wireless networks, ensuring secure and intelligent connectivity.
+ am an Assistant Professor in the Department of Electrical and Computer Engineering at the University of Hawaiʻi at Mānoa. My research lies at the intersection of wireless communication, cybersecurity, and artificial intelligence. Specifically, I focus on designing secure, intelligent, and efficient wireless systems for 5G, Sub-6G, NextG, and beyond.
+
+My work integrates AI/ML-driven methodologies with advanced wireless techniques such as Physical Layer Security (PLS), millimeter-wave (mmWave) sensing, and Integrated Sensing and Communication (ISAC) to enable real-time, contactless, and privacy-preserving applications. I also explore distributed IoT systems secured by confidential computing, as well as Open Radio Access Networks (O-RAN) with a focus on AI-native RAN architecture, security hardening, and standardization.
+
+My overarching goal is to enhance the resilience, trustworthiness, and intelligence of future wireless networks, enabling scalable, secure, and adaptive connectivity.
+
 I received my Bachelor's Degree from [Jilin University](https://www.jlu.edu.cn/), department of [Communication Engineering](https://dce.jlu.edu.cn/). Then I finished my Master's Degree at [Stevens Institute of Technology](https://www.stevens.edu/), department of Electrical Engineering. I joined [AISecLab](https://www.stevens.edu/icns-center-for-innovative-computing-and-networked-systems/aiseclab) at SIT, and been supervised by Prof. Shucheng Yu.
 
 ## 🔍 Research Interests
@@ -40,9 +46,36 @@ I received my Bachelor's Degree from [Jilin University](https://www.jlu.edu.cn/)
 - **Machine Learning:** Applied area, Federated Learning
 - **Security:** Physical Layer Security, Privacy preserving, Distributed security
 
+---
+
 ## 📣 Ph.D. Students Wanted
 
-I am actively recruiting highly motivated Ph.D. students starting Fall 2025 to join my group at the University of Hawaiʻi at Mānoa. If you are interested in working on cutting-edge topics in wireless communication, network security, AI/ML for 6G, or O-RAN systems, feel free to reach out with your CV and research interests.
+I am actively recruiting **highly motivated Ph.D. students** to join my group at the University of Hawaiʻi at Mānoa, starting in **Fall 2025**.
+
+If you are interested in working on cutting-edge topics related to:
+
+- Wireless communication for 6G and beyond  
+- Physical-layer and cross-layer security  
+- AI/ML for O-RAN and intelligent RAN systems  
+- ISAC-based sensing and privacy-preserving wireless networks  
+
+please email me with:
+
+- Your **CV**  
+- A brief **statement of research interests**  
+- Any relevant publications or project experience (if available)
+
+> 📧 **Email subject requirement:**  
+Please use the following subject line:  
+**`PhD Application Fall 2025 – Your Name – [Research Area]`**  
+(e.g., `PhD Application Fall 2025 – Jane Doe – ISAC & AI-RAN`)
+
+Applications without this subject line may not be considered.
+
+Fully funded positions are available. International applicants are welcome.
+
+---
+
 
 ## <img src="../img/news.png" height="50px"> News
 <div class="news-box">
