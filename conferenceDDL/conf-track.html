@@ -126,35 +126,6 @@ function render() {
   const now = new Date();
   tbody.innerHTML = "";
 
-  // 添加排序逻辑
-  const filteredConfs = confs
-    .filter(c => {
-      const name = c.name || c.Conference || '';
-      const sub = c.sub || '';
-      return (currentSub === "ALL" || sub.includes(currentSub)) &&
-             name.toLowerCase().includes(query);
-    })
-    .sort((a, b) => {
-      // 获取两者的 DDL 时间戳（优先使用 ISO 格式的 deadline 字段）
-      const getTime = (conf) => {
-        if (conf.deadline) return new Date(conf.deadline).getTime();
-        // 尝试从 Submission Deadline 文本中提取日期
-        const subDate = conf['Submission Deadline']?.match(/(\w{3} \d{1,2} \d{4})/);
-        return subDate ? new Date(subDate[0]).getTime() : Infinity;
-      };
-      return getTime(a) - getTime(b); // 升序排列（即将截止的在前）
-    });
-
-  // 渲染排序后的列表
-  filteredConfs.forEach(c => {
-    // ...原有渲染逻辑...
-  });
-}
-  const tbody = document.getElementById("conf-body");
-  const query = document.getElementById("search").value.toLowerCase();
-  const now = new Date();
-  tbody.innerHTML = "";
-
   confs.filter(c => {
     const name = c.name || c.Conference || '';
     const sub = c.sub || '';
