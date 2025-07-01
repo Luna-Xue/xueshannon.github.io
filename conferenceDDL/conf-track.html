@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Conference Deadlines - Wireless & Security</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 30px;
+            background-color: #f9f9f9;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .countdown {
+            font-weight: bold;
+        }
+        .green { color: green; }
+        .orange { color: orange; }
+        .red { color: red; }
+    </style>
+</head>
+<body>
+
+<h1>📅 Wireless & Security Conference Deadlines</h1>
+<p>This page tracks important deadlines for conferences in wireless communication, mmWave, ISAC, and O-RAN systems.</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>Conference</th>
+            <th>Acronym</th>
+            <th>Category</th>
+            <th>Deadline</th>
+            <th>Time Left</th>
+            <th>Conference Dates</th>
+            <th>Location</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><a href="https://infocom2025.ieee-infocom.org/" target="_blank">IEEE INFOCOM 2025</a></td>
+            <td>INFOCOM</td>
+            <td>Networking</td>
+            <td>2024-09-15 23:59</td>
+            <td class="countdown" data-deadline="2024-09-15T23:59:59"></td>
+            <td>2025-04-27 ~ 2025-04-30</td>
+            <td>Vancouver, Canada</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.sigmobile.org/mobicom/2025/" target="_blank">ACM MobiCom 2025</a></td>
+            <td>MobiCom</td>
+            <td>Wireless</td>
+            <td>2025-03-01 23:59</td>
+            <td class="countdown" data-deadline="2025-03-01T23:59:59"></td>
+            <td>2025-10-06 ~ 2025-10-10</td>
+            <td>Washington, D.C.</td>
+        </tr>
+        <tr>
+            <td><a href="https://globecom2025.ieee-globecom.org/" target="_blank">IEEE Globecom 2025</a></td>
+            <td>Globecom</td>
+            <td>Wireless</td>
+            <td>2025-04-15 23:59</td>
+            <td class="countdown" data-deadline="2025-04-15T23:59:59"></td>
+            <td>2025-12-08 ~ 2025-12-12</td>
+            <td>Madrid, Spain</td>
+        </tr>
+    </tbody>
+</table>
+
+<p><em>Last updated: 2025-07-01</em></p>
+
+<script>
+    function updateCountdowns() {
+        const now = new Date();
+        document.querySelectorAll('.countdown').forEach(td => {
+            const deadline = new Date(td.getAttribute('data-deadline'));
+            const diff = Math.floor((deadline - now) / (1000 * 60 * 60 * 24));
+            if (diff < 0) {
+                td.innerHTML = "<span class='red'>Closed</span>";
+            } else {
+                let color = diff <= 20 ? 'red' : diff <= 60 ? 'orange' : 'green';
+                td.innerHTML = `<span class='${color}'>${diff} days left</span>`;
+            }
+        });
+    }
+    updateCountdowns();
+    setInterval(updateCountdowns, 3600000);  // update every hour
+</script>
+
+</body>
+</html>

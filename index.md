@@ -21,7 +21,7 @@ subtitle: Assistant Professor
   <img src="./img/linkedin.png" alt="LinkedIn" width="32" class="social-icon">
 </a>
 <a href="./conferenceDDL/conference-deadlines.html" target="_blank">
-  <img src="./img/calendar.png" alt="Conference Deadlines" width="32" class="social-icon">
+  <img src="./img/deadline-icon.png" alt="Conference Deadlines" width="32" class="social-icon">
 </a>
 
 </div>
