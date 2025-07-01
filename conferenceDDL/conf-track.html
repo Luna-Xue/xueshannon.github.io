@@ -1,102 +1,112 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Conference Deadlines - Wireless & Security</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            padding: 30px;
-            background-color: #f9f9f9;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 10px;
-            text-align: center;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-        .countdown {
-            font-weight: bold;
-        }
-        .green { color: green; }
-        .orange { color: orange; }
-        .red { color: red; }
-    </style>
+  <meta charset="UTF-8">
+  <title>Conference Deadlines – Card UI</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f0f2f5;
+      margin: 20px;
+    }
+    h1 {
+      text-align: center;
+    }
+    .controls {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .controls input, .controls select {
+      padding: 8px;
+      margin: 0 5px;
+      font-size: 16px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 15px;
+    }
+    .card {
+      background: #fff;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: background 0.3s;
+    }
+    .card.red { border-left: 5px solid #e74c3c; }
+    .card.orange { border-left: 5px solid #f39c12; }
+    .card.green { border-left: 5px solid #27ae60; }
+
+    .card h3 {
+      margin-top: 0;
+      font-size: 1.1em;
+    }
+    .card p {
+      margin: 4px 0;
+    }
+    .countdown {
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
 
-<h1>📅 Wireless & Security Conference Deadlines</h1>
-<p>This page tracks important deadlines for conferences in wireless communication, mmWave, ISAC, and O-RAN systems.</p>
+<h1>📅 Conference Deadlines Tracker</h1>
 
-<table>
-    <thead>
-        <tr>
-            <th>Conference</th>
-            <th>Acronym</th>
-            <th>Category</th>
-            <th>Deadline</th>
-            <th>Time Left</th>
-            <th>Conference Dates</th>
-            <th>Location</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><a href="https://infocom2025.ieee-infocom.org/" target="_blank">IEEE INFOCOM 2025</a></td>
-            <td>INFOCOM</td>
-            <td>Networking</td>
-            <td>2024-09-15 23:59</td>
-            <td class="countdown" data-deadline="2024-09-15T23:59:59"></td>
-            <td>2025-04-27 ~ 2025-04-30</td>
-            <td>Vancouver, Canada</td>
-        </tr>
-        <tr>
-            <td><a href="https://www.sigmobile.org/mobicom/2025/" target="_blank">ACM MobiCom 2025</a></td>
-            <td>MobiCom</td>
-            <td>Wireless</td>
-            <td>2025-03-01 23:59</td>
-            <td class="countdown" data-deadline="2025-03-01T23:59:59"></td>
-            <td>2025-10-06 ~ 2025-10-10</td>
-            <td>Washington, D.C.</td>
-        </tr>
-        <tr>
-            <td><a href="https://globecom2025.ieee-globecom.org/" target="_blank">IEEE Globecom 2025</a></td>
-            <td>Globecom</td>
-            <td>Wireless</td>
-            <td>2025-04-15 23:59</td>
-            <td class="countdown" data-deadline="2025-04-15T23:59:59"></td>
-            <td>2025-12-08 ~ 2025-12-12</td>
-            <td>Madrid, Spain</td>
-        </tr>
-    </tbody>
-</table>
+<div class="controls">
+  <input type="text" id="search" placeholder="Search by name...">
+  <select id="filter">
+    <option value="ALL">All fields</option>
+    <option value="Wireless">Wireless</option>
+    <option value="ML">ML</option>
+    <option value="ISAC">ISAC</option>
+    <option value="O-RAN">O-RAN</option>
+    <option value="Security">Security</option>
+  </select>
+</div>
 
-<p><em>Last updated: 2025-07-01</em></p>
+<div class="grid" id="grid"></div>
 
 <script>
-    function updateCountdowns() {
-        const now = new Date();
-        document.querySelectorAll('.countdown').forEach(td => {
-            const deadline = new Date(td.getAttribute('data-deadline'));
-            const diff = Math.floor((deadline - now) / (1000 * 60 * 60 * 24));
-            if (diff < 0) {
-                td.innerHTML = "<span class='red'>Closed</span>";
-            } else {
-                let color = diff <= 20 ? 'red' : diff <= 60 ? 'orange' : 'green';
-                td.innerHTML = `<span class='${color}'>${diff} days left</span>`;
-            }
-        });
-    }
-    updateCountdowns();
-    setInterval(updateCountdowns, 3600000);  // update every hour
+const confs = [
+  {name:"IEEE INFOCOM 2025", sub:"Wireless", link:"https://infocom2025.ieee-infocom.org/", deadline:"2024-09-15T23:59:00Z", confDate:"2025-04-27 ~ 2025-04-30"},
+  {name:"ACM MobiCom 2025", sub:"Wireless", link:"https://www.sigmobile.org/mobicom/2025/", deadline:"2025-03-01T23:59:00Z", confDate:"2025-10-06 ~ 2025-10-10"},
+  {name:"IEEE Globecom 2025", sub:"Wireless", link:"https://globecom2025.ieee-globecom.org/", deadline:"2025-04-15T23:59:00Z", confDate:"2025-12-08 ~ 2025-12-12"},
+  /* 可补充更多会议项 */
+];
+
+function renderGrid() {
+  const search = document.getElementById("search").value.toLowerCase();
+  const filter = document.getElementById("filter").value;
+  const container = document.getElementById("grid");
+  container.innerHTML = "";
+  const now = new Date();
+
+  confs.filter(c => 
+    (filter==="ALL" || c.sub === filter) &&
+    c.name.toLowerCase().includes(search)
+  ).forEach(c => {
+    const ddl = new Date(c.deadline);
+    const days = Math.floor((ddl - now)/(864e5));
+    let status = days < 0 ? "red" : days <= 20 ? "red" : days <= 60 ? "orange" : "green";
+
+    const card = document.createElement("div");
+    card.className = `card ${status}`;
+    card.innerHTML = `
+      <h3><a href="${c.link}" target="_blank">${c.name}</a></h3>
+      <p>📂 <em>${c.sub}</em> &nbsp; | &nbsp; 🗓️ ${c.confDate}</p>
+      <p>Deadline: ${ddl.toISOString().slice(0,16).replace("T"," ")}</p>
+      <p>⏳ <span class="countdown">${days >= 0 ? days + " days left" : "Closed"}</span></p>
+    `;
+    container.appendChild(card);
+  });
+}
+
+document.getElementById("search").addEventListener("input", renderGrid);
+document.getElementById("filter").addEventListener("change", renderGrid);
+
+renderGrid();
+setInterval(renderGrid, 3600000);
 </script>
 
 </body>
