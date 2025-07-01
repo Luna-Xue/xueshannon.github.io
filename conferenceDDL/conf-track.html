@@ -1,112 +1,72 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Conference Deadlines – Card UI</title>
+  <title>Conference Deadlines Tracker</title>
   <style>
-    body {
-      font-family: sans-serif;
-      background: #f0f2f5;
-      margin: 20px;
-    }
-    h1 {
-      text-align: center;
-    }
-    .controls {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    .controls input, .controls select {
-      padding: 8px;
-      margin: 0 5px;
-      font-size: 16px;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      gap: 15px;
-    }
-    .card {
-      background: #fff;
-      padding: 15px;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      transition: background 0.3s;
-    }
-    .card.red { border-left: 5px solid #e74c3c; }
-    .card.orange { border-left: 5px solid #f39c12; }
-    .card.green { border-left: 5px solid #27ae60; }
-
-    .card h3 {
-      margin-top: 0;
-      font-size: 1.1em;
-    }
-    .card p {
-      margin: 4px 0;
-    }
-    .countdown {
-      font-weight: bold;
-    }
+    body { font-family: sans-serif; padding: 20px; background: #fff; }
+    .filter-btns button { margin-right: 8px; padding: 5px 10px; }
+    table { width:100%; border-collapse: collapse; margin-top: 10px; }
+    th, td { padding: 8px; border: 1px solid #ddd; text-align: center; }
+    .countdown.green { color: green; }
+    .countdown.orange { color: orange; }
+    .countdown.red { color: red; }
   </style>
 </head>
 <body>
 
 <h1>📅 Conference Deadlines Tracker</h1>
+<p>This tracker shows key deadlines for conferences in wireless, ISAC, O-RAN, and AI-related fields.</p>
 
-<div class="controls">
-  <input type="text" id="search" placeholder="Search by name...">
-  <select id="filter">
-    <option value="ALL">All fields</option>
-    <option value="Wireless">Wireless</option>
-    <option value="ML">ML</option>
-    <option value="ISAC">ISAC</option>
-    <option value="O-RAN">O-RAN</option>
-    <option value="Security">Security</option>
-  </select>
+<div class="filter-btns">
+  <button data-sub="ALL">All</button>
+  <button data-sub="Wireless">Wireless</button>
+  <button data-sub="ML">ML</button>
+  <button data-sub="ISAC">ISAC</button>
+  <button data-sub="O-RAN">O-RAN</button>
 </div>
 
-<div class="grid" id="grid"></div>
+<table>
+<thead>
+  <tr><th>Conference</th><th>Subfield</th><th>Deadline</th><th>Time Left</th></tr>
+</thead>
+<tbody id="conf-body"></tbody>
+</table>
 
 <script>
-const confs = [
-  {name:"IEEE INFOCOM 2025", sub:"Wireless", link:"https://infocom2025.ieee-infocom.org/", deadline:"2024-09-15T23:59:00Z", confDate:"2025-04-27 ~ 2025-04-30"},
-  {name:"ACM MobiCom 2025", sub:"Wireless", link:"https://www.sigmobile.org/mobicom/2025/", deadline:"2025-03-01T23:59:00Z", confDate:"2025-10-06 ~ 2025-10-10"},
-  {name:"IEEE Globecom 2025", sub:"Wireless", link:"https://globecom2025.ieee-globecom.org/", deadline:"2025-04-15T23:59:00Z", confDate:"2025-12-08 ~ 2025-12-12"},
-  /* 可补充更多会议项 */
-];
+let confs = [];
+async function fetchData() {
+  const res = await fetch('data.json');
+  confs = await res.json();
+  render("ALL");
+}
 
-function renderGrid() {
-  const search = document.getElementById("search").value.toLowerCase();
-  const filter = document.getElementById("filter").value;
-  const container = document.getElementById("grid");
-  container.innerHTML = "";
+function render(sub="ALL") {
+  const tbody = document.getElementById("conf-body");
+  tbody.innerHTML = "";
   const now = new Date();
-
-  confs.filter(c => 
-    (filter==="ALL" || c.sub === filter) &&
-    c.name.toLowerCase().includes(search)
-  ).forEach(c => {
+  confs.filter(c => sub==="ALL" || c.sub===sub).forEach(c => {
     const ddl = new Date(c.deadline);
     const days = Math.floor((ddl - now)/(864e5));
-    let status = days < 0 ? "red" : days <= 20 ? "red" : days <= 60 ? "orange" : "green";
-
-    const card = document.createElement("div");
-    card.className = `card ${status}`;
-    card.innerHTML = `
-      <h3><a href="${c.link}" target="_blank">${c.name}</a></h3>
-      <p>📂 <em>${c.sub}</em> &nbsp; | &nbsp; 🗓️ ${c.confDate}</p>
-      <p>Deadline: ${ddl.toISOString().slice(0,16).replace("T"," ")}</p>
-      <p>⏳ <span class="countdown">${days >= 0 ? days + " days left" : "Closed"}</span></p>
-    `;
-    container.appendChild(card);
+    const cls = days < 0 ? "red" : days <= 20 ? "red" : days <= 60 ? "orange" : "green";
+    const row = `
+      <tr>
+        <td><a href="${c.link}" target="_blank">${c.name}</a></td>
+        <td>${c.sub}</td>
+        <td>${ddl.toISOString().slice(0,16).replace("T"," ")}</td>
+        <td class="countdown ${cls}">${days >= 0 ? days + " days" : "Closed"}</td>
+      </tr>`;
+    tbody.insertAdjacentHTML("beforeend", row);
   });
 }
 
-document.getElementById("search").addEventListener("input", renderGrid);
-document.getElementById("filter").addEventListener("change", renderGrid);
+document.querySelectorAll(".filter-btns button").forEach(btn => {
+  btn.onclick = () => render(btn.dataset.sub);
+});
 
-renderGrid();
-setInterval(renderGrid, 3600000);
+fetchData();
+setInterval(() => render(), 3600000);
 </script>
 
 </body>
