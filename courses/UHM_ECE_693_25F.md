@@ -49,12 +49,10 @@ Location:
 
 ## 📚 Additional Materials
 
-- 🖥️ Lecture slides: [Google Drive Folder](#) *(TBA)*  
+- 🖥️ Lecture slides: [One Drive Folder](#) *(TBA)*  
 - 📁 Project template & datasets: [GitHub Repo](#) *(TBA)*  
 - 📖 Reading list:
-  - “Wireless Physical Layer Security” – Y. Zou et al.
-  - “Open RAN Security: Threats & Research Opportunities” – ACM Survey
-  - “ISAC for 6G” – IEEE Communications Magazine
+  - TEST – 
 
 ---
 
