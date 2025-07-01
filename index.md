@@ -31,7 +31,7 @@ Phone: (TBD)
 ```
 
 ## <img src="../img/career.png" height="50px"> About Me
- am an Assistant Professor in the Department of Electrical and Computer Engineering at the University of Hawaiʻi at Mānoa. My research lies at the intersection of wireless communication, cybersecurity, and artificial intelligence. Specifically, I focus on designing secure, intelligent, and efficient wireless systems for 5G, Sub-6G, NextG, and beyond.
+ I am an Assistant Professor in the Department of Electrical and Computer Engineering at the University of Hawaii at Mānoa. My research lies at the intersection of wireless communication, cybersecurity, and artificial intelligence. Specifically, I focus on designing secure, intelligent, and efficient wireless systems for 5G, Sub-6G, NextG, and beyond.
 
 My work integrates AI/ML-driven methodologies with advanced wireless techniques such as Physical Layer Security (PLS), millimeter-wave (mmWave) sensing, and Integrated Sensing and Communication (ISAC) to enable real-time, contactless, and privacy-preserving applications. I also explore distributed IoT systems secured by confidential computing, as well as Open Radio Access Networks (O-RAN) with a focus on AI-native RAN architecture, security hardening, and standardization.
 
