@@ -20,7 +20,7 @@ subtitle: Assistant Professor
 <a href="https://www.linkedin.com/in/xiaochan-xue-2b7b75227/" target="_blank">
   <img src="./img/linkedin.png" alt="LinkedIn" width="32" class="social-icon">
 </a>
-<a href="./conferenceDDL/" target="_blank">
+<a href="./conferenceDDL/conf-track.html" target="_blank">
   <img src="./img/deadline-icon.png" alt="Conference Deadlines" width="32" class="social-icon">
 </a>
 
