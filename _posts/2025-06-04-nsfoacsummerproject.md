@@ -16,6 +16,6 @@ description: mmWave, Integrated Sensing and Comunication (ISAC), O-RAN.
 
 ### Experiment in Progress  
 <div style="text-align: center;">
-  <img src="../img/post/2025-06-04_2.jpg" alt="mmWave breathing signal collection experimental process" width="600">
+  <img src="../img/post/2025-06-04_2.JPG" alt="mmWave breathing signal collection experimental process" width="600">
   <p style="font-size: 0.9em; color: gray;">▲ Real-time demo of mmWave-based passive sensing with O-RAN platform</p>
 </div>
