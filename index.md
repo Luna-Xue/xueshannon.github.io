@@ -43,6 +43,7 @@ I received my Bachelor's Degree from [Jilin University](https://www.jlu.edu.cn/)
 - **Integrated Sensing and Communication** Sensing for healthcare, Smart city, UAVs, and Vehicles. Distributed devices in cutting-edge network systems
 - **Machine Learning:** Applied area, Federated Learning
 - **Security:** Physical Layer Security, Privacy preserving, Distributed security
+
 ---
 
 ## 📣 Ph.D. Students Wanted
@@ -55,6 +56,7 @@ I am actively recruiting **highly motivated Ph.D. students** to join my group at
 Please use the following subject line:  
 **`PhD Application Fall 2025 – Your Name – [Research Area]`**  
 Applications without this subject line may not be considered.
+
 ---
 
 
