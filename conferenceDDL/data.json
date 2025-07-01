@@ -13,10 +13,12 @@
     "deadline": "2024-10-11T23:59:00Z"
   },
   {
-    "name": "IEEE DSN 2025",
+    "name": "IEEE DSN 2026",
+    "Location": "Charlotte, USA",
+    "Abstract Deadline": "Nov 27 2025",
+    "Submission Deadline": "Dec 04 2025",
     "sub": "Reliability",
-    "link": "https://dsn2025.ieee-dsn.org/",
-    "deadline": "2024-11-21T23:59:00Z"
+    "link": "https://dsn2026.ieee-dsn.org/"
   },
   {
     "name": "ACM MobiSys 2025",
