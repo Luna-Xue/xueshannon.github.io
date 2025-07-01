@@ -40,6 +40,10 @@ I received my Bachelor's Degree from [Jilin University](https://www.jlu.edu.cn/)
 - **Machine Learning:** Applied area, Federated Learning
 - **Security:** Physical Layer Security, Privacy preserving, Distributed security
 
+## 📣 Ph.D. Students Wanted
+
+I am actively recruiting highly motivated Ph.D. students starting Fall 2025 to join my group at the University of Hawaiʻi at Mānoa. If you are interested in working on cutting-edge topics in wireless communication, network security, AI/ML for 6G, or O-RAN systems, feel free to reach out with your CV and research interests.
+
 ## <img src="../img/news.png" height="50px"> News
 <div class="news-box">
   <div class="news-scroll">
