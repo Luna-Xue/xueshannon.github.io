@@ -64,6 +64,8 @@ Applications without this subject line may not be considered.
 <div class="news-box">
   <div class="news-scroll">
     <!-- 项目列表 -->
+    <div class="new-item">[June, 2025] <strong><a href="https://xueshannon.github.io/2025-06-04-nsfoacsummerproject/">NSF Summer Project Traning</a></strong> start at SIT AISecLab.</div>
+    <div class="new-item">[June, 2025] Passed my doctoral defense.</div>
     <div class="new-item">[May, 2025] <img src="../img/fireworks.png" height="30px"> I will join <span style="color:orange;"> University of Hawaii at Mānoa</span> Collage of Engineering, Department of Electrical&Computer Engineering as a <strong><span style="color:orange;">Tenure-Track Assistant Professor</span></strong>, 2025 Fall.</div> 
     <div class="new-item">[May, 2025] Planning my doctoral defense in June.</div>
     <div class="new-item">[May, 2025] See you at <strong>1st iCNS/ECE Symposium on AI Research and Innovations <span style="color:orange;">(DuckAI 2025)</span></strong> at Stevens!</div>
