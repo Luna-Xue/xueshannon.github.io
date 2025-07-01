@@ -1,0 +1,20 @@
+[
+  {
+    "name": "IEEE INFOCOM 2025",
+    "sub": "Wireless",
+    "link": "https://infocom2025.ieee-infocom.org/",
+    "deadline": "2024-09-15T23:59:00Z"
+  },
+  {
+    "name": "ACM MobiCom 2025",
+    "sub": "Wireless",
+    "link": "https://www.sigmobile.org/mobicom/2025/",
+    "deadline": "2025-03-01T23:59:00Z"
+  },
+  {
+    "name": "IEEE Globecom 2025",
+    "sub": "Wireless",
+    "link": "https://globecom2025.ieee-globecom.org/",
+    "deadline": "2025-04-15T23:59:00Z"
+  }
+]

@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Conference Deadlines Tracker</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; background: #fff; }
+    .filter-btns button { margin-right: 8px; padding: 5px 10px; }
+    table { width:100%; border-collapse: collapse; margin-top: 10px; }
+    th, td { padding: 8px; border: 1px solid #ddd; text-align: center; }
+    .countdown.green { color: green; }
+    .countdown.orange { color: orange; }
+    .countdown.red { color: red; }
+  </style>
+</head>
+<body>
+
+<h1>📅 Conference Deadlines Tracker</h1>
+<p>This tracker shows key deadlines for conferences in wireless, ISAC, O-RAN, and AI-related fields.</p>
+
+<div class="filter-btns">
+  <button data-sub="ALL">All</button>
+  <button data-sub="Wireless">Wireless</button>
+  <button data-sub="ML">ML</button>
+  <button data-sub="ISAC">ISAC</button>
+  <button data-sub="O-RAN">O-RAN</button>
+</div>
+
+<table>
+<thead>
+  <tr><th>Conference</th><th>Subfield</th><th>Deadline</th><th>Time Left</th></tr>
+</thead>
+<tbody id="conf-body"></tbody>
+</table>
+
+<script>
+let confs = [];
+async function fetchData() {
+  const res = await fetch('data.json');
+  confs = await res.json();
+  render("ALL");
+}
+
+function render(sub="ALL") {
+  const tbody = document.getElementById("conf-body");
+  tbody.innerHTML = "";
+  const now = new Date();
+  confs.filter(c => sub==="ALL" || c.sub===sub).forEach(c => {
+    const ddl = new Date(c.deadline);
+    const days = Math.floor((ddl - now)/(864e5));
+    const cls = days < 0 ? "red" : days <= 20 ? "red" : days <= 60 ? "orange" : "green";
+    const row = `
+      <tr>
+        <td><a href="${c.link}" target="_blank">${c.name}</a></td>
+        <td>${c.sub}</td>
+        <td>${ddl.toISOString().slice(0,16).replace("T"," ")}</td>
+        <td class="countdown ${cls}">${days >= 0 ? days + " days" : "Closed"}</td>
+      </tr>`;
+    tbody.insertAdjacentHTML("beforeend", row);
+  });
+}
+
+document.querySelectorAll(".filter-btns button").forEach(btn => {
+  btn.onclick = () => render(btn.dataset.sub);
+});
+
+fetchData();
+setInterval(() => render(), 3600000);
+</script>
+
+</body>
+</html>
