@@ -7,8 +7,8 @@ title: ECE 693
 **Fall 2025 – University of Hawaii at Mānoa**  
 Instructor: Dr. Xiaochan Xue  
 Email: 
-Lecture Time:  
-Location: 
+Lecture Time:  TBD
+Location: TBD
 
 ---
 
