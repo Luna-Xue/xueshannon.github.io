@@ -1,20 +1,68 @@
 [
   {
-    "name": "IEEE INFOCOM 2025",
+    "name": "IEEE ICC 2025",
     "sub": "Wireless",
-    "link": "https://infocom2025.ieee-infocom.org/",
-    "deadline": "2024-09-15T23:59:00Z"
+    "link": "https://icc2025.ieee-icc.org/",
+    "deadline": "2024-10-03T23:59:00Z"
   },
   {
-    "name": "ACM MobiCom 2025",
-    "sub": "Wireless",
-    "link": "https://www.sigmobile.org/mobicom/2025/",
-    "deadline": "2025-03-01T23:59:00Z"
+    "name": "ACM WiSec Cycle 1 2025",
+    "sub": "Security",
+    "link": "https://wisec.acm.org/",
+    "deadline": "2024-10-11T23:59:00Z"
   },
   {
-    "name": "IEEE Globecom 2025",
+    "name": "IEEE DSN 2025",
+    "sub": "Reliability",
+    "link": "https://dsn2025.ieee-dsn.org/",
+    "deadline": "2024-11-21T23:59:00Z"
+  },
+  {
+    "name": "ACM MobiSys 2025",
     "sub": "Wireless",
-    "link": "https://globecom2025.ieee-globecom.org/",
-    "deadline": "2025-04-15T23:59:00Z"
+    "link": "https://mobisys2025.sigmobile.org/",
+    "deadline": "2024-12-02T23:59:00Z"
+  },
+  {
+    "name": "IEEE ICDCS 2025",
+    "sub": "Networking",
+    "link": "https://icdcs2025.org/",
+    "deadline": "2024-12-04T23:59:00Z"
+  },
+  {
+    "name": "ACM CCS Cycle 1 2025",
+    "sub": "Security",
+    "link": "https://ccs2025.sigcomm.org/",
+    "deadline": "2025-01-02T23:59:00Z"
+  },
+  {
+    "name": "ESORICS Cycle 1 2025",
+    "sub": "Security",
+    "link": "https://esorics2025.eu/",
+    "deadline": "2025-01-10T23:59:00Z"
+  },
+  {
+    "name": "ACM AsiaCCS Cycle 2 2025",
+    "sub": "Security",
+    "link": "https://asiaccs2025.sigmod.org/",
+    "deadline": "2025-01-20T23:59:00Z"
+  },
+  {
+    "name": "ACM SIGMETRICS 2025",
+    "sub": "Performance",
+    "link": "https://sigmetrics2025.org/",
+    "deadline": "2025-01-15T23:59:00Z"
+  },
+  {
+    "name": "USENIX Security Cycle 2 2025",
+    "sub": "Security",
+    "link": "https://www.usenix.org/conference/usenixsecurity25",
+    "deadline": "2025-01-22T23:59:00Z"
+  },
+  {
+    "name": "ACM SIGCOMM 2025",
+    "sub": "Networking",
+    "link": "https://sigcomm.org/annualconference/2025",
+    "deadline": "2025-01-24T23:59:00Z"
   }
 ]
