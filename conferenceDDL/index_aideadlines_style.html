@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Conference Deadlines</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    :root {
+      --bg-color: #1e1e2f;
+      --card-bg: #2c2c3e;
+      --text-color: #f0f0f0;
+      --accent: #4e9af1;
+      --red: #f14e54;
+      --orange: #f39c12;
+      --green: #2ecc71;
+    }
+    body {
+      background: var(--bg-color);
+      color: var(--text-color);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, sans-serif;
+      padding: 20px;
+      margin: 0;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .toolbar {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .toolbar input, .toolbar button {
+      padding: 8px 14px;
+      margin: 5px;
+      font-size: 15px;
+      border-radius: 6px;
+      border: none;
+    }
+    .toolbar input {
+      width: 250px;
+    }
+    .toolbar button {
+      background-color: var(--card-bg);
+      color: var(--text-color);
+      cursor: pointer;
+      border: 1px solid #555;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: var(--card-bg);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    th, td {
+      padding: 12px 10px;
+      border-bottom: 1px solid #444;
+      text-align: center;
+    }
+    th {
+      background-color: #33334d;
+    }
+    tr:hover {
+      background-color: #363654;
+    }
+    .countdown.green { color: var(--green); }
+    .countdown.orange { color: var(--orange); }
+    .countdown.red { color: var(--red); }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+<h1>📅 Conference Deadlines</h1>
+<div class="toolbar">
+  <input type="text" id="search" placeholder="Search by name...">
+  <button data-sub="ALL">All</button>
+  <button data-sub="Wireless">Wireless</button>
+  <button data-sub="ML">ML</button>
+  <button data-sub="ISAC">ISAC</button>
+  <button data-sub="O-RAN">O-RAN</button>
+</div>
+
+<table>
+  <thead>
+    <tr><th>Conference</th><th>Abstract Deadline</th><th>Submission Deadline</th><th>Noticification</th><th>Time Left</th></tr>
+  </thead>
+  <tbody id="conf-body"></tbody>
+</table>
+
+<script>
+let confs = [];
+let currentSub = "ALL";
+
+async function fetchData() {
+  const res = await fetch('data.json');
+  confs = await res.json();
+  render();
+}
+
+function render() {
+  const tbody = document.getElementById("conf-body");
+  const query = document.getElementById("search").value.toLowerCase();
+  const now = new Date();
+  tbody.innerHTML = "";
+
+  confs.filter(c =>
+    (currentSub === "ALL" || c.sub === currentSub) &&
+    c.name.toLowerCase().includes(query)
+  ).forEach(c => {
+    const ddl = new Date(c.deadline);
+    const days = Math.floor((ddl - now)/(864e5));
+    const cls = days < 0 ? "red" : days <= 20 ? "red" : days <= 60 ? "orange" : "green";
+    const row = `
+      <tr>
+        <td><a href="${c.link}" target="_blank">${c.name}</a></td>
+        <td>${c.sub}</td>
+        <td>${ddl.toISOString().slice(0,16).replace("T"," ")}</td>
+        <td class="countdown ${cls}">${days >= 0 ? days + " days" : "Closed"}</td>
+      </tr>`;
+    tbody.insertAdjacentHTML("beforeend", row);
+  });
+}
+
+document.querySelectorAll(".toolbar button").forEach(btn => {
+  btn.onclick = () => {
+    currentSub = btn.dataset.sub;
+    render();
+  };
+});
+document.getElementById("search").addEventListener("input", render);
+
+fetchData();
+setInterval(() => render(), 3600000);
+</script>
+
+</body>
+</html>
