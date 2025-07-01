@@ -24,7 +24,6 @@ subtitle: Assistant Professor
 
 ## <img src="../img/contact.png" height="50px"> Contact
 
-
 ```
 Email: xxue2[at]stevens[dot]edu
 Phone: (TBD)
@@ -40,25 +39,22 @@ My overarching goal is to enhance the resilience, trustworthiness, and intellige
 I received my Bachelor's Degree from [Jilin University](https://www.jlu.edu.cn/), department of [Communication Engineering](https://dce.jlu.edu.cn/). Then I finished my Master's Degree at [Stevens Institute of Technology](https://www.stevens.edu/), department of Electrical Engineering. I joined [AISecLab](https://www.stevens.edu/icns-center-for-innovative-computing-and-networked-systems/aiseclab) at SIT, and been supervised by Prof. Shucheng Yu.
 
 ## 🔍 Research Interests
-
 - **Wireless Communication:** 5G, Sub-6G, Next-G, O-RAN, AI-RAN
 - **Integrated Sensing and Communication** Sensing for healthcare, Smart city, UAVs, and Vehicles. Distributed devices in cutting-edge network systems
 - **Machine Learning:** Applied area, Federated Learning
 - **Security:** Physical Layer Security, Privacy preserving, Distributed security
-
 ---
 
 ## 📣 Ph.D. Students Wanted
 
 I am actively recruiting **highly motivated Ph.D. students** to join my group at the University of Hawaiʻi at Mānoa, starting in **Fall 2025**. Please email me with:
 - Your **CV**  
-- A brief **statement of research interests**  
+- One page **Research Interests Statement**  
 - Any relevant publications or project experience (if available)
 > 📧 **Email subject requirement:**  
 Please use the following subject line:  
 **`PhD Application Fall 2025 – Your Name – [Research Area]`**  
 Applications without this subject line may not be considered.
-
 ---
 
 
