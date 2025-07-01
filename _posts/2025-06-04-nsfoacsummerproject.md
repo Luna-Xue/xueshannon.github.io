@@ -6,6 +6,8 @@ thumbnail: ""
 description: mmWave, Integrated Sensing and Comunication (ISAC), O-RAN.
 ---
 
+This is a one-month intensive wireless training project designed for Master's students interested in next-generation wireless communication. The program offers hands-on exposure to key technologies including mmWave systems, Integrated Sensing and Communication (ISAC), and Open Radio Access Networks (O-RAN). It is ideal for students looking to build foundational understanding and practical experience in cutting-edge wireless systems.
+
 ## 📸 Project Highlights
 
 ### Team Photo  
