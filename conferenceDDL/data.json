@@ -1,7 +1,7 @@
 [
   {
     "name": "IEEE ICC 2026",
-    "sub": "Wireless",
+    "sub": "Wireless & Communication",
     "Location": "Glasgow, Scotland, UK",
     "Start Date": "May 24, 2026",
     "End Date": "May 28, 2026",
@@ -11,8 +11,195 @@
     "link": "https://icc2026.ieee-icc.org/"
   },
   {
-    "name": "ACM WiSec Cycle 1 2025",
-    "sub": "Security",
+    "name": "IEEE GLOBECOM",
+    "sub": "Wireless & Communication",
+    "Location": "",
+    "Start Date": "",
+    "End Date": "",
+    "Abstract Deadline": "",
+    "Submission Deadline": "",
+    "Notification": "",
+    "link": "https://globecom2024.ieee-globecom.org/"
+  },
+  {
+    "name": "IEEE WCNC",
+    "sub": "Wireless & Communication",
+    "Location": "",
+    "Start Date": "",
+    "End Date": "",
+    "Abstract Deadline": "",
+    "Submission Deadline": "",
+    "Notification": "",
+    "link": "https://wcnc2025.ieee-wcnc.org/"
+  },
+  {
+    "name": "IEEE VTC",
+    "sub": "Wireless & Communication",
+    "Location": "",
+    "Start Date": "",
+    "End Date": "",
+    "Abstract Deadline": "",
+    "Submission Deadline": "",
+    "Notification": "",
+    "link": "https://vtc2025.ieee-vtc.org/"
+  },
+  {
+    "name": "IEEE PIMRC",
+    "sub": "Wireless & Communication",
+    "Location": "",
+    "Start Date": "",
+    "End Date": "",
+    "Abstract Deadline": "",
+    "Submission Deadline": "",
+    "Notification": "",
+    "link": "https://pimrc2025.ieee-pimrc.org/"
+  },
+  {
+    "name": "IEEE DySPAN",
+    "sub": "Wireless & Communication",
+    "Location": "",
+    "Start Date": "",
+    "End Date": "",
+    "Abstract Deadline": "",
+    "Submission Deadline": "",
+    "Notification": "",
+    "link": "https://dyspan2025.ieee-dyspan.org/"
+  },
+  {
+    "name": "ACM SIGCOMM 2025",
+    "sub": "Networking & Systems",
+    "Location": "",
+    "Start Date": "",
+    "End Date": "",
+    "Abstract Deadline": "",
+    "Submission Deadline": "2025-01-24",
+    "Notification": "",
+    "link": "https://sigcomm.org/annualconference/2025"
+  },
+  {
+    "name": "USENIX NSDI",
+    "sub": "Networking & Systems",
+    "Location": "",
+    "Start Date": "",
+    "End Date": "",
+    "Abstract Deadline": "",
+    "Submission Deadline": "",
+    "Notification": "",
+    "link": "https://www.usenix.org/conference/nsdi25"
+  },
+  {
+    "name": "IEEE INFOCOM 2026",
+    "sub": "Networking & Systems",
+    "Location": "Tokyo, Japan",
+    "Start Date": "May 18, 2026",
+    "End Date": "May 21, 2026",
+    "Abstract Deadline": "Jul 24, 2025",
+    "Submission Deadline": "July 31, 2025",
+    "Notification": "Dec 08, 2025",
+    "link": "https://infocom2026.ieee-infocom.org/"
+  },
+  {
+    "name": "ACM CoNEXT",
+    "sub": "Networking & Systems",
+    "Location": "",
+    "Start Date": "",
+    "End Date": "",
+    "Abstract Deadline": "",
+    "Submission Deadline": "",
+    "Notification": "",
+    "link": "https://conferences2.sigcomm.org/co-next/2025/"
+  },
+  {
+    "name": "ACM IMC",
+    "sub": "Networking & Systems",
+    "Location": "",
+    "Start Date": "",
+    "End Date": "",
+    "Abstract Deadline": "",
+    "Submission Deadline": "",
+    "Notification": "",
+    "link": "https://www.sigcomm.org/conferences/imc"
+  },
+  {
+    "name": "IFIP Networking",
+    "sub": "Networking & Systems",
+    "Location": "",
+    "Start Date": "",
+    "End Date": "",
+    "Abstract Deadline": "",
+    "Submission Deadline": "",
+    "Notification": "",
+    "link": "https://networking.ifip.org/2025/"
+  },
+  {
+    "name": "IEEE Symposium on Security & Privacy (Oakland)",
+    "sub": "Security & Privacy",
+    "Location": "",
+    "Start Date": "",
+    "End Date": "",
+    "Abstract Deadline": "",
+    "Submission Deadline": "",
+    "Notification": "",
+    "link": "https://www.ieee-security.org/TC/SP2025/"
+  },
+  {
+    "name": "USENIX Security Symposium",
+    "sub": "Security & Privacy",
+    "Location": "",
+    "Start Date": "",
+    "End Date": "",
+    "Abstract Deadline": "",
+    "Submission Deadline": "",
+    "Notification": "",
+    "link": "https://www.usenix.org/conference/usenixsecurity25"
+  },
+  {
+    "name": "ACM CCS 2025",
+    "sub": "Security & Privacy",
+    "Location": "",
+    "Start Date": "",
+    "End Date": "",
+    "Abstract Deadline": "",
+    "Submission Deadline": "2025-01-02",
+    "Notification": "",
+    "link": "https://ccs2025.sigcomm.org/"
+  },
+  {
+    "name": "NDSS",
+    "sub": "Security & Privacy",
+    "Location": "",
+    "Start Date": "",
+    "End Date": "",
+    "Abstract Deadline": "",
+    "Submission Deadline": "",
+    "Notification": "",
+    "link": "https://www.ndss-symposium.org/ndss2025/"
+  },
+  {
+    "name": "ACNS",
+    "sub": "Security & Privacy",
+    "Location": "",
+    "Start Date": "",
+    "End Date": "",
+    "Abstract Deadline": "",
+    "Submission Deadline": "",
+    "Notification": "",
+    "link": "https://acns2025.org/"
+  },
+  {
+    "name": "ESORICS 2025",
+    "sub": "Security & Privacy",
+    "Location": "",
+    "Start Date": "",
+    "End Date": "",
+    "Abstract Deadline": "",
+    "Submission Deadline": "2025-01-10",
+    "Notification": "",
+    "link": "https://esorics2025.eu/"
+  },
+  {
+    "name": "ACM WiSec 2025",
+    "sub": "Security & Privacy",
     "Location": "",
     "Start Date": "",
     "End Date": "",
@@ -23,7 +210,7 @@
   },
   {
     "name": "IEEE DSN 2026",
-    "sub": "Reliability",
+    "sub": "Networking & Systems",
     "Location": "Charlotte, USA",
     "Start Date": "",
     "End Date": "",
@@ -34,7 +221,7 @@
   },
   {
     "name": "ACM MobiSys 2025",
-    "sub": "Wireless",
+    "sub": "Wireless & Communication",
     "Location": "",
     "Start Date": "",
     "End Date": "",
@@ -45,7 +232,7 @@
   },
   {
     "name": "IEEE ICDCS 2025",
-    "sub": "Networking",
+    "sub": "Networking & Systems",
     "Location": "",
     "Start Date": "",
     "End Date": "",
@@ -55,30 +242,8 @@
     "link": "https://icdcs2025.org/"
   },
   {
-    "name": "ACM CCS Cycle 1 2025",
-    "sub": "Security",
-    "Location": "",
-    "Start Date": "",
-    "End Date": "",
-    "Abstract Deadline": "",
-    "Submission Deadline": "2025-01-02",
-    "Notification": "",
-    "link": "https://ccs2025.sigcomm.org/"
-  },
-  {
-    "name": "ESORICS Cycle 1 2025",
-    "sub": "Security",
-    "Location": "",
-    "Start Date": "",
-    "End Date": "",
-    "Abstract Deadline": "",
-    "Submission Deadline": "2025-01-10",
-    "Notification": "",
-    "link": "https://esorics2025.eu/"
-  },
-  {
-    "name": "ACM AsiaCCS Cycle 2 2025",
-    "sub": "Security",
+    "name": "ACM AsiaCCS 2025",
+    "sub": "Security & Privacy",
     "Location": "",
     "Start Date": "",
     "End Date": "",
@@ -89,7 +254,7 @@
   },
   {
     "name": "ACM SIGMETRICS 2025",
-    "sub": "Performance",
+    "sub": "Networking & Systems",
     "Location": "",
     "Start Date": "",
     "End Date": "",
@@ -99,26 +264,15 @@
     "link": "https://sigmetrics2025.org/"
   },
   {
-    "name": "USENIX Security Cycle 2 2025",
-    "sub": "Security",
-    "Location": "",
-    "Start Date": "",
-    "End Date": "",
+    "name": "IEEE AIoT 2025",
+    "sub": "Wireless & Communication",
+    "Location": "Osaka, Japan",
+    "Start Date": "Dec 3, 2025",
+    "End Date": "Dec 5, 2025",
     "Abstract Deadline": "",
-    "Submission Deadline": "2025-01-22",
-    "Notification": "",
-    "link": "https://www.usenix.org/conference/usenixsecurity25"
-  },
-  {
-    "name": "ACM SIGCOMM 2025",
-    "sub": "Networking",
-    "Location": "",
-    "Start Date": "",
-    "End Date": "",
-    "Abstract Deadline": "",
-    "Submission Deadline": "2025-01-24",
-    "Notification": "",
-    "link": "https://sigcomm.org/annualconference/2025"
+    "Submission Deadline": "Aug 1 2025",
+    "Notification": "Oct 3 2025",
+    "link": "https://www.ieee-aiot.org/2025/"
   },
   {
     "name": "WWW 2026",
@@ -130,148 +284,6 @@
     "Submission Deadline": "",
     "Notification": "",
     "link": ""
-  },
-  {
-    "name": "IEEE ICC",
-    "sub": "",
-    "Location": "Montreal, Canada",
-    "Start Date": "",
-    "End Date": "",
-    "Abstract Deadline": "",
-    "Submission Deadline": "Oct 11 2024",
-    "Notification": "Jan 17 2025",
-    "link": ""
-  },
-  {
-    "name": "ACM WiSec - Cycle 1",
-    "sub": "",
-    "Location": "Arlington, VA",
-    "Start Date": "",
-    "End Date": "",
-    "Abstract Deadline": "",
-    "Submission Deadline": "Nov 21 2024",
-    "Notification": "Jan 15 2025",
-    "link": ""
-  },
-  {
-    "name": "IEEE DSN",
-    "sub": "",
-    "Location": "Naples, Italy",
-    "Start Date": "",
-    "End Date": "",
-    "Abstract Deadline": "Nov 27 2024",
-    "Submission Deadline": "Dec 04 2024",
-    "Notification": "Mar 19 2025",
-    "link": ""
-  },
-  {
-    "name": "ACM MobiSys",
-    "sub": "",
-    "Location": "Anaheim, CA",
-    "Start Date": "",
-    "End Date": "",
-    "Abstract Deadline": "Dec 02 2024",
-    "Submission Deadline": "Dec 09 2024",
-    "Notification": "Mar 07 2025",
-    "link": ""
-  },
-  {
-    "name": "IEEE ICDCS",
-    "sub": "",
-    "Location": "Glasgow, Scotland",
-    "Start Date": "",
-    "End Date": "",
-    "Abstract Deadline": "Dec 04 2024",
-    "Submission Deadline": "Dec 11 2024",
-    "Notification": "Apr 09 2025",
-    "link": ""
-  },
-  {
-    "name": "ACM CCS - Cycle 1",
-    "sub": "",
-    "Location": "Taipei, ROC",
-    "Start Date": "",
-    "End Date": "",
-    "Abstract Deadline": "Jan 02 2025",
-    "Submission Deadline": "Jan 09 2025",
-    "Notification": "Mar 27 2025",
-    "link": ""
-  },
-  {
-    "name": "ESORICS - Cycle 1",
-    "sub": "",
-    "Location": "Toulouse, France",
-    "Start Date": "",
-    "End Date": "",
-    "Abstract Deadline": "",
-    "Submission Deadline": "Jan 10 2025",
-    "Notification": "Mar 21 2025",
-    "link": ""
-  },
-  {
-    "name": "ACM AsiaCCS - Cycle 2",
-    "sub": "",
-    "Location": "Ha Noi, Vietnam",
-    "Start Date": "",
-    "End Date": "",
-    "Abstract Deadline": "",
-    "Submission Deadline": "Jan 20 2025",
-    "Notification": "Apr 19 2025",
-    "link": ""
-  },
-  {
-    "name": "ACM SIGMETRICS",
-    "sub": "",
-    "Location": "Stony Brook, New York",
-    "Start Date": "",
-    "End Date": "",
-    "Abstract Deadline": "Jan 15 2025",
-    "Submission Deadline": "Jan 22 2025",
-    "Notification": "Mar 18 2025",
-    "link": ""
-  },
-  {
-    "name": "USENIX Security - Cycle 2",
-    "sub": "",
-    "Location": "Seattle, WA",
-    "Start Date": "",
-    "End Date": "",
-    "Abstract Deadline": "",
-    "Submission Deadline": "Jan 22 2025",
-    "Notification": "Apr 30 2025",
-    "link": ""
-  },
-  {
-    "name": "ACM SIGCOMM",
-    "sub": "",
-    "Location": "Coimbra, Portugal",
-    "Start Date": "",
-    "End Date": "",
-    "Abstract Deadline": "Jan 24 2025",
-    "Submission Deadline": "Jan 31 2025",
-    "Notification": "Apr 29 2025",
-    "link": ""
-  },
-  {
-    "name": "IEEE INFOCOM 2026",
-    "sub": "",
-    "Location": "Tokyo, Japan",
-    "Start Date": "May 18, 2026",
-    "End Date": "May 21, 2026",
-    "Abstract Deadline": "Jul 24, 2025",
-    "Submission Deadline": "July 31, 2025",
-    "Notification": "Dec 08, 2025",
-    "link": "https://infocom2026.ieee-infocom.org/group/81"
-  },
-  {
-    "name": "IEEE AIoT 2025",
-    "sub": "",
-    "Location": "Osaka, Japan",
-    "Start Date": "Dec 3, 2025",
-    "End Date": "Dec 5, 2025",
-    "Abstract Deadline": "",
-    "Submission Deadline": "Aug 1 2025",
-    "Notification": "Oct 3 2025",
-    "link": "https://www.ieee-aiot.org/2025/"
   }
 ]
+  
