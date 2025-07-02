@@ -40,13 +40,13 @@ My work integrates AI/ML-driven methodologies with advanced wireless techniques 
 
 ---
 
-### 📣 Ph.D. Students Wanted
+#### 📣 Ph.D. Students Wanted
 
 I am actively recruiting **highly motivated Ph.D. students** to join my group at the University of Hawaiʻi at Mānoa, starting in **Fall 2025**. Please email me with:
 - Your **CV**  
 - One page **Research Interests Statement**  
 - Any relevant publications or project experience (if available)
-> 📧 **Email subject requirement:**  
+> **Email subject requirement:**  
 Please use the following subject line:  
 **`PhD Application – Your Name – [Research Area]`**  
 Emails without this subject format are likely to be missed during filtering.
