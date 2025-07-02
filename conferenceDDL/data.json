@@ -253,14 +253,25 @@
     "link": ""
   },
   {
+    "name": "IEEE INFOCOM 2025",
+    "sub": "",
+    "Location": "Tokyo, Japan",
+    "Start Date": "May 18, 2026",
+    "End Date": "May 21, 2026",
+    "Abstract Deadline": "Jul 24, 2025",
+    "Submission Deadline": "July 31, 2025",
+    "Notification": "Dec 08, 2025",
+    "link": "https://infocom2026.ieee-infocom.org/group/81"
+  },
+  {
     "name": "IEEE AIoT 2025",
     "sub": "",
     "Location": "Osaka, Japan",
-    "Start Date": "",
-    "End Date": "",
+    "Start Date": "Dec 3, 2025",
+    "End Date": "Dec 5, 2025",
     "Abstract Deadline": "",
     "Submission Deadline": "Aug 1 2025",
     "Notification": "Oct 3 2025",
-    "link": ""
+    "link": "https://www.ieee-aiot.org/2025/"
   }
 ]
