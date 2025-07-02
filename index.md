@@ -157,8 +157,8 @@ My work integrates AI/ML-driven methodologies with advanced wireless techniques 
 }
 
 .school-icon {
-  width: 35px;
-  height: 35px;
+  width: 45px;
+  height: 45px;
   object-fit: contain;
 }
 
