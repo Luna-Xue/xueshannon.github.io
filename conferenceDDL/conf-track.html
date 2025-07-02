@@ -166,13 +166,13 @@ function render() {
     const hostTime = formatHostTime(c['Start Date'], c['End Date']);
     const row = `
       <tr>
-        <td><a href="\${c.link || '#'}" target="_blank">\${c.name || c.Conference}</a></td>
-        <td>\${hostTime}</td>
-        <td>\${c.Location || ''}</td>
-        <td>\${formatDate(c['Abstract Deadline'] || '')}</td>
-        <td>\${formatDate(c['Submission Deadline'] || deadline)}</td>
-        <td>\${formatDate(c.Notification || '')}</td>
-        <td class="countdown \${cls}">\${days >= 0 ? days + " days" : "Closed"}</td>
+        <td><a href="${c.link || '#'}" target="_blank">${c.name || c.Conference}</a></td>
+        <td>${hostTime}</td>
+        <td>${c.Location || ''}</td>
+        <td>${formatDate(c['Abstract Deadline'] || '')}</td>
+        <td>${formatDate(c['Submission Deadline'] || deadline)}</td>
+        <td>${formatDate(c.Notification || '')}</td>
+        <td class="countdown ${cls}">${days >= 0 ? days + " days" : "Closed"}</td>
       </tr>`;
     tbody.insertAdjacentHTML("beforeend", row);
   });
