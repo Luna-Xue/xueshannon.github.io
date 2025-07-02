@@ -55,7 +55,7 @@ My work integrates AI/ML-driven methodologies with advanced wireless techniques 
     <div class="timeline-item">
       <div class="timeline-dot"></div>
       <div class="timeline-icon">
-        <img src="../img/uhm-logo.png" alt="University of Hawaii at Mānoa" class="school-icon">
+        <img src="../img/uhm.jpg" alt="University of Hawaii at Mānoa" class="school-icon">
       </div>
       <div class="timeline-content">
         <div class="timeline-date">Fall 2025 - Present</div>
@@ -66,31 +66,29 @@ My work integrates AI/ML-driven methodologies with advanced wireless techniques 
         </div>
       </div>
     </div>
-
     <!-- Stevens -->
     <div class="timeline-item">
       <div class="timeline-dot"></div>
       <div class="timeline-icon">
-        <img src="../img/stevens-logo.png" alt="Stevens Institute of Technology" class="school-icon">
+        <img src="../img/SIT.png" alt="Stevens Institute of Technology" class="school-icon">
       </div>
       <div class="timeline-content">
-        <div class="timeline-date">2021 - 2025</div>
-        <div class="timeline-title">Ph.D. in Electrical Engineering</div>
+        <div class="timeline-date">2018 - 2025</div>
+        <div class="timeline-title">Master in Electrical Engineering & Ph.D. in Computer Engineering</div>
         <div class="timeline-location">Stevens Institute of Technology</div>
         <div class="timeline-description">
           Advised by Prof. Shucheng Yu at <a href="https://www.stevens.edu/icns-center-for-innovative-computing-and-networked-systems/aiseclab" target="_blank">AISecLab</a>.
         </div>
       </div>
     </div>
-
     <!-- Jilin University -->
     <div class="timeline-item">
       <div class="timeline-dot"></div>
       <div class="timeline-icon">
-        <img src="../img/jilin-logo.png" alt="Jilin University" class="school-icon">
+        <img src="../img/JLU.jpg" alt="Jilin University" class="school-icon">
       </div>
       <div class="timeline-content">
-        <div class="timeline-date">2014 - 2018</div>
+        <div class="timeline-date">2013- 2017</div>
         <div class="timeline-title">B.Eng. in Communication Engineering</div>
         <div class="timeline-location">Jilin University, China</div>
       </div>
