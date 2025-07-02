@@ -26,7 +26,7 @@ subtitle: Assistant Professor
 
 </div>
 
-## <img src="../img/contact.png" height="40px"> Contact
+## <img src="../img/contact.png" height="45px"> Contact
 
 ```
 Email: xxue2[at]stevens[dot]edu
@@ -157,8 +157,8 @@ My work integrates AI/ML-driven methodologies with advanced wireless techniques 
 }
 
 .school-icon {
-  width: 45px;
-  height: 45px;
+  width: 55px;
+  height: 55px;
   object-fit: contain;
 }
 
