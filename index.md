@@ -40,7 +40,7 @@ My work integrates AI/ML-driven methodologies with advanced wireless techniques 
 
 ---
 
-## 🔍 Research Interests
+## <img src="../img/research.png" height="50px"> Research Interests
 - **Wireless Communication:** 5G, Sub-6G, Next-G, O-RAN, AI-RAN
 - **Integrated Sensing and Communication** Sensing for healthcare, Smart city, UAVs, and Vehicles. Distributed devices in cutting-edge network systems
 - **Machine Learning:** Applied area, Federated Learning
