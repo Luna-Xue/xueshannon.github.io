@@ -41,7 +41,6 @@ My work integrates AI/ML-driven methodologies with advanced wireless techniques 
 ---
 
 #### 📣 Ph.D. Students Wanted
-
 I am actively recruiting **highly motivated Ph.D. students** to join my group at the University of Hawaiʻi at Mānoa, starting in **Fall 2025**. Please email me with:
 - Your **CV**  
 - One page **Research Interests Statement**  
