@@ -65,7 +65,6 @@ Emails without this subject format are likely to be missed during filtering.
 
 ---
 
-
 ## <img src="../img/news.png" height="50px"> News
 <div class="news-box">
   <div class="news-scroll">
