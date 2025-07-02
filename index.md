@@ -26,7 +26,7 @@ subtitle: Assistant Professor
 
 </div>
 
-## <img src="../img/contact.png" height="45px"> Contact
+## <img src="../img/contact.png" height="50px"> Contact
 
 ```
 Email: xxue2[at]stevens[dot]edu
