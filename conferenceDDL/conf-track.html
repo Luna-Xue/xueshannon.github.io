@@ -90,7 +90,8 @@
       overflow-y: auto;
       background-color: var(--card-bg);
       margin-top: -1px;
-      display: contents; /* 关键修改 */
+      display: flex; /* 修改为flex布局 */
+      flex-direction: column;
     }
     .table-row {
       display: grid;
@@ -148,6 +149,7 @@
 </div>
 
 <script>
+// JavaScript部分保持不变
 let confs = [];
 let currentSub = "ALL";
 
