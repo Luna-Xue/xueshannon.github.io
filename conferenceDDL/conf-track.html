@@ -131,32 +131,38 @@ function formatHostTime(start, end) {
 }
 
 function render() {
-  const tbody = document.getElementById("conf-body");
-  const query = document.getElementById("search").value.toLowerCase();
-  const now = new Date();
-  tbody.innerHTML = "";
-
-  const sorted = [...confs].sort((a, b) => {
-    const da = parseDate(a['Submission Deadline'] || a.deadline || '2100-01-01');
-    const db = parseDate(b['Submission Deadline'] || b.deadline || '2100-01-01');
-    return da - db;
-  });
+  // ... (前面的代码保持不变)
 
   sorted.filter(c => {
-    const name = c.name || c.Conference || '';
-    const sub = c.sub || '';
-    return (currentSub === "ALL" || sub.includes(currentSub)) &&
-           name.toLowerCase().includes(query);
+    // ... (过滤逻辑保持不变)
   }).forEach(c => {
-    // 统一解析日期
-    const deadline = parseDate(c.deadline || c['Submission Deadline'] || '');
-    
-    // 计算剩余天数
+    // 统一处理 Submission Deadline
+    let deadlineStr = c['Submission Deadline'] || c.deadline || '';
     let days = -1;
     let cls = "red";
-    if (deadline && !isNaN(deadline)) {
-      days = Math.floor((deadline - now) / 864e5);
-      cls = days < 0 ? "red" : days <= 20 ? "red" : days <= 60 ? "orange" : "green";
+    
+    if (deadlineStr) {
+      try {
+        // 尝试解析 ISO 格式 (如 "2025-09-29T23:59:00Z")
+        let deadlineDate = new Date(deadlineStr);
+        
+        // 如果解析失败，尝试解析 "MMM DD YYYY" 格式 (如 "Dec 04 2024")
+        if (isNaN(deadlineDate)) {
+          const dateParts = deadlineStr.match(/(\w{3}) (\d{1,2}) (\d{4})/);
+          if (dateParts) {
+            deadlineDate = new Date(`${dateParts[1]} ${dateParts[2]}, ${dateParts[3]}`);
+          }
+        }
+        
+        if (!isNaN(deadlineDate)) {
+          days = Math.floor((deadlineDate - now) / (1000 * 60 * 60 * 24));
+          cls = days < 0 ? "red" : 
+                days <= 20 ? "orange" : 
+                "green";
+        }
+      } catch (e) {
+        console.error("Date parsing error:", e);
+      }
     }
 
     const hostTime = formatHostTime(c['Start Date'], c['End Date']);
@@ -166,35 +172,12 @@ function render() {
         <td>${hostTime}</td>
         <td>${c.Location || ''}</td>
         <td>${formatDate(c['Abstract Deadline'] || '')}</td>
-        <td>${formatDate(c['Submission Deadline'] || c.deadline)}</td>
+        <td>${formatDate(deadlineStr)}</td>
         <td>${formatDate(c.Notification || '')}</td>
-        <td class="countdown ${cls}">${days >= 0 ? days + " days" : "Closed"}</td>
+        <td class="countdown ${cls}">${days >= 0 ? days + " days left" : "Closed"}</td>
       </tr>`;
     tbody.insertAdjacentHTML("beforeend", row);
   });
-}
-
-// 新增辅助函数：统一解析日期
-function parseDate(dateStr) {
-  if (!dateStr) return NaN;
-  
-  // 清理 HTML 标签（如 <strike>）
-  const cleanStr = dateStr.replace(/<[^>]*>/g, '').trim();
-  
-  // 尝试解析 ISO 格式（如 "2025-09-29T23:59:00Z"）
-  const isoDate = new Date(cleanStr);
-  if (!isNaN(isoDate)) return isoDate;
-  
-  // 尝试解析自然语言格式（如 "Oct 10 2024"）
-  const naturalDate = new Date(cleanStr);
-  if (!isNaN(naturalDate)) return naturalDate;
-  
-  // 尝试解析其他常见格式（如 "Dec 04 2024; 11:59 PM (AOE)"）
-  const simplified = cleanStr.split(';')[0].trim();
-  const simplifiedDate = new Date(simplified);
-  if (!isNaN(simplifiedDate)) return simplifiedDate;
-  
-  return NaN;
 }
   const tbody = document.getElementById("conf-body");
   const query = document.getElementById("search").value.toLowerCase();
