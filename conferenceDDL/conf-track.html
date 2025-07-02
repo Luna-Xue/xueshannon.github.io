@@ -106,12 +106,24 @@ let currentSub = "ALL";
 
 function formatDate(dateStr) {
   try {
-    const date = new Date(dateStr);
-    if (isNaN(date)) return dateStr;
-    const options = { year: 'numeric', month: 'short', day: '2-digit' };
-    return date.toLocaleDateString('en-US', options);
+    // Try to parse ISO format first
+    if (dateStr.match(/^\d{4}-\d{2}-\d{2}/)) {
+      const date = new Date(dateStr);
+      if (!isNaN(date)) {
+        return date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: '2-digit' });
+      }
+    }
+    // Try to parse "MMM DD YYYY" format
+    const dateMatch = dateStr.match(/(\w{3}) (\d{1,2}) (\d{4})/);
+    if (dateMatch) {
+      const date = new Date(`${dateMatch[1]} ${dateMatch[2]}, ${dateMatch[3]}`);
+      if (!isNaN(date)) {
+        return date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: '2-digit' });
+      }
+    }
+    return dateStr.replace(/<strike>|<\/strike>/g, '');
   } catch {
-    return dateStr;
+    return dateStr.replace(/<strike>|<\/strike>/g, '');
   }
 }
 
@@ -130,39 +142,56 @@ function formatHostTime(start, end) {
   }
 }
 
+function parseDeadline(deadlineStr) {
+  if (!deadlineStr) return null;
+  
+  try {
+    // Try ISO format first
+    let date = new Date(deadlineStr);
+    if (!isNaN(date)) return date;
+    
+    // Try "MMM DD YYYY" format
+    const dateMatch = deadlineStr.match(/(\w{3}) (\d{1,2}) (\d{4})/);
+    if (dateMatch) {
+      date = new Date(`${dateMatch[1]} ${dateMatch[2]}, ${dateMatch[3]}`);
+      if (!isNaN(date)) return date;
+    }
+    
+    return null;
+  } catch {
+    return null;
+  }
+}
+
 function render() {
-  // ... (前面的代码保持不变)
+  const tbody = document.getElementById("conf-body");
+  const query = document.getElementById("search").value.toLowerCase();
+  const now = new Date();
+  tbody.innerHTML = "";
+
+  const sorted = [...confs].sort((a, b) => {
+    const dateA = parseDeadline(a['Submission Deadline'] || a.deadline) || new Date('2100-01-01');
+    const dateB = parseDeadline(b['Submission Deadline'] || b.deadline) || new Date('2100-01-01');
+    return dateA - dateB;
+  });
 
   sorted.filter(c => {
-    // ... (过滤逻辑保持不变)
+    const name = c.name || c.Conference || '';
+    const sub = c.sub || '';
+    return (currentSub === "ALL" || sub.includes(currentSub)) &&
+           name.toLowerCase().includes(query);
   }).forEach(c => {
-    // 统一处理 Submission Deadline
-    let deadlineStr = c['Submission Deadline'] || c.deadline || '';
+    const deadlineStr = c['Submission Deadline'] || c.deadline || '';
+    const deadlineDate = parseDeadline(deadlineStr);
+    
     let days = -1;
     let cls = "red";
     
-    if (deadlineStr) {
-      try {
-        // 尝试解析 ISO 格式 (如 "2025-09-29T23:59:00Z")
-        let deadlineDate = new Date(deadlineStr);
-        
-        // 如果解析失败，尝试解析 "MMM DD YYYY" 格式 (如 "Dec 04 2024")
-        if (isNaN(deadlineDate)) {
-          const dateParts = deadlineStr.match(/(\w{3}) (\d{1,2}) (\d{4})/);
-          if (dateParts) {
-            deadlineDate = new Date(`${dateParts[1]} ${dateParts[2]}, ${dateParts[3]}`);
-          }
-        }
-        
-        if (!isNaN(deadlineDate)) {
-          days = Math.floor((deadlineDate - now) / (1000 * 60 * 60 * 24));
-          cls = days < 0 ? "red" : 
-                days <= 20 ? "orange" : 
-                "green";
-        }
-      } catch (e) {
-        console.error("Date parsing error:", e);
-      }
+    if (deadlineDate) {
+      days = Math.floor((deadlineDate - now) / (1000 * 60 * 60 * 24));
+      cls = days < 0 ? "red" : 
+            days <= 20 ? "orange" : 
+            "green";
     }
 
     const hostTime = formatHostTime(c['Start Date'], c['End Date']);
@@ -179,52 +208,6 @@ function render() {
     tbody.insertAdjacentHTML("beforeend", row);
   });
 }
-  const tbody = document.getElementById("conf-body");
-  const query = document.getElementById("search").value.toLowerCase();
-  const now = new Date();
-  tbody.innerHTML = "";
-
-  const sorted = [...confs].sort((a, b) => {
-    const da = new Date(a['Submission Deadline'] || a.deadline || '2100-01-01');
-    const db = new Date(b['Submission Deadline'] || b.deadline || '2100-01-01');
-    return da - db;
-  });
-
-  sorted.filter(c => {
-    const name = c.name || c.Conference || '';
-    const sub = c.sub || '';
-    return (currentSub === "ALL" || sub.includes(currentSub)) &&
-           name.toLowerCase().includes(query);
-  }).forEach(c => {
-    let deadline = c.deadline;
-    const deadlineText = c['Submission Deadline'] || '';
-    if (!deadline && deadlineText) {
-      const dateMatch = deadlineText.match(/\\w{3} \\d{1,2} \\d{4}/);
-      if (dateMatch) deadline = new Date(dateMatch[0]).toISOString();
-    }
-
-    let days = -1;
-    let cls = "red";
-    if (deadline) {
-      const ddl = new Date(deadline);
-      days = Math.floor((ddl - now) / 864e5);
-      cls = days < 0 ? "red" : days <= 20 ? "red" : days <= 60 ? "orange" : "green";
-    }
-
-    const hostTime = formatHostTime(c['Start Date'], c['End Date']);
-    const row = `
-      <tr>
-        <td><a href="${c.link || '#'}" target="_blank">${c.name || c.Conference}</a></td>
-        <td>${hostTime}</td>
-        <td>${c.Location || ''}</td>
-        <td>${formatDate(c['Abstract Deadline'] || '')}</td>
-        <td>${formatDate(c['Submission Deadline'] || deadline)}</td>
-        <td>${formatDate(c.Notification || '')}</td>
-        <td class="countdown ${cls}">${days >= 0 ? days + " days" : "Closed"}</td>
-      </tr>`;
-    tbody.insertAdjacentHTML("beforeend", row);
-  });
-}
 
 document.querySelectorAll(".toolbar button").forEach(btn => {
   btn.onclick = () => {
@@ -235,12 +218,19 @@ document.querySelectorAll(".toolbar button").forEach(btn => {
 document.getElementById("search").addEventListener("input", render);
 
 async function fetchData() {
-  const res = await fetch('data.json');
-  confs = await res.json();
-  render();
+  try {
+    const res = await fetch('data.json');
+    confs = await res.json();
+    render();
+  } catch (error) {
+    console.error("Error loading conference data:", error);
+    alert("Failed to load conference data. Please check console for details.");
+  }
 }
 
+// Initial load
 fetchData();
+// Refresh every hour
 setInterval(render, 3600000);
 </script>
 
