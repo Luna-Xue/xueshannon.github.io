@@ -38,15 +38,17 @@ Phone: (TBD)
 
 My work integrates AI/ML-driven methodologies with advanced wireless techniques such as Physical Layer Security (PLS), millimeter-wave (mmWave) sensing, and Integrated Sensing and Communication (ISAC) to enable real-time, contactless, and privacy-preserving applications. I also explore distributed IoT systems secured by confidential computing, as well as Open Radio Access Networks (O-RAN) with a focus on AI-native RAN architecture, security hardening, and standardization.
 
-My overarching goal is to enhance the resilience, trustworthiness, and intelligence of future wireless networks, enabling scalable, secure, and adaptive connectivity.
-
-I received my Bachelor's Degree from [Jilin University](https://www.jlu.edu.cn/), department of [Communication Engineering](https://dce.jlu.edu.cn/). Then I finished my Master's Degree at [Stevens Institute of Technology](https://www.stevens.edu/), department of Electrical Engineering. I joined [AISecLab](https://www.stevens.edu/icns-center-for-innovative-computing-and-networked-systems/aiseclab) at SIT, and been supervised by Prof. Shucheng Yu.
+---
 
 ## 🔍 Research Interests
 - **Wireless Communication:** 5G, Sub-6G, Next-G, O-RAN, AI-RAN
 - **Integrated Sensing and Communication** Sensing for healthcare, Smart city, UAVs, and Vehicles. Distributed devices in cutting-edge network systems
 - **Machine Learning:** Applied area, Federated Learning
 - **Security:** Physical Layer Security, Privacy preserving, Distributed security
+
+---
+## Experience
+I received my Bachelor's Degree from [Jilin University](https://www.jlu.edu.cn/), department of [Communication Engineering](https://dce.jlu.edu.cn/). Then I finished my Master's Degree at [Stevens Institute of Technology](https://www.stevens.edu/), department of Electrical Engineering. I joined [AISecLab](https://www.stevens.edu/icns-center-for-innovative-computing-and-networked-systems/aiseclab) at SIT, and been supervised by Prof. Shucheng Yu.
 
 ---
 
