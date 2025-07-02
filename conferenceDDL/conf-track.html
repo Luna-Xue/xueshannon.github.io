@@ -22,9 +22,7 @@
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", sans-serif;
       margin: 0;
       line-height: 1.6;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
+      overflow: hidden; /* NEW */
     }
     .header {
       background: white;
@@ -76,22 +74,18 @@
     }
     .table-header {
       position: sticky;
-      top: 100px;
-      z-index: 10;
+      top: 120px;  /* 高于 header 区域 */
+      z-index: 50;
       background-color: var(--header-bg);
       color: white;
       display: grid;
       grid-template-columns: repeat(7, 1fr);
       padding: 8px 12px;
-      border-top: 1px solid var(--border-color);
     }
     .table-body {
-      flex: 1;
       overflow-y: auto;
       background-color: var(--card-bg);
-      margin-top: -1px;
-      display: flex; /* 修改为flex布局 */
-      flex-direction: column;
+      max-height: calc(100vh - 190px);
     }
     .table-row {
       display: grid;
