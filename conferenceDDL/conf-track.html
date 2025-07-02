@@ -12,7 +12,7 @@
       --accent: #3a86ff;
       --red: #e63946;
       --orange: #ff9e00;
-      --green: #12863d;
+      --green: #2a9d8f;
       --header-bg: #343a40;
       --border-color: #dee2e6;
     }
@@ -78,39 +78,51 @@
       color: white;
       border-color: var(--accent);
     }
-    .scroll-container {
+    .table-container {
       flex: 1;
-      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
       padding: 0 20px;
-      position: relative;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      background-color: var(--card-bg);
-      border-radius: 8px;
       overflow: hidden;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-      margin-bottom: 20px;
     }
-    thead {
+    .table-header {
       position: sticky;
-      top: 140px; /* 标题栏高度 + 工具栏高度 */
+      top: 140px; /* 标题高度 + 工具栏高度 */
       z-index: 10;
-    }
-    th, td {
-      padding: 14px 12px;
-      border-bottom: 1px solid var(--border-color);
-      text-align: center;
-    }
-    th {
       background-color: var(--header-bg);
       color: white;
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      padding: 14px 12px;
+      border-radius: 8px 8px 0 0;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    .table-header div {
+      text-align: center;
       font-weight: 500;
       letter-spacing: 0.5px;
     }
-    tr:hover {
+    .table-body {
+      flex: 1;
+      overflow-y: auto;
+      background-color: var(--card-bg);
+      border-radius: 0 0 8px 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    .table-row {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      padding: 14px 12px;
+      border-bottom: 1px solid var(--border-color);
+    }
+    .table-row:hover {
       background-color: #f8f9fa;
+    }
+    .table-row div {
+      text-align: center;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
     .countdown.green { color: var(--green); font-weight: 500; }
     .countdown.orange { color: var(--orange); font-weight: 500; }
@@ -133,11 +145,11 @@
       .toolbar input {
         width: 100%;
       }
-      th, td {
+      .table-header, .table-row {
         padding: 10px 8px;
         font-size: 14px;
       }
-      thead {
+      .table-header {
         top: 180px; /* 移动设备上高度更大 */
       }
     }
@@ -158,21 +170,17 @@
   </div>
 </div>
 
-<div class="scroll-container">
-  <table>
-    <thead>
-      <tr>
-        <th>Conference</th>
-        <th>Host Time</th>
-        <th>Location</th>
-        <th>Abstract Deadline</th>
-        <th>Submission Deadline</th>
-        <th>Notification</th>
-        <th>Time Left</th>
-      </tr>
-    </thead>
-    <tbody id="conf-body"></tbody>
-  </table>
+<div class="table-container">
+  <div class="table-header">
+    <div>Conference</div>
+    <div>Host Time</div>
+    <div>Location</div>
+    <div>Abstract Deadline</div>
+    <div>Submission Deadline</div>
+    <div>Notification</div>
+    <div>Time Left</div>
+  </div>
+  <div class="table-body" id="conf-body"></div>
 </div>
 
 <script>
@@ -181,14 +189,12 @@ let currentSub = "ALL";
 
 function formatDate(dateStr) {
   try {
-    // Try to parse ISO format first
     if (dateStr.match(/^\d{4}-\d{2}-\d{2}/)) {
       const date = new Date(dateStr);
       if (!isNaN(date)) {
         return date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: '2-digit' });
       }
     }
-    // Try to parse "MMM DD YYYY" format
     const dateMatch = dateStr.match(/(\w{3}) (\d{1,2}) (\d{4})/);
     if (dateMatch) {
       const date = new Date(`${dateMatch[1]} ${dateMatch[2]}, ${dateMatch[3]}`);
@@ -221,11 +227,9 @@ function parseDeadline(deadlineStr) {
   if (!deadlineStr) return null;
   
   try {
-    // Try ISO format first
     let date = new Date(deadlineStr);
     if (!isNaN(date)) return date;
     
-    // Try "MMM DD YYYY" format
     const dateMatch = deadlineStr.match(/(\w{3}) (\d{1,2}) (\d{4})/);
     if (dateMatch) {
       date = new Date(`${dateMatch[1]} ${dateMatch[2]}, ${dateMatch[3]}`);
@@ -270,17 +274,18 @@ function render() {
     }
 
     const hostTime = formatHostTime(c['Start Date'], c['End Date']);
-    const row = `
-      <tr>
-        <td><a href="${c.link || '#'}" target="_blank">${c.name || c.Conference}</a></td>
-        <td>${hostTime}</td>
-        <td>${c.Location || ''}</td>
-        <td>${formatDate(c['Abstract Deadline'] || '')}</td>
-        <td>${formatDate(deadlineStr)}</td>
-        <td>${formatDate(c.Notification || '')}</td>
-        <td class="countdown ${cls}">${days >= 0 ? days + " days left" : "Closed"}</td>
-      </tr>`;
-    tbody.insertAdjacentHTML("beforeend", row);
+    const row = document.createElement('div');
+    row.className = 'table-row';
+    row.innerHTML = `
+      <div><a href="${c.link || '#'}" target="_blank">${c.name || c.Conference}</a></div>
+      <div>${hostTime}</div>
+      <div>${c.Location || ''}</div>
+      <div>${formatDate(c['Abstract Deadline'] || '')}</div>
+      <div>${formatDate(deadlineStr)}</div>
+      <div>${formatDate(c.Notification || '')}</div>
+      <div class="countdown ${cls}">${days >= 0 ? days + " days left" : "Closed"}</div>
+    `;
+    tbody.appendChild(row);
   });
 }
 
