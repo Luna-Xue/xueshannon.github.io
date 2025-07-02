@@ -170,8 +170,8 @@ Emails without this subject format are likely to be missed during filtering.
 }
 
 .school-icon {
-  width: 55px;
-  height: 55px;
+  width: 65px;
+  height: 65px;
   object-fit: contain;
 }
 
