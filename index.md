@@ -51,7 +51,7 @@ My work integrates AI/ML-driven methodologies with advanced wireless techniques 
 
 <div class="timeline-container">
   <div class="timeline">
-    <!-- 时间轴项目 1 -->
+    <!-- 1 -->
     <div class="timeline-item">
       <div class="timeline-dot"></div>
       <div class="timeline-content">
@@ -63,12 +63,11 @@ My work integrates AI/ML-driven methodologies with advanced wireless techniques 
         </div>
       </div>
     </div>
-
-    <!-- 时间轴项目 2 -->
+    <!-- 2 -->
     <div class="timeline-item">
       <div class="timeline-dot"></div>
       <div class="timeline-content">
-        <div class="timeline-date">2021 - 2025</div>
+        <div class="timeline-date">2020 - 2025</div>
         <div class="timeline-title">Ph.D. in Electrical Engineering</div>
         <div class="timeline-location">Stevens Institute of Technology</div>
         <div class="timeline-description">
@@ -77,22 +76,20 @@ My work integrates AI/ML-driven methodologies with advanced wireless techniques 
         </div>
       </div>
     </div>
-
-    <!-- 时间轴项目 3 -->
+    <!-- 3 -->
     <div class="timeline-item">
       <div class="timeline-dot"></div>
       <div class="timeline-content">
-        <div class="timeline-date">2018 - 2021</div>
+        <div class="timeline-date">2018 - 2020</div>
         <div class="timeline-title">M.S. in Electrical Engineering</div>
         <div class="timeline-location">Stevens Institute of Technology</div>
       </div>
     </div>
-
-    <!-- 时间轴项目 4 -->
+    <!-- 4 -->
     <div class="timeline-item">
       <div class="timeline-dot"></div>
       <div class="timeline-content">
-        <div class="timeline-date">2014 - 2018</div>
+        <div class="timeline-date">2013 - 2017</div>
         <div class="timeline-title">B.Eng. in Communication Engineering</div>
         <div class="timeline-location">Jilin University, China</div>
       </div>
