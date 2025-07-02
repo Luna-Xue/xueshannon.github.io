@@ -31,14 +31,14 @@
       position: sticky;
       top: 0;
       z-index: 100;
-      padding: 10px 20px 0; /* 减小顶部内边距 */
+      padding: 10px 20px 0;
     }
     h1 {
       text-align: center;
-      margin: 0 0 8px 0; /* 减小标题下边距 */
+      margin: 0 0 8px 0;
       color: var(--header-bg);
       font-weight: 600;
-      font-size: 1.5em; /* 减小标题字体大小 */
+      font-size: 1.5em;
     }
     .toolbar {
       text-align: center;
@@ -46,11 +46,11 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 6px; /* 减小按钮间距 */
-      padding-bottom: 8px; /* 减小底部内边距 */
+      gap: 6px;
+      padding-bottom: 8px;
     }
     .toolbar input {
-      padding: 8px 12px; /* 减小输入框内边距 */
+      padding: 8px 12px;
       font-size: 14px;
       border-radius: 4px;
       border: 1px solid var(--border-color);
@@ -58,7 +58,7 @@
       max-width: 100%;
     }
     .toolbar button {
-      padding: 8px 12px; /* 减小按钮内边距 */
+      padding: 8px 12px;
       font-size: 14px;
       border-radius: 4px;
       border: 1px solid var(--border-color);
@@ -72,11 +72,11 @@
       flex-direction: column;
       padding: 0 20px;
       overflow: hidden;
-      margin-top: -15px; /* 关键调整：整体上移15px */
+      margin-top: -15px;
     }
     .table-header {
       position: sticky;
-      top: 10px; /* 精确计算的新高度 */
+      top: 78px;
       z-index: 10;
       background-color: var(--header-bg);
       color: white;
@@ -89,14 +89,38 @@
       flex: 1;
       overflow-y: auto;
       background-color: var(--card-bg);
-      margin-top: -1px; /* 消除表头与内容的间隙 */
+      margin-top: -1px;
+      display: contents; /* 关键修改 */
     }
-    /* 其余样式保持不变... */
+    .table-row {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      padding: 8px 12px;
+      border-bottom: 1px solid var(--border-color);
+      align-items: center;
+    }
+    .table-row:hover {
+      background-color: #f8f9fa;
+    }
+    .table-row div {
+      text-align: center;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      padding: 4px;
+    }
+    .countdown.green { color: var(--green); font-weight: 500; }
+    .countdown.orange { color: var(--orange); font-weight: 500; }
+    .countdown.red { color: var(--red); font-weight: 500; }
+    a { 
+      color: var(--accent); 
+      text-decoration: none;
+      font-weight: 500;
+    }
   </style>
 </head>
 <body>
 
-<!-- HTML结构保持不变 -->
 <div class="header">
   <h1>📅 Conference Deadlines</h1>
   <div class="toolbar">
@@ -124,7 +148,6 @@
 </div>
 
 <script>
-// JavaScript部分保持不变
 let confs = [];
 let currentSub = "ALL";
 
