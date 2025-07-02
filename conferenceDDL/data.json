@@ -1,189 +1,266 @@
 [
   {
-    "Conference": "IEEE ICC 2026",
-    "Location": "Glasgow, Scotland, UK",
+    "name": "IEEE ICC 2026",
     "sub": "Wireless",
-    "link": "https://icc2026.ieee-icc.org/",
-    "deadline": "2025-09-29T23:59:00Z"
+    "Location": "Glasgow, Scotland, UK",
+    "Start Date": "",
+    "End Date": "",
+    "Abstract Deadline": "",
+    "Submission Deadline": "2025-09-29",
+    "Notification": "",
+    "link": "https://icc2026.ieee-icc.org/"
   },
   {
     "name": "ACM WiSec Cycle 1 2025",
     "sub": "Security",
-    "link": "https://wisec.acm.org/",
-    "deadline": "2024-10-11T23:59:00Z"
+    "Location": "",
+    "Start Date": "",
+    "End Date": "",
+    "Abstract Deadline": "",
+    "Submission Deadline": "2024-10-11",
+    "Notification": "",
+    "link": "https://wisec.acm.org/"
   },
   {
     "name": "IEEE DSN 2026",
+    "sub": "Reliability",
     "Location": "Charlotte, USA",
+    "Start Date": "",
+    "End Date": "",
     "Abstract Deadline": "Nov 27 2025",
     "Submission Deadline": "Dec 04 2025",
-    "sub": "Reliability",
+    "Notification": "",
     "link": "https://dsn2026.ieee-dsn.org/"
   },
   {
     "name": "ACM MobiSys 2025",
     "sub": "Wireless",
-    "link": "https://mobisys2025.sigmobile.org/",
-    "deadline": "2024-12-02T23:59:00Z"
+    "Location": "",
+    "Start Date": "",
+    "End Date": "",
+    "Abstract Deadline": "",
+    "Submission Deadline": "2024-12-02",
+    "Notification": "",
+    "link": "https://mobisys2025.sigmobile.org/"
   },
   {
     "name": "IEEE ICDCS 2025",
     "sub": "Networking",
-    "link": "https://icdcs2025.org/",
-    "deadline": "2024-12-04T23:59:00Z"
+    "Location": "",
+    "Start Date": "",
+    "End Date": "",
+    "Abstract Deadline": "",
+    "Submission Deadline": "2024-12-04",
+    "Notification": "",
+    "link": "https://icdcs2025.org/"
   },
   {
     "name": "ACM CCS Cycle 1 2025",
     "sub": "Security",
-    "link": "https://ccs2025.sigcomm.org/",
-    "deadline": "2025-01-02T23:59:00Z"
+    "Location": "",
+    "Start Date": "",
+    "End Date": "",
+    "Abstract Deadline": "",
+    "Submission Deadline": "2025-01-02",
+    "Notification": "",
+    "link": "https://ccs2025.sigcomm.org/"
   },
   {
     "name": "ESORICS Cycle 1 2025",
     "sub": "Security",
-    "link": "https://esorics2025.eu/",
-    "deadline": "2025-01-10T23:59:00Z"
+    "Location": "",
+    "Start Date": "",
+    "End Date": "",
+    "Abstract Deadline": "",
+    "Submission Deadline": "2025-01-10",
+    "Notification": "",
+    "link": "https://esorics2025.eu/"
   },
   {
     "name": "ACM AsiaCCS Cycle 2 2025",
     "sub": "Security",
-    "link": "https://asiaccs2025.sigmod.org/",
-    "deadline": "2025-01-20T23:59:00Z"
+    "Location": "",
+    "Start Date": "",
+    "End Date": "",
+    "Abstract Deadline": "",
+    "Submission Deadline": "2025-01-20",
+    "Notification": "",
+    "link": "https://asiaccs2025.sigmod.org/"
   },
   {
     "name": "ACM SIGMETRICS 2025",
     "sub": "Performance",
-    "link": "https://sigmetrics2025.org/",
-    "deadline": "2025-01-15T23:59:00Z"
+    "Location": "",
+    "Start Date": "",
+    "End Date": "",
+    "Abstract Deadline": "",
+    "Submission Deadline": "2025-01-15",
+    "Notification": "",
+    "link": "https://sigmetrics2025.org/"
   },
   {
     "name": "USENIX Security Cycle 2 2025",
     "sub": "Security",
-    "link": "https://www.usenix.org/conference/usenixsecurity25",
-    "deadline": "2025-01-22T23:59:00Z"
+    "Location": "",
+    "Start Date": "",
+    "End Date": "",
+    "Abstract Deadline": "",
+    "Submission Deadline": "2025-01-22",
+    "Notification": "",
+    "link": "https://www.usenix.org/conference/usenixsecurity25"
   },
   {
     "name": "ACM SIGCOMM 2025",
     "sub": "Networking",
-    "link": "https://sigcomm.org/annualconference/2025",
-    "deadline": "2025-01-24T23:59:00Z"
+    "Location": "",
+    "Start Date": "",
+    "End Date": "",
+    "Abstract Deadline": "",
+    "Submission Deadline": "2025-01-24",
+    "Notification": "",
+    "link": "https://sigcomm.org/annualconference/2025"
   },
   {
-    "Conference": "WWW",
+    "name": "WWW",
+    "sub": "",
     "Location": "Sydney, Australia",
-    "Abstract Deadline": "<strike>Oct 03 2024</strike>",
-    "Submission Deadline": "<strike>Oct 10 2024 (AOE)</strike>",
+    "Start Date": "",
+    "End Date": "",
+    "Abstract Deadline": "Oct 03 2024",
+    "Submission Deadline": "Oct 10 2024",
     "Notification": "Jan 27 2025",
-    "Time Left": "",
-    "sub": ""
+    "link": ""
   },
   {
-    "Conference": "IEEE ICC",
+    "name": "IEEE ICC",
+    "sub": "",
     "Location": "Montreal, Canada",
+    "Start Date": "",
+    "End Date": "",
     "Abstract Deadline": "",
-    "Submission Deadline": "<strike>Oct 11 2024</strike>",
+    "Submission Deadline": "Oct 11 2024",
     "Notification": "Jan 17 2025",
-    "Time Left": "",
-    "sub": ""
+    "link": ""
   },
   {
-    "Conference": "ACM WiSec - Cycle 1",
+    "name": "ACM WiSec - Cycle 1",
+    "sub": "",
     "Location": "Arlington, VA",
+    "Start Date": "",
+    "End Date": "",
     "Abstract Deadline": "",
-    "Submission Deadline": "<strike>Nov 21 2024 (AOE)</strike>",
+    "Submission Deadline": "Nov 21 2024",
     "Notification": "Jan 15 2025",
-    "Time Left": "",
-    "sub": ""
+    "link": ""
   },
   {
-    "Conference": "IEEE DSN",
+    "name": "IEEE DSN",
+    "sub": "",
     "Location": "Naples, Italy",
-    "Abstract Deadline": "<strike>Nov 27 2024; 11:59 PM (AOE)</strike>",
-    "Submission Deadline": "<strike>Dec 04 2024; 11:59 PM (AOE)</strike>",
+    "Start Date": "",
+    "End Date": "",
+    "Abstract Deadline": "Nov 27 2024",
+    "Submission Deadline": "Dec 04 2024",
     "Notification": "Mar 19 2025",
-    "Time Left": "",
-    "sub": ""
+    "link": ""
   },
   {
-    "Conference": "ACM MobiSys",
+    "name": "ACM MobiSys",
+    "sub": "",
     "Location": "Anaheim, CA",
-    "Abstract Deadline": "<strike>Dec 02 2024; 11:59 PM (AOE)</strike>",
-    "Submission Deadline": "<strike>Dec 09 2024; 11:59 PM (AOE)</strike>",
+    "Start Date": "",
+    "End Date": "",
+    "Abstract Deadline": "Dec 02 2024",
+    "Submission Deadline": "Dec 09 2024",
     "Notification": "Mar 07 2025",
-    "Time Left": "",
-    "sub": ""
+    "link": ""
   },
   {
-    "Conference": "IEEE ICDCS",
+    "name": "IEEE ICDCS",
+    "sub": "",
     "Location": "Glasgow, Scotland",
-    "Abstract Deadline": "<strike>Dec 04 2024</strike>",
-    "Submission Deadline": "<strike>Dec 11 2024</strike>",
+    "Start Date": "",
+    "End Date": "",
+    "Abstract Deadline": "Dec 04 2024",
+    "Submission Deadline": "Dec 11 2024",
     "Notification": "Apr 09 2025",
-    "Time Left": "",
-    "sub": ""
+    "link": ""
   },
   {
-    "Conference": "ACM CCS - Cycle 1",
+    "name": "ACM CCS - Cycle 1",
+    "sub": "",
     "Location": "Taipei, ROC",
-    "Abstract Deadline": "<strike>Jan 02 2025</strike>",
-    "Submission Deadline": "<strike>Jan 09 2025 (AOE)</strike>",
+    "Start Date": "",
+    "End Date": "",
+    "Abstract Deadline": "Jan 02 2025",
+    "Submission Deadline": "Jan 09 2025",
     "Notification": "Mar 27 2025",
-    "Time Left": "",
-    "sub": ""
+    "link": ""
   },
   {
-    "Conference": "ESORICS - Cycle 1",
+    "name": "ESORICS - Cycle 1",
+    "sub": "",
     "Location": "Toulouse, France",
+    "Start Date": "",
+    "End Date": "",
     "Abstract Deadline": "",
-    "Submission Deadline": "<strike>Jan 10 2025 (AOE)</strike>",
+    "Submission Deadline": "Jan 10 2025",
     "Notification": "Mar 21 2025",
-    "Time Left": "",
-    "sub": ""
+    "link": ""
   },
   {
-    "Conference": "ACM AsiaCCS - Cycle 2",
+    "name": "ACM AsiaCCS - Cycle 2",
+    "sub": "",
     "Location": "Ha Noi, Vietnam",
+    "Start Date": "",
+    "End Date": "",
     "Abstract Deadline": "",
-    "Submission Deadline": "<strike>Jan 20 2025; 11:59 PM (AOE)</strike>",
+    "Submission Deadline": "Jan 20 2025",
     "Notification": "Apr 19 2025",
-    "Time Left": "",
-    "sub": ""
+    "link": ""
   },
   {
-    "Conference": "ACM SIGMETRICS",
+    "name": "ACM SIGMETRICS",
+    "sub": "",
     "Location": "Stony Brook, New York",
-    "Abstract Deadline": "<strike>Jan 15 2025</strike>",
-    "Submission Deadline": "<strike>Jan 22 2025</strike>",
+    "Start Date": "",
+    "End Date": "",
+    "Abstract Deadline": "Jan 15 2025",
+    "Submission Deadline": "Jan 22 2025",
     "Notification": "Mar 18 2025",
-    "Time Left": "",
-    "sub": ""
+    "link": ""
   },
   {
-    "Conference": "USENIX Security - Cycle 2",
+    "name": "USENIX Security - Cycle 2",
+    "sub": "",
     "Location": "Seattle, WA",
+    "Start Date": "",
+    "End Date": "",
     "Abstract Deadline": "",
-    "Submission Deadline": "<strike>Jan 22 2025 (AOE)</strike>",
+    "Submission Deadline": "Jan 22 2025",
     "Notification": "Apr 30 2025",
-    "Time Left": "",
-    "sub": ""
+    "link": ""
   },
   {
-    "Conference": "ACM SIGCOMM",
+    "name": "ACM SIGCOMM",
+    "sub": "",
     "Location": "Coimbra, Portugal",
-    "Abstract Deadline": "<strike>Jan 24 2025; 11:59 PM (UTC)</strike>",
-    "Submission Deadline": "<strike>Jan 31 2025; 11:59 PM (UTC)</strike>",
+    "Start Date": "",
+    "End Date": "",
+    "Abstract Deadline": "Jan 24 2025",
+    "Submission Deadline": "Jan 31 2025",
     "Notification": "Apr 29 2025",
-    "Time Left": "",
-    "sub": ""
+    "link": ""
   },
   {
-    "Conference": "IEEE AIoT 2025",
+    "name": "IEEE AIoT 2025",
+    "sub": "",
     "Location": "Osaka, Japan",
+    "Start Date": "",
+    "End Date": "",
     "Abstract Deadline": "",
     "Submission Deadline": "Aug 1 2025",
     "Notification": "Oct 3 2025",
-    "Time Left": "",
-    "sub": ""
+    "link": ""
   }
-
 ]
