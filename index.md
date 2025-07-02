@@ -224,7 +224,7 @@ Emails without this subject format are likely to be missed during filtering.
 }
 
 .timeline-location:before {
-  content: "📍";
+  content: "";
   margin-right: 6px;
   font-size: 14px;
 }
