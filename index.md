@@ -26,28 +26,28 @@ subtitle: Assistant Professor
 
 </div>
 
-## <img src="../img/contact.png" height="50px"> Contact
+## <img src="../img/contact.png" height="30px"> Contact
 
 ```
 Email: xxue2[at]stevens[dot]edu
 Phone: (TBD)
 ```
 
-## <img src="../img/resume.png" height="50px"> About Me
+## <img src="../img/resume.png" height="30px"> About Me
  I am an Assistant Professor in the Department of Electrical and Computer Engineering at the University of Hawaii at Mānoa. My research lies at the intersection of wireless communication, cybersecurity, and artificial intelligence. Specifically, I focus on designing secure, intelligent, and efficient wireless systems for 5G, Sub-6G, NextG, and beyond.
 
 My work integrates AI/ML-driven methodologies with advanced wireless techniques such as Physical Layer Security (PLS), millimeter-wave (mmWave) sensing, and Integrated Sensing and Communication (ISAC) to enable real-time, contactless, and privacy-preserving applications. I also explore distributed IoT systems secured by confidential computing, as well as Open Radio Access Networks (O-RAN) with a focus on AI-native RAN architecture, security hardening, and standardization.
 
 ---
 
-## <img src="../img/research.png" height="50px"> Research Interests
+## <img src="../img/research.png" height="30px"> Research Interests
 - **Wireless Communication:** 5G, Sub-6G, Next-G, O-RAN, AI-RAN
 - **Integrated Sensing and Communication** Sensing for healthcare, Smart city, UAVs, and Vehicles. Distributed devices in cutting-edge network systems
 - **Machine Learning:** Applied area, Federated Learning
 - **Security:** Physical Layer Security, Privacy preserving, Distributed security
 
 ---
-## <img src="../img/footsteps.png" height="50px"> Experience
+## <img src="../img/footsteps.png" height="30px"> Experience
 
 <div class="timeline-container">
   <div class="timeline">
@@ -130,7 +130,7 @@ My work integrates AI/ML-driven methodologies with advanced wireless techniques 
 
 .timeline-dot {
   position: absolute;
-  left: -50px;
+  left: -30px;
   top: 15px;
   width: 12px;
   height: 12px;
@@ -238,7 +238,7 @@ Emails without this subject format are likely to be missed during filtering.
 
 ---
 
-## <img src="../img/hotnews.png" height="50px"> News
+## <img src="../img/hotnews.png" height="30px"> News
 <div class="news-box">
   <div class="news-scroll">
     <!-- 项目列表 -->
@@ -261,4 +261,4 @@ Emails without this subject format are likely to be missed during filtering.
 
 
 
-## <img src="../img/grants.png" height="50px"> Grants
+## <img src="../img/grants.png" height="30px"> Grants
