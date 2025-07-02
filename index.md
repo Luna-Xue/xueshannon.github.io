@@ -102,7 +102,7 @@ My work integrates AI/ML-driven methodologies with advanced wireless techniques 
 .timeline-container {
   max-width: 900px;
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 10px 0; /* 减小顶部底部内边距 */
 }
 
 /* 时间轴主线 */
@@ -115,16 +115,16 @@ My work integrates AI/ML-driven methodologies with advanced wireless techniques 
   content: '';
   position: absolute;
   left: 20px;
-  top: 0;
-  bottom: 0;
+  top: 10px; /* 调整顶部起始位置 */
+  bottom: 10px; /* 调整底部结束位置 */
   width: 2px;
   background: #e0e0e0;
 }
 
-/* 时间轴项目 */
+/* 时间轴项目 - 减小间距 */
 .timeline-item {
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 20px; /* 从30px减小到20px */
 }
 
 .timeline-dot {
@@ -141,10 +141,10 @@ My work integrates AI/ML-driven methodologies with advanced wireless techniques 
 }
 
 .timeline-content {
-  padding: 20px;
+  padding: 15px 20px; /* 减小垂直内边距 */
   background: #fff;
   border-radius: 6px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); /* 更柔和的阴影 */
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
