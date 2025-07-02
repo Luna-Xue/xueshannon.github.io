@@ -119,13 +119,13 @@ Emails without this subject format are likely to be missed during filtering.
 /* 时间轴主线 */
 .timeline {
   position: relative;
-  padding-left: 100px;
+  padding-left: 110px; /* 增加左侧空间 */
 }
 
 .timeline::before {
   content: '';
   position: absolute;
-  left: 60px;
+  left: 65px; /* 轴线位置调整 */
   top: 10px;
   bottom: 10px;
   width: 2px;
@@ -135,15 +135,16 @@ Emails without this subject format are likely to be missed during filtering.
 /* 时间轴项目 */
 .timeline-item {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 25px; /* 增加项目间距 */
   display: flex;
   align-items: flex-start;
+  min-height: 80px; /* 确保有足够垂直空间 */
 }
 
 .timeline-dot {
   position: absolute;
-  left: -35px;
-  top: 15px;
+  left: -55px;
+  top: 40px; /* 圆点下移 */
   width: 12px;
   height: 12px;
   border-radius: 50%;
@@ -155,22 +156,22 @@ Emails without this subject format are likely to be missed during filtering.
 
 .timeline-icon {
   position: absolute;
-  left: -85px;
-  top: 5px;
-  width: 40px;
-  height: 40px;
+  left: -100px; /* 图标左移 */
+  top: 25px; /* 图标下移 */
+  width: 65px; /* 增大容器 */
+  height: 65px;
   border-radius: 50%;
   background: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
   z-index: 1;
 }
 
 .school-icon {
-  width: 65px;
-  height: 65px;
+  width: 60px; /* 图标尺寸 */
+  height: 60px;
   object-fit: contain;
 }
 
