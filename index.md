@@ -223,11 +223,11 @@ Emails without this subject format are likely to be missed during filtering.
   align-items: center;
 }
 
-.timeline-location:before {
+/*.timeline-location:before {
   content: "";
   margin-right: 6px;
   font-size: 14px;
-}
+}*/
 
 /* 描述样式 - 详细内容 */
 .timeline-description {
