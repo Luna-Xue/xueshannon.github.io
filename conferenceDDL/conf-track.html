@@ -42,7 +42,7 @@
     }
     .toolbar {
       text-align: center;
-      margin-bottom: 15px;
+      margin-bottom: 0; /* 移除底部边距使表头紧贴 */
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
@@ -87,32 +87,33 @@
     }
     .table-header {
       position: sticky;
-      top: 140px; /* 标题高度 + 工具栏高度 */
+      top: 110px; /* 调整为更小的值使表头紧贴搜索栏 */
       z-index: 10;
       background-color: var(--header-bg);
       color: white;
       display: grid;
       grid-template-columns: repeat(7, 1fr);
-      padding: 14px 12px;
-      border-radius: 8px 8px 0 0;
+      padding: 12px 12px; /* 减小内边距 */
+      margin-top: -5px; /* 上移表头 */
+      border-radius: 0; /* 移除圆角使更紧凑 */
       box-shadow: 0 1px 3px rgba(0,0,0,0.1);
     }
     .table-header div {
       text-align: center;
       font-weight: 500;
       letter-spacing: 0.5px;
+      font-size: 0.9em; /* 稍小字体 */
     }
     .table-body {
       flex: 1;
       overflow-y: auto;
       background-color: var(--card-bg);
-      border-radius: 0 0 8px 8px;
       box-shadow: 0 1px 3px rgba(0,0,0,0.1);
     }
     .table-row {
       display: grid;
       grid-template-columns: repeat(7, 1fr);
-      padding: 14px 12px;
+      padding: 12px 12px; /* 减小行内边距 */
       border-bottom: 1px solid var(--border-color);
     }
     .table-row:hover {
@@ -145,12 +146,12 @@
       .toolbar input {
         width: 100%;
       }
-      .table-header, .table-row {
-        padding: 10px 8px;
-        font-size: 14px;
-      }
       .table-header {
-        top: 180px; /* 移动设备上高度更大 */
+        top: 150px; /* 移动设备调整 */
+      }
+      .table-header, .table-row {
+        padding: 8px 8px;
+        font-size: 14px;
       }
     }
   </style>
@@ -184,6 +185,7 @@
 </div>
 
 <script>
+// JavaScript部分保持不变
 let confs = [];
 let currentSub = "ALL";
 
