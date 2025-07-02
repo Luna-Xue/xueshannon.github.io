@@ -51,9 +51,12 @@ My work integrates AI/ML-driven methodologies with advanced wireless techniques 
 
 <div class="timeline-container">
   <div class="timeline">
-    <!-- 1 -->
+    <!-- UHM -->
     <div class="timeline-item">
       <div class="timeline-dot"></div>
+      <div class="timeline-icon">
+        <img src="../img/uhm-logo.png" alt="University of Hawaii at Mānoa" class="school-icon">
+      </div>
       <div class="timeline-content">
         <div class="timeline-date">Fall 2025 - Present</div>
         <div class="timeline-title">Assistant Professor</div>
@@ -63,33 +66,31 @@ My work integrates AI/ML-driven methodologies with advanced wireless techniques 
         </div>
       </div>
     </div>
-    <!-- 2 -->
+
+    <!-- Stevens -->
     <div class="timeline-item">
       <div class="timeline-dot"></div>
+      <div class="timeline-icon">
+        <img src="../img/stevens-logo.png" alt="Stevens Institute of Technology" class="school-icon">
+      </div>
       <div class="timeline-content">
-        <div class="timeline-date">2020 - 2025</div>
+        <div class="timeline-date">2021 - 2025</div>
         <div class="timeline-title">Ph.D. in Electrical Engineering</div>
         <div class="timeline-location">Stevens Institute of Technology</div>
         <div class="timeline-description">
           Advised by Prof. Shucheng Yu at <a href="https://www.stevens.edu/icns-center-for-innovative-computing-and-networked-systems/aiseclab" target="_blank">AISecLab</a>.
-          Research on AI-driven wireless security and sensing systems.
         </div>
       </div>
     </div>
-    <!-- 3 -->
+
+    <!-- Jilin University -->
     <div class="timeline-item">
       <div class="timeline-dot"></div>
-      <div class="timeline-content">
-        <div class="timeline-date">2018 - 2020</div>
-        <div class="timeline-title">M.S. in Electrical Engineering</div>
-        <div class="timeline-location">Stevens Institute of Technology</div>
+      <div class="timeline-icon">
+        <img src="../img/jilin-logo.png" alt="Jilin University" class="school-icon">
       </div>
-    </div>
-    <!-- 4 -->
-    <div class="timeline-item">
-      <div class="timeline-dot"></div>
       <div class="timeline-content">
-        <div class="timeline-date">2013 - 2017</div>
+        <div class="timeline-date">2014 - 2018</div>
         <div class="timeline-title">B.Eng. in Communication Engineering</div>
         <div class="timeline-location">Jilin University, China</div>
       </div>
@@ -102,49 +103,73 @@ My work integrates AI/ML-driven methodologies with advanced wireless techniques 
 .timeline-container {
   max-width: 900px;
   margin: 0 auto;
-  padding: 10px 0; /* 减小顶部底部内边距 */
+  padding: 10px 0;
 }
 
 /* 时间轴主线 */
 .timeline {
   position: relative;
-  padding-left: 50px;
+  padding-left: 80px; /* 增加左侧空间放置图标 */
 }
 
 .timeline::before {
   content: '';
   position: absolute;
-  left: 20px;
-  top: 10px; /* 调整顶部起始位置 */
-  bottom: 10px; /* 调整底部结束位置 */
+  left: 45px; /* 调整线条位置 */
+  top: 10px;
+  bottom: 10px;
   width: 2px;
   background: #e0e0e0;
 }
 
-/* 时间轴项目 - 减小间距 */
+/* 时间轴项目 */
 .timeline-item {
   position: relative;
-  margin-bottom: 20px; /* 从30px减小到20px */
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
 }
 
 .timeline-dot {
   position: absolute;
-  left: -38px;
-  top: 5px;
+  left: -65px; /* 调整圆点位置 */
+  top: 15px;
   width: 12px;
   height: 12px;
   border-radius: 50%;
   background: #ff6b6b;
   border: 3px solid #fff;
   box-shadow: 0 0 0 2px #ff6b6b;
+  z-index: 2;
+}
+
+.timeline-icon {
+  position: absolute;
+  left: -70px; /* 图标位置 */
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   z-index: 1;
 }
 
+.school-icon {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
 .timeline-content {
-  padding: 15px 20px; /* 减小垂直内边距 */
+  flex: 1;
+  padding: 15px 20px;
   background: #fff;
   border-radius: 6px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08); /* 更柔和的阴影 */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
