@@ -47,8 +47,153 @@ My work integrates AI/ML-driven methodologies with advanced wireless techniques 
 - **Security:** Physical Layer Security, Privacy preserving, Distributed security
 
 ---
-## Experience
-I received my Bachelor's Degree from [Jilin University](https://www.jlu.edu.cn/), department of [Communication Engineering](https://dce.jlu.edu.cn/). Then I finished my Master's Degree at [Stevens Institute of Technology](https://www.stevens.edu/), department of Electrical Engineering. I joined [AISecLab](https://www.stevens.edu/icns-center-for-innovative-computing-and-networked-systems/aiseclab) at SIT, and been supervised by Prof. Shucheng Yu.
+## <img src="../img/career.png" height="50px"> Experience
+
+<div class="timeline-container">
+  <div class="timeline">
+    <!-- 时间轴项目 1 -->
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <div class="timeline-date">Fall 2025 - Present</div>
+        <div class="timeline-title">Assistant Professor</div>
+        <div class="timeline-location">University of Hawaii at Mānoa, Department of ECE</div>
+        <div class="timeline-description">
+          Tenure-track position focusing on wireless communication, AI/ML for networks, and security.
+        </div>
+      </div>
+    </div>
+
+    <!-- 时间轴项目 2 -->
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <div class="timeline-date">2021 - 2025</div>
+        <div class="timeline-title">Ph.D. in Electrical Engineering</div>
+        <div class="timeline-location">Stevens Institute of Technology</div>
+        <div class="timeline-description">
+          Advised by Prof. Shucheng Yu at <a href="https://www.stevens.edu/icns-center-for-innovative-computing-and-networked-systems/aiseclab" target="_blank">AISecLab</a>.
+          Research on AI-driven wireless security and sensing systems.
+        </div>
+      </div>
+    </div>
+
+    <!-- 时间轴项目 3 -->
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <div class="timeline-date">2018 - 2021</div>
+        <div class="timeline-title">M.S. in Electrical Engineering</div>
+        <div class="timeline-location">Stevens Institute of Technology</div>
+      </div>
+    </div>
+
+    <!-- 时间轴项目 4 -->
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <div class="timeline-date">2014 - 2018</div>
+        <div class="timeline-title">B.Eng. in Communication Engineering</div>
+        <div class="timeline-location">Jilin University, China</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+/* 时间轴容器 */
+.timeline-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+/* 时间轴主线 */
+.timeline {
+  position: relative;
+  padding-left: 50px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #e0e0e0;
+}
+
+/* 时间轴项目 */
+.timeline-item {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -38px;
+  top: 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ff6b6b;
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 2px #ff6b6b;
+  z-index: 1;
+}
+
+.timeline-content {
+  padding: 20px;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.timeline-content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.timeline-date {
+  font-size: 14px;
+  color: #ff6b6b;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.timeline-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.timeline-location {
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.timeline-description {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .timeline {
+    padding-left: 30px;
+  }
+  
+  .timeline-dot {
+    left: -28px;
+  }
+}
+</style>
 
 ---
 
