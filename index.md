@@ -33,7 +33,7 @@ Email: xxue2[at]stevens[dot]edu
 Phone: (TBD)
 ```
 
-## <img src="../img/career.png" height="50px"> About Me
+## <img src="../img/resume.png" height="50px"> About Me
  I am an Assistant Professor in the Department of Electrical and Computer Engineering at the University of Hawaii at Mānoa. My research lies at the intersection of wireless communication, cybersecurity, and artificial intelligence. Specifically, I focus on designing secure, intelligent, and efficient wireless systems for 5G, Sub-6G, NextG, and beyond.
 
 My work integrates AI/ML-driven methodologies with advanced wireless techniques such as Physical Layer Security (PLS), millimeter-wave (mmWave) sensing, and Integrated Sensing and Communication (ISAC) to enable real-time, contactless, and privacy-preserving applications. I also explore distributed IoT systems secured by confidential computing, as well as Open Radio Access Networks (O-RAN) with a focus on AI-native RAN architecture, security hardening, and standardization.
@@ -47,7 +47,7 @@ My work integrates AI/ML-driven methodologies with advanced wireless techniques 
 - **Security:** Physical Layer Security, Privacy preserving, Distributed security
 
 ---
-## <img src="../img/career.png" height="50px"> Experience
+## <img src="../img/footsteps.png" height="50px"> Experience
 
 <div class="timeline-container">
   <div class="timeline">
@@ -230,7 +230,7 @@ Emails without this subject format are likely to be missed during filtering.
 
 ---
 
-## <img src="../img/news.png" height="50px"> News
+## <img src="../img/hotnews.png" height="50px"> News
 <div class="news-box">
   <div class="news-scroll">
     <!-- 项目列表 -->
@@ -253,4 +253,4 @@ Emails without this subject format are likely to be missed during filtering.
 
 
 
-## <img src="../img/money.png" height="50px"> Grants
+## <img src="../img/grants.png" height="50px"> Grants
