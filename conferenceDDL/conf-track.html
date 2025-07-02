@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -75,6 +74,7 @@
 <body>
 
 <h1>📅 Conference Deadlines</h1>
+
 <div class="toolbar">
   <input type="text" id="search" placeholder="Search by name...">
   <button data-sub="ALL">All</button>
@@ -89,6 +89,7 @@
   <thead>
     <tr>
       <th>Conference</th>
+      <th>Host Time</th>
       <th>Location</th>
       <th>Abstract Deadline</th>
       <th>Submission Deadline</th>
@@ -103,22 +104,29 @@
 let confs = [];
 let currentSub = "ALL";
 
-async function fetchData() {
-  const res = await fetch('data.json');
-  confs = await res.json();
-  render();
-}
-
 function formatDate(dateStr) {
-  if (!dateStr) return '';
-  if (dateStr.includes('<strike>')) return `<span class="strikethrough">${dateStr.replace(/<\/?strike>/g, '')}</span>`;
-
   try {
     const date = new Date(dateStr);
+    if (isNaN(date)) return dateStr;
     const options = { year: 'numeric', month: 'short', day: '2-digit' };
-    return isNaN(date) ? dateStr : date.toLocaleDateString('en-US', options);
+    return date.toLocaleDateString('en-US', options);
   } catch {
     return dateStr;
+  }
+}
+
+function formatHostTime(start, end) {
+  try {
+    const s = new Date(start);
+    const e = new Date(end);
+    if (isNaN(s) || isNaN(e)) return '';
+    const month = s.toLocaleDateString('en-US', { month: 'short' });
+    const sd = s.getDate().toString().padStart(2, '0');
+    const ed = e.getDate().toString().padStart(2, '0');
+    const year = s.getFullYear();
+    return `${month} ${sd}–${ed}, ${year}`;
+  } catch {
+    return '';
   }
 }
 
@@ -128,7 +136,6 @@ function render() {
   const now = new Date();
   tbody.innerHTML = "";
 
-  // Sort by Submission Deadline (or fallback deadline)
   const sorted = [...confs].sort((a, b) => {
     const da = new Date(a['Submission Deadline'] || a.deadline || '2100-01-01');
     const db = new Date(b['Submission Deadline'] || b.deadline || '2100-01-01');
@@ -142,10 +149,9 @@ function render() {
            name.toLowerCase().includes(query);
   }).forEach(c => {
     let deadline = c.deadline;
-    let deadlineText = c['Submission Deadline'] || '';
-
+    const deadlineText = c['Submission Deadline'] || '';
     if (!deadline && deadlineText) {
-      const dateMatch = deadlineText.match(/(\w{3} \d{1,2} \d{4})/);
+      const dateMatch = deadlineText.match(/\\w{3} \\d{1,2} \\d{4}/);
       if (dateMatch) deadline = new Date(dateMatch[0]).toISOString();
     }
 
@@ -157,9 +163,11 @@ function render() {
       cls = days < 0 ? "red" : days <= 20 ? "red" : days <= 60 ? "orange" : "green";
     }
 
+    const hostTime = formatHostTime(c['Start Date'], c['End Date']);
     const row = `
       <tr>
         <td><a href="\${c.link || '#'}" target="_blank">\${c.name || c.Conference}</a></td>
+        <td>\${hostTime}</td>
         <td>\${c.Location || ''}</td>
         <td>\${formatDate(c['Abstract Deadline'] || '')}</td>
         <td>\${formatDate(c['Submission Deadline'] || deadline)}</td>
@@ -178,8 +186,14 @@ document.querySelectorAll(".toolbar button").forEach(btn => {
 });
 document.getElementById("search").addEventListener("input", render);
 
+async function fetchData() {
+  const res = await fetch('data.json');
+  confs = await res.json();
+  render();
+}
+
 fetchData();
-setInterval(() => render(), 3600000);
+setInterval(render, 3600000);
 </script>
 
 </body>
