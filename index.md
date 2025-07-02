@@ -107,13 +107,13 @@ My work integrates AI/ML-driven methodologies with advanced wireless techniques 
 /* 时间轴主线 */
 .timeline {
   position: relative;
-  padding-left: 80px; /* 增加左侧空间放置图标 */
+  padding-left: 100px;
 }
 
 .timeline::before {
   content: '';
   position: absolute;
-  left: 45px; /* 调整线条位置 */
+  left: 60px;
   top: 10px;
   bottom: 10px;
   width: 2px;
@@ -130,7 +130,7 @@ My work integrates AI/ML-driven methodologies with advanced wireless techniques 
 
 .timeline-dot {
   position: absolute;
-  left: -65px; /* 调整圆点位置 */
+  left: -50px;
   top: 15px;
   width: 12px;
   height: 12px;
@@ -143,7 +143,7 @@ My work integrates AI/ML-driven methodologies with advanced wireless techniques 
 
 .timeline-icon {
   position: absolute;
-  left: -70px; /* 图标位置 */
+  left: -85px;
   top: 5px;
   width: 40px;
   height: 40px;
@@ -206,11 +206,19 @@ My work integrates AI/ML-driven methodologies with advanced wireless techniques 
 /* 响应式设计 */
 @media (max-width: 768px) {
   .timeline {
-    padding-left: 30px;
+    padding-left: 60px;
+  }
+  
+  .timeline::before {
+    left: 30px;
   }
   
   .timeline-dot {
-    left: -28px;
+    left: -30px;
+  }
+  
+  .timeline-icon {
+    left: -60px;
   }
 }
 </style>
