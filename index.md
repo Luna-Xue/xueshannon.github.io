@@ -119,13 +119,13 @@ Emails without this subject format are likely to be missed during filtering.
 /* 时间轴主线 */
 .timeline {
   position: relative;
-  padding-left: 40px; /* 减少左侧空间 */
+  padding-left: 40px;
 }
 
 .timeline::before {
   content: '';
   position: absolute;
-  left: 15px; /* 轴线位置调整 */
+  left: 15px;
   top: 0;
   bottom: 0;
   width: 2px;
@@ -138,15 +138,15 @@ Emails without this subject format are likely to be missed during filtering.
   margin-bottom: 25px;
   display: flex;
   align-items: flex-start;
-  min-height: 70px;
-  padding-left: 60px; /* 为红点和图标预留空间 */
+  min-height: 80px;
+  padding-left: 65px;
 }
 
-/* 红点样式 - 在竖线左侧 */
+/* 红点样式 */
 .timeline-dot {
   position: absolute;
-  left: -25px; /* 在竖线左侧 */
-  top: 30px;
+  left: 14px;
+  top: 35px;
   width: 12px;
   height: 12px;
   border-radius: 50%;
@@ -154,15 +154,16 @@ Emails without this subject format are likely to be missed during filtering.
   border: 3px solid #fff;
   box-shadow: 0 0 0 2px #ff6b6b;
   z-index: 2;
+  transform: translateX(-50%);
 }
 
-/* 图标样式 - 在竖线右侧 */
+/* 图标样式 */
 .timeline-icon {
   position: absolute;
-  left: 25px; /* 在竖线右侧 */
-  top: 20px;
-  width: 40px; /* 缩小尺寸 */
-  height: 40px;
+  left: 35px;
+  top: 25px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   background: white;
   display: flex;
@@ -173,21 +174,72 @@ Emails without this subject format are likely to be missed during filtering.
 }
 
 .school-icon {
-  width: 35px; /* 缩小尺寸 */
-  height: 35px;
+  width: 45px;
+  height: 45px;
   object-fit: contain;
 }
 
+/* 内容区域 */
 .timeline-content {
   flex: 1;
-  padding: 15px 20px;
+  padding: 20px;
   background: #fff;
-  border-radius: 6px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border-radius: 8px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.1);
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-/* 响应式设计 - 确保手机版无重叠 */
+.timeline-content:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+/* 日期样式 - 强调 */
+.timeline-date {
+  font-size: 14px;
+  color: #ff6b6b;
+  font-weight: 700;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+/* 标题样式 - 最突出 */
+.timeline-title {
+  font-size: 19px;
+  font-weight: 800;
+  margin-bottom: 6px;
+  color: #2c3e50;
+  line-height: 1.3;
+}
+
+/* 地点样式 - 次级信息 */
+.timeline-location {
+  font-size: 15px;
+  color: #7f8c8d;
+  margin-bottom: 12px;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+}
+
+.timeline-location:before {
+  content: "📍";
+  margin-right: 6px;
+  font-size: 14px;
+}
+
+/* 描述样式 - 详细内容 */
+.timeline-description {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #f1f1f1;
+}
+
+/* 响应式设计 */
 @media (max-width: 768px) {
   .timeline {
     padding-left: 20px;
@@ -198,29 +250,44 @@ Emails without this subject format are likely to be missed during filtering.
   }
   
   .timeline-item {
-    padding-left: 45px;
-    min-height: 60px;
+    padding-left: 50px;
+    min-height: 70px;
   }
   
   .timeline-dot {
-    left: -15px;
-    top: 25px;
+    left: 9px;
+    top: 30px;
+    transform: translateX(-50%);
   }
   
   .timeline-icon {
-    left: 15px;
-    top: 15px;
+    left: 25px;
+    top: 20px;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .school-icon {
     width: 35px;
     height: 35px;
   }
   
-  .school-icon {
-    width: 30px;
-    height: 30px;
+  .timeline-content {
+    padding: 15px;
   }
   
-  .timeline-content {
-    padding: 12px 15px;
+  .timeline-title {
+    font-size: 17px;
+  }
+  
+  .timeline-location {
+    font-size: 14px;
+  }
+  
+  .timeline-description {
+    font-size: 14px;
+    padding-top: 10px;
+    margin-top: 10px;
   }
 }
 </style>
