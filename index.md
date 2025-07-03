@@ -67,7 +67,7 @@ Emails without this subject format are likely to be missed during filtering.
     <div class="timeline-item">
       <div class="timeline-dot"></div>
       <div class="timeline-icon">
-        <img src="../img/uhm.jpg" alt="University of Hawaii at Mānoa" class="school-icon">
+        <img src="../img/uhm.png" alt="University of Hawaii at Mānoa" class="school-icon">
       </div>
       <div class="timeline-content">
         <div class="timeline-date">Fall 2025 - Present</div>
@@ -97,7 +97,7 @@ Emails without this subject format are likely to be missed during filtering.
     <div class="timeline-item">
       <div class="timeline-dot"></div>
       <div class="timeline-icon">
-        <img src="../img/JLU.jpg" alt="Jilin University" class="school-icon">
+        <img src="../img/JLU.png" alt="Jilin University" class="school-icon">
       </div>
       <div class="timeline-content">
         <div class="timeline-date">2013- 2017</div>
