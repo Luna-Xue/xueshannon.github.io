@@ -6,13 +6,13 @@ title: People
 ## 🤝 Collaborators
 - **[Prof. Shucheng Yu](https://www.stevens.edu/profile/syu19)** - Associate Professor, Stevens Institute of Technology
 - **[Prof. Min Song](https://www.stevens.edu/profile/msong6)** - Professor, Stevens Institute of Technology
-- **[Moh Khalid Hasan]()** - Assistant Professor, James Madison University
 - **[Prof. Laxima Niure Kandel](https://faculty.erau.edu/Laxima.NiureKandel)** - Assistant Professor, Embry-Riddle Aeronautical University
 - **[Prof. Yulong Zou](https://scholar.google.com/citations?user=v9zFuDEAAAAJ&hl=en)** - Professor, Nanjing University of Posts and Telecommunications
 - **[Prof. Hongbin Li](https://www.stevens.edu/profile/hli)** - Professor, Stevens Institute of Technology
 - **[Prof. K.P. (Suba) Subbalakshmi](https://www.stevens.edu/profile/ksubbala)** - Professor, Stevens Institute of Technology
 - **[Prof. Ying Wang](https://www.stevens.edu/profile/ywang6)** - Associate Professor, Stevens Institute of Technology
 - **[Prof. Yao Zheng](https://www2.hawaii.edu/~yaozheng/)** - Associate Professor, University of Hawaii at Mānoa
+- **[Prof. Moh Khalid Hasan]()** - Assistant Professor, James Madison University
 
 
 ## 🎓 Mentorships
