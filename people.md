@@ -11,6 +11,8 @@ title: People
 - **[Prof. Hongbin Li](https://www.stevens.edu/profile/hli)** - Professor, Stevens Institute of Technology
 - **[Prof. K.P. (Suba) Subbalakshmi](https://www.stevens.edu/profile/ksubbala)** - Professor, Stevens Institute of Technology
 - **[Prof. Ying Wang](https://www.stevens.edu/profile/ywang6)** - Associate Professor, Stevens Institute of Technology
+- **[Prof. Yao Zheng](https://www2.hawaii.edu/~yaozheng/)** - Associate Professor, University of Hawaii at Mānoa
+
 
 ## 🎓 Mentorships
 - **[2024-2025 AFRL Software Design Radio (SDR) Challenge](https://wbi-innovates.zohobackstage.com/afrlsdr)** 
