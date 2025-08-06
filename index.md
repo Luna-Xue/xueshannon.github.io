@@ -29,7 +29,7 @@ subtitle: Assistant Professor
 ## <img src="../img/contact.png" height="50px"> Contact
 
 ```
-Email: xxue2[at]stevens[dot]edu
+Email: xxue[at]hawaii[dot]edu
 Phone: (TBD)
 ```
 
