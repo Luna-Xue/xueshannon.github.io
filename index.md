@@ -30,7 +30,7 @@ subtitle: Assistant Professor
 
 ```
 Email: xxue[at]hawaii[dot]edu
-Phone: (TBD)
+Address: 2540 Dole Street, Holmes Hall 436, Honolulu, HI 96822 USA 
 ```
 
 ## <img src="../img/resume.png" height="35px"> About Me
