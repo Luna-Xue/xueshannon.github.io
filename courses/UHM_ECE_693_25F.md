@@ -12,7 +12,7 @@ Location: TBD
 
 ---
 
-## 📆 Class Schedule
+## Class Schedule
 
 | Week | Date         | Topic                                   | Notes             |
 |------|--------------|-----------------------------------------|-------------------|
@@ -34,7 +34,7 @@ Location: TBD
 
 ---
 
-## 📝 Assignments & Projects
+## Assignments & Projects
 
 - **HW1:** Threat Modeling in 5G Wireless (Due Week 3)  
 - **HW2:** PHY-layer Authentication Simulation (Due Week 6)  
@@ -47,7 +47,7 @@ Location: TBD
 
 ---
 
-## 📚 Additional Materials
+## Additional Materials
 
 - 🖥️ Lecture slides: [One Drive Folder](#) *(TBA)*  
 - 📁 Project template & datasets: [GitHub Repo](#) *(TBA)*  
