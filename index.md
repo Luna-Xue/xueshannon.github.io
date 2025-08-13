@@ -2,6 +2,7 @@
 layout: page
 title: Xiaochan Xue
 subtitle: Assistant Professor
+subtitle: University of Hawaiʻi at Mānoa
 ---
 
 <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
