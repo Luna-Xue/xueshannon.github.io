@@ -4,7 +4,7 @@ title: People
 ---
 
 ## 🤝 Collaborators
-- **[Prof. Shucheng Yu](https://www.stevens.edu/profile/syu19)** - Associate Professor, Stevens Institute of Technology
+- **[Prof. Shucheng Yu](https://www.stevens.edu/profile/syu19)** - Associate Professor, Yeshiva University
 - **[Prof. Min Song](https://www.stevens.edu/profile/msong6)** - Professor, Stevens Institute of Technology
 - **[Prof. Laxima Niure Kandel](https://faculty.erau.edu/Laxima.NiureKandel)** - Assistant Professor, Embry-Riddle Aeronautical University
 - **[Prof. Yulong Zou](https://scholar.google.com/citations?user=v9zFuDEAAAAJ&hl=en)** - Professor, Nanjing University of Posts and Telecommunications
