@@ -19,7 +19,7 @@ title: People
 - **[2024-2025 AFRL Software Design Radio (SDR) Challenge](https://wbi-innovates.zohobackstage.com/afrlsdr)** 
     - Members (Undergraduate): Shaun George, Lenny Yanza, Karen Caguana, Xiangxi (Mall) Wang
     - Member (High School): Akshat Santhana Gopalan
-- **[Saurabh Raman Parkar](https://github.com/nexuseli18)** - Master, AI Integrated Sensing
+- **[Saurabh Raman Parkar](https://srparkar.github.io/)** - Master, AI Integrated Sensing
 - **[Ruoxi Li]()** - Master, AI Integrated Sensing
 - **[Beula Jose]()** - Master, Wireless Security
 - **[Zhifan Jiang]()** - Master, SDR

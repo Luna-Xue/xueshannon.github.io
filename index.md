@@ -102,7 +102,7 @@ Emails without this subject format are likely to be missed during filtering.
       </div>
       <div class="timeline-content">
         <div class="timeline-date">2013- 2017</div>
-        <div class="timeline-title">B.Eng. in Communication Engineering</div>
+        <div class="timeline-title">B.S. in Communication Engineering</div>
         <div class="timeline-location">Jilin University, China</div>
       </div>
     </div>
