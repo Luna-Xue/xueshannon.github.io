@@ -15,8 +15,8 @@ Location: [KUY 407](https://manoa.hawaii.edu/campus-environments/kuykendall-hall
 
 <div markdown="1" style="font-size: 13px;">
 
-| Week |       Date       |                 Topic                   |       Notes       |
-|:--:|:------------:|:---------------------------------------:|:-----------------:|
+|Week|       Date       |                Topic                  |       Notes       |
+|:-:|:------------:|:-------------------------------------:|:-----------------:|
 | 1  | Aug 25 & 27   | Introduction to Wireless Threats        | Overview & Tools  |
 | 2  | Sep 3         | Security Challenges in 5G/NextG         | (Sep 1 no class)  |
 | 3  | Sep 8 & 10    | Physical Layer Security Fundamentals    | HW1 Assigned      |
