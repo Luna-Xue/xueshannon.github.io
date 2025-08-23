@@ -8,7 +8,7 @@ title: ECE 693E
 Instructor: Dr. Xiaochan Xue  
 Email: xxue[at]hawaii[dot]edu
 Lecture Time:  Mondy & Wednesday  9:00 am - 10:15 am
-Location: KUY 407
+Location: [KUY 407](https://manoa.hawaii.edu/campus-environments/kuykendall-hall/)
 
 ---
 

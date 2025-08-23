@@ -3,7 +3,7 @@ layout: page
 title: Teaching
 ---
 ## University of Hawaii at Mānoa
-- [ECE 693 - 2025 Fall](courses/UHM_ECE_693_25F.md)
+- [ECE 693E - 2025 Fall](courses/UHM_ECE_693_25F.md)
 
 ## Stevens Institute of Technology
 - [CPE/EE 691 - Infomation System Security](courses/SIT_CPE_691_25F.md) (WebCampus)
