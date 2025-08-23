@@ -13,7 +13,7 @@ Location: [KUY 407](https://manoa.hawaii.edu/campus-environments/kuykendall-hall
 
 ## Class Schedule
 
-<small>
+<div style="font-size: 13px;">
 | Week |       Date       |                 Topic                   |       Notes       |
 |:--:|:------------:|:---------------------------------------:|:-----------------:|
 | 1  | Aug 25–29    | Introduction to Wireless Threats        | Overview & Tools  |
@@ -31,7 +31,7 @@ Location: [KUY 407](https://manoa.hawaii.edu/campus-environments/kuykendall-hall
 | 13 | Nov 17–21    | Emerging Trends: ISAC, RIS, LLM in PHY  |                   |
 | 14 | Nov 24–28    | Thanksgiving Break                      | No Class          |
 | 15 | Dec 1–5      | Final Presentations                     |                   |
-</small>
+</div>
 
 ---
 
