@@ -17,21 +17,22 @@ Location: [KUY 407](https://manoa.hawaii.edu/campus-environments/kuykendall-hall
 
 | Week |       Date       |                 Topic                   |       Notes       |
 |:--:|:------------:|:---------------------------------------:|:-----------------:|
-| 1  | Aug 25–29    | Introduction to Wireless Threats        | Overview & Tools  |
-| 2  | Sep 1–5      | Security Challenges in 5G/NextG         |                   |
-| 3  | Sep 8–12     | Physical Layer Security Fundamentals    | HW1 Assigned      |
-| 4  | Sep 15–19    | Wireless Sensing & ISAC                 |                   |
-| 5  | Sep 22–26    | mmWave Vulnerabilities                  | Lab 1             |
-| 6  | Sep 29–Oct 3 | O-RAN Architecture & Trust              | HW2 Assigned      |
-| 7  | Oct 6–10     | Federated Learning + Privacy            |                   |
-| 8  | Oct 13–17    | Midterm Review                          |                   |
-| 9  | Oct 20–24    | Midterm Exam                            |                   |
-| 10 | Oct 27–31    | Secure AI-RAN Systems                   | HW3               |
-| 11 | Nov 3–7      | Attacks & Defense in Open Networks      |                   |
-| 12 | Nov 10–14    | Final Project Planning                  | Proposal Due      |
-| 13 | Nov 17–21    | Emerging Trends: ISAC, RIS, LLM in PHY  |                   |
-| 14 | Nov 24–28    | Thanksgiving Break                      | No Class          |
-| 15 | Dec 1–5      | Final Presentations                     |                   |
+| 1  | Aug 25 & 27   | Introduction to Wireless Threats        | Overview & Tools  |
+| 2  | Sep 3         | Security Challenges in 5G/NextG         | (Sep 1 no class)  |
+| 3  | Sep 8 & 10    | Physical Layer Security Fundamentals    | HW1 Assigned      |
+| 4  | Sep 15 & 17   | Wireless Sensing & ISAC                 |                   |
+| 5  | Sep 22 & 24   | mmWave Vulnerabilities                  | Lab 1             |
+| 6  | Sep 29 & Oct 1| O-RAN Architecture & Trust              | HW2 Assigned      |
+| 7  | Oct 6 & 8     | Federated Learning + Privacy            |                   |
+| 8  | Oct 13 & 15   | Midterm Review                          |                   |
+| 9  | Oct 20 & 22   | Midterm Exam                            |                   |
+| 10 | Oct 27 & 29   | Secure AI-RAN Systems                   | HW3               |
+| 11 | Nov 3 & 5     | Attacks & Defense in Open Networks      |                   |
+| 12 | Nov 10 & 12   | Final Project Planning                  | Proposal Due      |
+| 13 | Nov 17 & 19   | Emerging Trends: ISAC, RIS, LLM in PHY  |                   |
+| 14 | Nov 24 & 26   |                                         |                   |
+| 15 | Dec 1 & 3     |                                         |                   |
+| 16 | Dec 8 & 9     | Final Presentations                     |                   |
 
 </div>
 
