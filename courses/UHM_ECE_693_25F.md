@@ -7,6 +7,7 @@ title: ECE 693E
 **Fall 2025 – University of Hawaii at Mānoa**  
 Instructor: Dr. Xiaochan Xue  
 Email: xxue[at]hawaii[dot]edu
+
 Lecture Time:  Mondy & Wednesday  9:00 am - 10:15 am
 Location: [KUY 407](https://manoa.hawaii.edu/campus-environments/kuykendall-hall/)
 
@@ -14,8 +15,8 @@ Location: [KUY 407](https://manoa.hawaii.edu/campus-environments/kuykendall-hall
 
 ## Class Schedule
 
-| Week | Date         | Topic                                   | Notes             |
-|------|--------------|-----------------------------------------|-------------------|
+| Week | Date           | Topic                                   | Notes             |
+|------|----------------|-----------------------------------------|-------------------|
 | 1    | Aug 25–Aug 29 | Introduction to Wireless Threats       | Overview & Tools  |
 | 2    | Sep 1–Sep 5   | Security Challenges in 5G/NextG        |                   |
 | 3    | Sep 8–Sep 12  | Physical Layer Security Fundamentals   | HW1 Assigned      |
