@@ -15,7 +15,7 @@ Location: [KUY 407](https://manoa.hawaii.edu/campus-environments/kuykendall-hall
 
 <div markdown="1" style="font-size: 13px;">
 
-| Week | Date         | Topic                                      | Milestones / Notes   |
+| Week | Date         | Topic                                       | Milestones / Notes   |
 |:---:|:-------------:|:--------------------------------------------|:---------------------|
 | 1   | Aug 25 & 27   | Course Introduction & Communication Basics  | Overview & Tools     |
 | 2   | Sep 3         | Wireless Channel Characteristics, OFDM/MIMO | (Sep 1 no class)     |
@@ -32,7 +32,7 @@ Location: [KUY 407](https://manoa.hawaii.edu/campus-environments/kuykendall-hall
 | 13  | Nov 17 & 19   | Emerging Trends II: AI for PHY & NextG RAN  | Midstage Report Due  |
 | 14  | Nov 24 & 26   | Attacks & Defenses in Open Networks         |                      |
 | 15  | Dec 1 & 3     | Advanced Topics: LLM for Security & RAN     |                      |
-| 16  | Dec 8 & 9     | Final Project Presentations                 | Presentation Due     |
+| 16  | Dec 8 & 10    | Final Project Presentations                 | Presentation Due     |
 
 </div>
 
