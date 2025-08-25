@@ -15,7 +15,7 @@ Location: [KUY 407](https://manoa.hawaii.edu/campus-environments/kuykendall-hall
 
 <div markdown="1" style="font-size: 13px;">
 
-| Week | Date         | Topic                                       | Milestones / Notes   |
+| Week | Date         |                    Topic                    |  Milestones / Notes  |
 |:---:|:-------------:|:--------------------------------------------|:---------------------|
 | 1   | Aug 25 & 27   | Course Introduction & Communication Basics  | Overview & Tools     |
 | 2   | Sep 3         | Wireless Channel Characteristics, OFDM/MIMO | (Sep 1 no class)     |
