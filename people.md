@@ -93,10 +93,12 @@ title: People
 }
 
 .mentorship-section {
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-    border-radius: 20px;
-    padding: 30px;
-    margin-bottom: 30px;
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    border-left: 4px solid #3498db;
 }
 
 .mentorship-header {
