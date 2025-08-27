@@ -197,9 +197,19 @@ title: People
     
     <div class="phd-students-section">
         <div class="phd-students-content">
-            <h3>Current Ph.D. Students</h3>
             <ul>
-                <li><a href="https://srparkar.github.io/" target="_blank">Saurabh Raman Parkar</a> - AI Integrated Sensing</li>
+                <li>
+                    <div class="profile-avatar">
+                        <img src="img/avatar-placeholder.jpg" alt="Saurabh Raman Parkar" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <span style="display: none;">👨‍🎓</span>
+                    </div>
+                    <div class="profile-info">
+                        <div class="profile-name">
+                            <a href="https://srparkar.github.io/" target="_blank">Saurabh Raman Parkar</a>
+                        </div>
+                        <div class="profile-description">AI Integrated Sensing</div>
+                    </div>
+                </li>
             </ul>
         </div>
     </div>
@@ -212,15 +222,112 @@ title: People
         <div class="collaborators-content">
             <h3>Research Collaborators</h3>
             <ul>
-                <li><a href="https://www.yu.edu/katz/faculty#:~:text=Liyang%20Yan%27s%20Bio-,Shucheng%20Yu,-AI" target="_blank">Prof. Shucheng Yu</a> - Associate Professor, Yeshiva University</li>
-                <li><a href="https://www.stevens.edu/profile/msong6" target="_blank">Prof. Min Song</a> - Professor, Stevens Institute of Technology</li>
-                <li><a href="https://faculty.erau.edu/Laxima.NiureKandel" target="_blank">Prof. Laxima Niure Kandel</a> - Assistant Professor, Embry-Riddle Aeronautical University</li>
-                <li><a href="https://scholar.google.com/citations?user=v9zFuDEAAAAJ&hl=en" target="_blank">Prof. Yulong Zou</a> - Professor, Nanjing University of Posts and Telecommunications</li>
-                <li><a href="https://www.stevens.edu/profile/hli" target="_blank">Prof. Hongbin Li</a> - Professor, Stevens Institute of Technology</li>
-                <li><a href="https://www.stevens.edu/profile/ksubbala" target="_blank">Prof. K.P. (Suba) Subbalakshmi</a> - Professor, Stevens Institute of Technology</li>
-                <li><a href="https://www.stevens.edu/profile/ywang6" target="_blank">Prof. Ying Wang</a> - Associate Professor, Stevens Institute of Technology</li>
-                <li><a href="https://www2.hawaii.edu/~yaozheng/" target="_blank">Prof. Yao Zheng</a> - Associate Professor, University of Hawaii at Mānoa</li>
-                <li>Prof. Moh Khalid Hasan - Assistant Professor, James Madison University</li>
+                <li>
+                    <div class="profile-avatar">
+                        <img src="img/avatar-placeholder.jpg" alt="Prof. Shucheng Yu" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <span style="display: none;">👨‍🏫</span>
+                    </div>
+                    <div class="profile-info">
+                        <div class="profile-name">
+                            <a href="https://www.yu.edu/katz/faculty#:~:text=Liyang%20Yan%27s%20Bio-,Shucheng%20Yu,-AI" target="_blank">Prof. Shucheng Yu</a>
+                        </div>
+                        <div class="profile-description">Associate Professor, Yeshiva University</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="profile-avatar">
+                        <img src="img/avatar-placeholder.jpg" alt="Prof. Min Song" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <span style="display: none;">👨‍🏫</span>
+                    </div>
+                    <div class="profile-info">
+                        <div class="profile-name">
+                            <a href="https://www.stevens.edu/profile/msong6" target="_blank">Prof. Min Song</a>
+                        </div>
+                        <div class="profile-description">Professor, Stevens Institute of Technology</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="profile-avatar">
+                        <img src="img/avatar-placeholder.jpg" alt="Prof. Laxima Niure Kandel" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <span style="display: none;">👩‍🏫</span>
+                    </div>
+                    <div class="profile-info">
+                        <div class="profile-name">
+                            <a href="https://faculty.erau.edu/Laxima.NiureKandel" target="_blank">Prof. Laxima Niure Kandel</a>
+                        </div>
+                        <div class="profile-description">Assistant Professor, Embry-Riddle Aeronautical University</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="profile-avatar">
+                        <img src="img/avatar-placeholder.jpg" alt="Prof. Yulong Zou" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <span style="display: none;">👨‍🏫</span>
+                    </div>
+                    <div class="profile-info">
+                        <div class="profile-name">
+                            <a href="https://scholar.google.com/citations?user=v9zFuDEAAAAJ&hl=en" target="_blank">Prof. Yulong Zou</a>
+                        </div>
+                        <div class="profile-description">Professor, Nanjing University of Posts and Telecommunications</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="profile-avatar">
+                        <img src="img/avatar-placeholder.jpg" alt="Prof. Hongbin Li" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <span style="display: none;">👨‍🏫</span>
+                    </div>
+                    <div class="profile-info">
+                        <div class="profile-name">
+                            <a href="https://www.stevens.edu/profile/hli" target="_blank">Prof. Hongbin Li</a>
+                        </div>
+                        <div class="profile-description">Professor, Stevens Institute of Technology</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="profile-avatar">
+                        <img src="img/avatar-placeholder.jpg" alt="Prof. K.P. (Suba) Subbalakshmi" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <span style="display: none;">👩‍🏫</span>
+                    </div>
+                    <div class="profile-info">
+                        <div class="profile-name">
+                            <a href="https://www.stevens.edu/profile/ksubbala" target="_blank">Prof. K.P. (Suba) Subbalakshmi</a>
+                        </div>
+                        <div class="profile-description">Professor, Stevens Institute of Technology</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="profile-avatar">
+                        <img src="img/avatar-placeholder.jpg" alt="Prof. Ying Wang" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <span style="display: none;">👩‍🏫</span>
+                    </div>
+                    <div class="profile-info">
+                        <div class="profile-name">
+                            <a href="https://www.stevens.edu/profile/ywang6" target="_blank">Prof. Ying Wang</a>
+                        </div>
+                        <div class="profile-description">Associate Professor, Stevens Institute of Technology</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="profile-avatar">
+                        <img src="img/avatar-placeholder.jpg" alt="Prof. Yao Zheng" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <span style="display: none;">👨‍🏫</span>
+                    </div>
+                    <div class="profile-info">
+                        <div class="profile-name">
+                            <a href="https://www2.hawaii.edu/~yaozheng/" target="_blank">Prof. Yao Zheng</a>
+                        </div>
+                        <div class="profile-description">Associate Professor, University of Hawaii at Mānoa</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="profile-avatar">
+                        <img src="img/avatar-placeholder.jpg" alt="Prof. Moh Khalid Hasan" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <span style="display: none;">👨‍🏫</span>
+                    </div>
+                    <div class="profile-info">
+                        <div class="profile-name">Prof. Moh Khalid Hasan</div>
+                        <div class="profile-description">Assistant Professor, James Madison University</div>
+                    </div>
+                </li>
             </ul>
         </div>
     </div>
@@ -232,27 +339,64 @@ title: People
     <div class="mentorships-section">
         <div class="mentorships-content">
             <h3>Current Projects</h3>
-             <h4>Group Mentorship</h4>
-             <ul>
-                 <li><a href="https://wbi-innovates.zohobackstage.com/afrlsdr" target="_blank">AFRL Software Design Radio (SDR) Challenge 2024-2025</a></li>
-             </ul>
-             
-             <h5>Undergraduate Members</h5>
-             <ul>
-                 <li>Shaun George, Lenny Yanza, Karen Caguana, Xiangxi (Mall) Wang</li>
-             </ul>
-             
-             <h5>High School Member</h5>
-             <ul>
-                 <li>Akshat Santhana Gopalan</li>
-             </ul>
+            <h4>Group Mentorship</h4>
+            <ul>
+                <li>
+                    <div class="profile-avatar">
+                        <img src="img/avatar-placeholder.jpg" alt="AFRL SDR Challenge" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <span style="display: none;">🏆</span>
+                    </div>
+                    <div class="profile-info">
+                        <div class="profile-name">
+                            <a href="https://wbi-innovates.zohobackstage.com/afrlsdr" target="_blank">AFRL Software Design Radio (SDR) Challenge 2024-2025</a>
+                        </div>
+                        <div class="profile-description">Group Project</div>
+                    </div>
+                </li>
+            </ul>
             
             <h4>Individual Mentorship</h4>
             <ul>
-                <li>Ruoxi Li - Master, AI Integrated Sensing</li>
-                <li>Beula Jose - Master, Wireless Security</li>
-                <li>Zhifan Jiang - Master, SDR</li>
-                <li>Jiapeng Xiao - Master, SDR</li>
+                <li>
+                    <div class="profile-avatar">
+                        <img src="img/avatar-placeholder.jpg" alt="Ruoxi Li" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <span style="display: none;">👨‍🎓</span>
+                    </div>
+                    <div class="profile-info">
+                        <div class="profile-name">Ruoxi Li</div>
+                        <div class="profile-description">Master, AI Integrated Sensing</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="profile-avatar">
+                        <img src="img/avatar-placeholder.jpg" alt="Beula Jose" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <span style="display: none;">👩‍🎓</span>
+                    </div>
+                    <div class="profile-info">
+                        <div class="profile-name">Beula Jose</div>
+                        <div class="profile-description">Master, Wireless Security</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="profile-avatar">
+                        <img src="img/avatar-placeholder.jpg" alt="Zhifan Jiang" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <span style="display: none;">👨‍🎓</span>
+                    </div>
+                    <div class="profile-info">
+                        <div class="profile-name">Zhifan Jiang</div>
+                        <div class="profile-description">Master, SDR</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="profile-avatar">
+                        <img src="img/avatar-placeholder.jpg" alt="Jiapeng Xiao" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <span style="display: none;">👨‍🎓</span>
+                    </div>
+                    <div class="profile-info">
+                        <div class="profile-name">Jiapeng Xiao</div>
+                        <div class="profile-description">Master, SDR</div>
+                    </div>
+                </li>
             </ul>
         </div>
     </div>
