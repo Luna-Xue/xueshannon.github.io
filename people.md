@@ -205,7 +205,7 @@ title: People
     <div class="collaborators-grid">
         <div class="collaborator-card">
             <div class="collaborator-name">
-                <a href="https://www.stevens.edu/profile/syu19" target="_blank">Prof. Shucheng Yu</a>
+                <a href="https://www.yu.edu/katz/faculty#:~:text=Liyang%20Yan%27s%20Bio-,Shucheng%20Yu,-AI" target="_blank">Prof. Shucheng Yu</a>
             </div>
             <div class="collaborator-title">Associate Professor</div>
             <div class="collaborator-institution">Yeshiva University</div>
