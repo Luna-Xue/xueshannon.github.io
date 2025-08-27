@@ -127,7 +127,7 @@ hr{ border:0; border-top:1px solid var(--border); margin: 28px 0; }
         <div class="person-name">
           <a href="https://srparkar.github.io/" target="_blank" rel="noopener">Saurabh Raman Parkar</a>
         </div>
-        <div class="person-role">Ph.D. Student — AI-Integrated Sensing</div>
+        <div class="person-role">Incoming Ph.D. Student — AI-Integrated Sensing</div>
       </div>
     </div>
   </div>
