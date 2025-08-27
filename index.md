@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Xiaochan Xue
+title: Xiaochan Xue (薛晓婵)
 subtitle: Assistant Professor
 subtitle: University of Hawaiʻi at Mānoa
 ---
