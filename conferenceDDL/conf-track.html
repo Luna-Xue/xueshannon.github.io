@@ -268,7 +268,7 @@ document.getElementById("search").addEventListener("input", render);
 
 async function fetchData() {
   try {
-    const res = await fetch('data.json');
+    const res = await fetch('https://raw.githubusercontent.com/nexuseli18/conf-tracker/refs/heads/master/conferences.json');
     confs = await res.json();
     render();
   } catch (error) {
