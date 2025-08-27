@@ -54,6 +54,15 @@ title: People
     border: 1px solid #dee2e6;
 }
 
+.phd-students-section {
+    background: linear-gradient(135deg, #e8f5e8 0%, #d4edda 100%);
+    border-radius: 20px;
+    padding: 40px;
+    margin-bottom: 30px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    border: 1px solid #c3e6cb;
+}
+
 .collaborators-content {
     font-size: 1.4rem;
     line-height: 1.8;
@@ -183,6 +192,19 @@ title: People
 
 <div class="people-container">
     <div class="section-header">
+        <h2>Ph.D. Students</h2>
+    </div>
+    
+    <div class="phd-students-section">
+        <div class="phd-students-content">
+            <h3>Current Ph.D. Students</h3>
+            <ul>
+                <li><a href="https://srparkar.github.io/" target="_blank">Saurabh Raman Parkar</a> - AI Integrated Sensing</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="section-header">
         <h2>Collaborators</h2>
     </div>
     
@@ -227,7 +249,6 @@ title: People
             
             <h4>Individual Mentorship</h4>
             <ul>
-                <li><a href="https://srparkar.github.io/" target="_blank">Saurabh Raman Parkar</a> - Master, AI Integrated Sensing</li>
                 <li>Ruoxi Li - Master, AI Integrated Sensing</li>
                 <li>Beula Jose - Master, Wireless Security</li>
                 <li>Zhifan Jiang - Master, SDR</li>
