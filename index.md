@@ -15,10 +15,9 @@ subtitle: University of Hawaiʻi at Mānoa
 <a href="https://github.com/XueShannon" target="_blank">
   <img src="./img/github.png" alt="GitHub" width="32" class="social-icon">
 </a>
-<iframe src="./files/CV_Xiaochan.pdf" width="100%" height="800px" style="border:none;">
-  This browser does not support PDFs. Please download the PDF to view it:
-  <a href="./files/CV_Xiaochan.pdf">Download CV</a>
-</iframe>
+<a href="./files/CV_Xiaochan.pdf" target="_blank" class="cv-download">
+  <img src="./img/cv.png" alt="CV" width="32" class="social-icon">
+</a>
 <a href="https://www.linkedin.com/in/xiaochan-xue-2b7b75227/" target="_blank">
   <img src="./img/linkedin.png" alt="LinkedIn" width="32" class="social-icon">
 </a>
