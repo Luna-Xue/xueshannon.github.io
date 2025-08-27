@@ -71,6 +71,7 @@ title: People
 .person-body{ min-width: 0; }
 
 .person-name{
+  font-size: 0.95rem;
   font-weight: 700; color: var(--ink);
   line-height: 1.2; margin-bottom: 4px;
 }
