@@ -217,10 +217,7 @@ title: People
              
              <h5>Undergraduate Members</h5>
              <ul>
-                 <li>Shaun George</li>
-                 <li>Lenny Yanza</li>
-                 <li>Karen Caguana</li>
-                 <li>Xiangxi (Mall) Wang</li>
+                 <li>Shaun George, Lenny Yanza, Karen Caguana, Xiangxi (Mall) Wang</li>
              </ul>
              
              <h5>High School Member</h5>
