@@ -210,7 +210,7 @@ title: People
     <div class="mentorships-section">
         <div class="mentorships-content">
             <h3>Current Projects</h3>
-                         <h4>Group Mentorship</h4>
+             <h4>Group Mentorship</h4>
              <ul>
                  <li><a href="https://wbi-innovates.zohobackstage.com/afrlsdr" target="_blank">AFRL Software Design Radio (SDR) Challenge 2024-2025</a></li>
              </ul>
