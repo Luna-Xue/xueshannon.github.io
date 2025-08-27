@@ -121,6 +121,15 @@ title: People
     margin: 25px 0 15px 0;
 }
 
+.mentorships-content h5 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #34495e;
+    margin: 20px 0 10px 0;
+    border-bottom: 1px solid #bdc3c7;
+    padding-bottom: 5px;
+}
+
 .mentorships-content ul {
     list-style: none;
     padding: 0;
@@ -201,12 +210,23 @@ title: People
     <div class="mentorships-section">
         <div class="mentorships-content">
             <h3>Current Projects</h3>
-            <h4>AFRL Software Design Radio (SDR) Challenge 2024-2025</h4>
-            <ul>
-                <li><a href="https://wbi-innovates.zohobackstage.com/afrlsdr" target="_blank">Project Link</a></li>
-                <li>Undergraduate Members: Shaun George, Lenny Yanza, Karen Caguana, Xiangxi (Mall) Wang</li>
-                <li>High School Member: Akshat Santhana Gopalan</li>
-            </ul>
+                         <h4>Group Mentorship</h4>
+             <ul>
+                 <li><a href="https://wbi-innovates.zohobackstage.com/afrlsdr" target="_blank">AFRL Software Design Radio (SDR) Challenge 2024-2025</a></li>
+             </ul>
+             
+             <h5>Undergraduate Members</h5>
+             <ul>
+                 <li>Shaun George</li>
+                 <li>Lenny Yanza</li>
+                 <li>Karen Caguana</li>
+                 <li>Xiangxi (Mall) Wang</li>
+             </ul>
+             
+             <h5>High School Member</h5>
+             <ul>
+                 <li>Akshat Santhana Gopalan</li>
+             </ul>
             
             <h4>Individual Mentorship</h4>
             <ul>
