@@ -44,13 +44,12 @@ My work integrates AI/ML-driven methodologies with advanced wireless techniques 
 #### Lab Opening
 <sub>
 I am actively recruiting **highly motivated Ph.D. students** to join my group at the University of Hawaiʻi at Mānoa, starting in **Spring 2026**. **Strong preference will be given to applicants with a Master’s degree (or current Master’s students) in EE/ECE/CS or relevant, however, outstanding undergraduate students with exceptional research or project experience will also be considered**. Please email me with: 1) your **CV**, 2) one page **Research Interests Statement**, and 3) any relevant publications or project experience (if available)  
-</sub><br>
-<small>
+</sub>
 > **Email subject requirement:**  
 > Please use the following subject line:  
 > **`PhD Application – Your Name – [Research Area]`**  
 > Emails without this subject format are likely to be missed during filtering.
-</small>
+
 ---
 
 ## <img src="../img/research.png" height="35px"> Research Interests
