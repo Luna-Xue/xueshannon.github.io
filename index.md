@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Xiaochan Xue (薛晓婵)
+title: Xiaochan Xue
 subtitle: Assistant Professor
 subtitle: University of Hawaiʻi at Mānoa
 ---
@@ -41,7 +41,7 @@ My work integrates AI/ML-driven methodologies with advanced wireless techniques 
 
 ---
 
-#### 📣 Ph.D. Students Wanted
+#### 📣 Lab Opening
 I am actively recruiting **highly motivated Ph.D. students** to join my group at the University of Hawaiʻi at Mānoa, starting in **Spring 2026**. Please email me with:
 - Your **CV**  
 - One page **Research Interests Statement**  
