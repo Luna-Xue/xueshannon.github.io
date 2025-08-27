@@ -41,8 +41,8 @@ My work integrates AI/ML-driven methodologies with advanced wireless techniques 
 
 ---
 
-#### 📣 Lab Opening
-I am actively recruiting **highly motivated Ph.D. students** to join my group at the University of Hawaiʻi at Mānoa, starting in **Spring 2026**. Please email me with:
+#### Lab Opening
+I am actively recruiting **highly motivated Ph.D. students** to join my group at the University of Hawaiʻi at Mānoa, starting in Spring 2026. **Strong preference will be given to applicants with a Master’s degree (or current Master’s students) in EE/ECE/CS or relevent, however, outstanding undergraduate students with exceptional research or project experience will also be considered**. Please email me with:
 - Your **CV**  
 - One page **Research Interests Statement**  
 - Any relevant publications or project experience (if available)
