@@ -164,9 +164,6 @@ title: People
 }
 
 .individual-header {
-    display: flex;
-    align-items: center;
-    gap: 12px;
     margin-bottom: 10px;
 }
 
@@ -206,7 +203,6 @@ title: People
     <div class="collaborators-grid">
         <div class="collaborator-card">
             <div class="collaborator-name">
-                <span>👨‍🏫</span>
                 <a href="https://www.stevens.edu/profile/syu19" target="_blank">Prof. Shucheng Yu</a>
             </div>
             <div class="collaborator-title">Associate Professor</div>
@@ -215,7 +211,6 @@ title: People
         
         <div class="collaborator-card">
             <div class="collaborator-name">
-                <span>👨‍🏫</span>
                 <a href="https://www.stevens.edu/profile/msong6" target="_blank">Prof. Min Song</a>
             </div>
             <div class="collaborator-title">Professor</div>
@@ -224,7 +219,6 @@ title: People
         
         <div class="collaborator-card">
             <div class="collaborator-name">
-                <span>👩‍🏫</span>
                 <a href="https://faculty.erau.edu/Laxima.NiureKandel" target="_blank">Prof. Laxima Niure Kandel</a>
             </div>
             <div class="collaborator-title">Assistant Professor</div>
@@ -233,7 +227,6 @@ title: People
         
         <div class="collaborator-card">
             <div class="collaborator-name">
-                <span>👨‍🏫</span>
                 <a href="https://scholar.google.com/citations?user=v9zFuDEAAAAJ&hl=en" target="_blank">Prof. Yulong Zou</a>
             </div>
             <div class="collaborator-title">Professor</div>
@@ -242,7 +235,6 @@ title: People
         
         <div class="collaborator-card">
             <div class="collaborator-name">
-                <span>👨‍🏫</span>
                 <a href="https://www.stevens.edu/profile/hli" target="_blank">Prof. Hongbin Li</a>
             </div>
             <div class="collaborator-title">Professor</div>
@@ -251,7 +243,6 @@ title: People
         
         <div class="collaborator-card">
             <div class="collaborator-name">
-                <span>👩‍🏫</span>
                 <a href="https://www.stevens.edu/profile/ksubbala" target="_blank">Prof. K.P. (Suba) Subbalakshmi</a>
             </div>
             <div class="collaborator-title">Professor</div>
@@ -260,7 +251,6 @@ title: People
         
         <div class="collaborator-card">
             <div class="collaborator-name">
-                <span>👩‍🏫</span>
                 <a href="https://www.stevens.edu/profile/ywang6" target="_blank">Prof. Ying Wang</a>
             </div>
             <div class="collaborator-title">Associate Professor</div>
@@ -269,7 +259,6 @@ title: People
         
         <div class="collaborator-card">
             <div class="collaborator-name">
-                <span>👨‍🏫</span>
                 <a href="https://www2.hawaii.edu/~yaozheng/" target="_blank">Prof. Yao Zheng</a>
             </div>
             <div class="collaborator-title">Associate Professor</div>
@@ -278,7 +267,6 @@ title: People
         
         <div class="collaborator-card">
             <div class="collaborator-name">
-                <span>👨‍🏫</span>
                 <span>Prof. Moh Khalid Hasan</span>
             </div>
             <div class="collaborator-title">Assistant Professor</div>
@@ -292,7 +280,6 @@ title: People
     
     <div class="mentorship-section">
         <div class="mentorship-header">
-            <span style="font-size: 2rem;">🏆</span>
             <h3 class="mentorship-title">
                 <a href="https://wbi-innovates.zohobackstage.com/afrlsdr" target="_blank">2024-2025 AFRL Software Design Radio (SDR) Challenge</a>
             </h3>
@@ -324,7 +311,6 @@ title: People
     
     <div class="individual-mentorship">
         <div class="individual-header">
-            <span style="font-size: 1.5rem;">🎯</span>
             <h4 class="individual-name">
                 <a href="https://srparkar.github.io/" target="_blank">Saurabh Raman Parkar</a>
             </h4>
@@ -334,7 +320,6 @@ title: People
     
     <div class="individual-mentorship">
         <div class="individual-header">
-            <span style="font-size: 1.5rem;">🎯</span>
             <h4 class="individual-name">Ruoxi Li</h4>
         </div>
         <div class="individual-focus">Master, AI Integrated Sensing</div>
@@ -342,7 +327,6 @@ title: People
     
     <div class="individual-mentorship">
         <div class="individual-header">
-            <span style="font-size: 1.5rem;">🎯</span>
             <h4 class="individual-name">Beula Jose</h4>
         </div>
         <div class="individual-focus">Master, Wireless Security</div>
@@ -350,7 +334,6 @@ title: People
     
     <div class="individual-mentorship">
         <div class="individual-header">
-            <span style="font-size: 1.5rem;">🎯</span>
             <h4 class="individual-name">Zhifan Jiang</h4>
         </div>
         <div class="individual-focus">Master, SDR</div>
@@ -358,7 +341,6 @@ title: People
     
     <div class="individual-mentorship">
         <div class="individual-header">
-            <span style="font-size: 1.5rem;">🎯</span>
             <h4 class="individual-name">Jiapeng Xiao</h4>
         </div>
         <div class="individual-focus">Master, SDR</div>
