@@ -98,7 +98,7 @@ hr{ border:0; border-top:1px solid var(--border); margin: 28px 0; }
     <!-- Saurabh Raman Parkar -->
     <div class="person-card">
       <div class="person-photo">
-        <img src="img/avatar-placeholder.jpg" alt="Saurabh Raman Parkar"
+        <img src="img/Avatar/sparkar.jpg" alt="Saurabh Raman Parkar"
              onerror="this.style.display='none'; this.parentElement.textContent='👨‍🎓';">
       </div>
       <div class="person-body">
