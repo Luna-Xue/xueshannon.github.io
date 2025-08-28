@@ -44,7 +44,7 @@ My work integrates AI/ML-driven methodologies with advanced wireless techniques 
 ### Lab Openings
 
 <div style="background: #f8f8f8; border-left: 4px solid #ff6b6b; padding: 12px 18px; margin-bottom: 10px; font-size: 15px;">
-I am actively recruiting <b>highly motivated Ph.D. students</b> to join my group at the University of Hawaiʻi at Mānoa, starting in <b>Spring 2026</b>.<br>
+I am actively recruiting <b>highly motivated Ph.D. students</b> to join my group at the University of Hawaiʻi at Mānoa, starting in <b>Spring 2026 and beyond</b>.<br>
 <b>Strong preference</b> will be given to applicants with a Master’s degree (or current Master’s students) in EE/ECE/CS or relevant fields. Outstanding undergraduate students with exceptional research or project experience will also be considered.<br>
 Please email me with:<br>
 1) your <b>CV</b>,<br>
