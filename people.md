@@ -99,7 +99,7 @@ hr{ border:0; border-top:1px solid var(--border); margin: 28px 0; }
     <!-- Saurabh Raman Parkar -->
     <div class="person-card">
       <div class="person-photo">
-        <img src="img/Avatar/sparkar.jpg" alt="Saurabh Raman Parkar"
+        <img src="/img/Avatar/sparkar.jpg" alt="Saurabh Raman Parkar"
       </div>
       <div class="person-body">
         <div class="person-name">
@@ -122,7 +122,7 @@ hr{ border:0; border-top:1px solid var(--border); margin: 28px 0; }
     <!-- Prof. Shucheng Yu -->
     <div class="person-card">
       <div class="person-photo">
-        <img src="img/avatar-placeholder.jpg" alt="Prof. Shucheng Yu"
+        <img src="/img/Avatar/syu19.jpg" alt="Prof. Shucheng Yu"
       </div>
       <div class="person-body">
         <div class="person-name">
@@ -136,7 +136,7 @@ hr{ border:0; border-top:1px solid var(--border); margin: 28px 0; }
     <!-- Prof. Min Song -->
     <div class="person-card">
       <div class="person-photo">
-        <img src="img/avatar-placeholder.jpg" alt="Prof. Min Song"
+        <img src="/img/Avatar/msong6.jpg" alt="Prof. Min Song"
       </div>
       <div class="person-body">
         <div class="person-name"><a href="https://www.stevens.edu/profile/msong6" target="_blank" rel="noopener">Prof. Min Song</a></div>
@@ -148,7 +148,7 @@ hr{ border:0; border-top:1px solid var(--border); margin: 28px 0; }
     <!-- Prof. Laxima Niure Kandel -->
     <div class="person-card">
       <div class="person-photo">
-        <img src="img/avatar-placeholder.jpg" alt="Prof. Laxima Niure Kandel"
+        <img src="/img/Avatar-placeholder.jpg" alt="Prof. Laxima Niure Kandel"
       </div>
       <div class="person-body">
         <div class="person-name"><a href="https://faculty.erau.edu/Laxima.NiureKandel" target="_blank" rel="noopener">Prof. Laxima Niure Kandel</a></div>
@@ -160,7 +160,7 @@ hr{ border:0; border-top:1px solid var(--border); margin: 28px 0; }
     <!-- Prof. Yulong Zou -->
     <div class="person-card">
       <div class="person-photo">
-        <img src="img/Avatar/yulong zou.jpeg" alt="Prof. Yulong Zou"
+        <img src="/img/Avatar/yulong zou.jpeg" alt="Prof. Yulong Zou"
       </div>
       <div class="person-body">
         <div class="person-name"><a href="https://scholar.google.com/citations?user=v9zFuDEAAAAJ&hl=en" target="_blank" rel="noopener">Prof. Yulong Zou</a></div>
@@ -172,7 +172,7 @@ hr{ border:0; border-top:1px solid var(--border); margin: 28px 0; }
     <!-- Prof. Hongbin Li -->
     <div class="person-card">
       <div class="person-photo">
-        <img src="img/avatar-placeholder.jpg" alt="Prof. Hongbin Li"
+        <img src="/img/Avatar/hli.jpg" alt="Prof. Hongbin Li"
       </div>
       <div class="person-body">
         <div class="person-name"><a href="https://www.stevens.edu/profile/hli" target="_blank" rel="noopener">Prof. Hongbin Li</a></div>
@@ -184,7 +184,7 @@ hr{ border:0; border-top:1px solid var(--border); margin: 28px 0; }
     <!-- Prof. K.P. (Suba) Subbalakshmi -->
     <div class="person-card">
       <div class="person-photo">
-        <img src="img/avatar-placeholder.jpg" alt="Prof. K.P. (Suba) Subbalakshmi"
+        <img src="/img/Avatar/ksubbala.jpg" alt="Prof. K.P. (Suba) Subbalakshmi"
       </div>
       <div class="person-body">
         <div class="person-name"><a href="https://www.stevens.edu/profile/ksubbala" target="_blank" rel="noopener">Prof. K.P. (Suba) Subbalakshmi</a></div>
@@ -196,7 +196,7 @@ hr{ border:0; border-top:1px solid var(--border); margin: 28px 0; }
     <!-- Prof. Ying Wang -->
     <div class="person-card">
       <div class="person-photo">
-        <img src="img/avatar-placeholder.jpg" alt="Prof. Ying Wang"
+        <img src="/img/Avatar/ywang6.jpg" alt="Prof. Ying Wang"
       </div>
       <div class="person-body">
         <div class="person-name"><a href="https://www.stevens.edu/profile/ywang6" target="_blank" rel="noopener">Prof. Ying Wang</a></div>
@@ -208,7 +208,7 @@ hr{ border:0; border-top:1px solid var(--border); margin: 28px 0; }
     <!-- Prof. Yao Zheng -->
     <div class="person-card">
       <div class="person-photo">
-        <img src="img/Avatar/yaozheng.png" alt="Prof. Yao Zheng"
+        <img src="/img/Avatar/yaozheng.png" alt="Prof. Yao Zheng"
       </div>
       <div class="person-body">
         <div class="person-name"><a href="https://www2.hawaii.edu/~yaozheng/" target="_blank" rel="noopener">Prof. Yao Zheng</a></div>
@@ -220,7 +220,7 @@ hr{ border:0; border-top:1px solid var(--border); margin: 28px 0; }
     <!-- Prof. Moh Khalid Hasan -->
     <div class="person-card">
       <div class="person-photo">
-        <img src="img/Avatar/Khalid.jpeg" alt="Prof. Moh Khalid Hasan"
+        <img src="/img/Avatar/Khalid.jpeg" alt="Prof. Moh Khalid Hasan"
       </div>
       <div class="person-body">
         <div class="person-name"><a https://www.jmu.edu/cise/people/faculty/hasan-moh-khalid.shtml" target="_blank" rel="noopener">Prof. Moh Khalid Hasan</a></div>
@@ -243,7 +243,7 @@ hr{ border:0; border-top:1px solid var(--border); margin: 28px 0; }
     <!-- AFRL SDR Challenge -->
     <div class="person-card">
       <div class="person-photo">
-        <img src="img/avatar-placeholder.jpg" alt="AFRL SDR Challenge"
+        <img src="/img/avatar-placeholder.jpg" alt="AFRL SDR Challenge"
              onerror="this.style.display='none'; this.parentElement.textContent='🏆';">
       </div>
       <div class="person-body">
@@ -262,7 +262,7 @@ hr{ border:0; border-top:1px solid var(--border); margin: 28px 0; }
   <div class="people-grid" style="margin-top:10px;">
     <div class="person-card">
       <div class="person-photo">
-        <img src="img/avatar-placeholder.jpg" alt="Ruoxi Li"
+        <img src="/img/avatar-placeholder.jpg" alt="Ruoxi Li"
              onerror="this.style.display='none'; this.parentElement.textContent='👩‍🎓';">
       </div>
       <div class="person-body">
@@ -273,7 +273,7 @@ hr{ border:0; border-top:1px solid var(--border); margin: 28px 0; }
 
     <div class="person-card">
       <div class="person-photo">
-        <img src="img/avatar-placeholder.jpg" alt="Beula Jose"
+        <img src="/img/avatar-placeholder.jpg" alt="Beula Jose"
              onerror="this.style.display='none'; this.parentElement.textContent='👩‍🎓';">
       </div>
       <div class="person-body">
@@ -284,7 +284,7 @@ hr{ border:0; border-top:1px solid var(--border); margin: 28px 0; }
 
     <div class="person-card">
       <div class="person-photo">
-        <img src="img/avatar-placeholder.jpg" alt="Zhifan Jiang"
+        <img src="/img/avatar-placeholder.jpg" alt="Zhifan Jiang"
              onerror="this.style.display='none'; this.parentElement.textContent='👨‍🎓';">
       </div>
       <div class="person-body">
@@ -295,7 +295,7 @@ hr{ border:0; border-top:1px solid var(--border); margin: 28px 0; }
 
     <div class="person-card">
       <div class="person-photo">
-        <img src="img/avatar-placeholder.jpg" alt="Jiapeng Xiao"
+        <img src="/img/avatar-placeholder.jpg" alt="Jiapeng Xiao"
              onerror="this.style.display='none'; this.parentElement.textContent='👨‍🎓';">
       </div>
       <div class="person-body">
