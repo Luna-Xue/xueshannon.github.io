@@ -10,8 +10,8 @@ title: People
   --border:#e6e9ee;
   --card:#ffffff;
   --bg:#fafbfc;
-  --brand:#1f6feb;   /* header underline & links */
-  --accent:#ff7b72;  /* small accents */
+  --brand:#1f6feb;
+  --accent:#ff7b72;
 }
 
 .people-container{
@@ -36,14 +36,16 @@ title: People
   color: var(--muted);
 }
 
+/* 两列排布 */
 .people-grid{
   display: grid;
-  grid-template-columns: repeat(3, minmax(0,1fr));
+  grid-template-columns: repeat(2, minmax(0,1fr));
   gap: 18px;
   margin-top: 16px;
 }
-@media (max-width: 960px){ .people-grid{ grid-template-columns: repeat(2,1fr);} }
-@media (max-width: 640px){ .people-grid{ grid-template-columns: 1fr;} }
+@media (max-width: 768px){ 
+  .people-grid{ grid-template-columns: 1fr;} 
+}
 
 .person-card{
   display: flex;
@@ -71,42 +73,18 @@ title: People
 .person-body{ min-width: 0; }
 
 .person-name{
-  font-size: 0.95rem;
   font-weight: 700; color: var(--ink);
   line-height: 1.2; margin-bottom: 4px;
 }
 .person-name a{ color: var(--ink); text-decoration: none; }
 .person-name a:hover{ color: var(--brand); }
 
-.person-role{
-  font-size: .98rem; color: var(--ink);
-}
-.person-affil{
-  font-size: .9rem; color: var(--muted);
-  margin-top: 2px;
-}
-
-.group-list{ margin: 8px 0 0; padding-left: 18px; }
-.group-list li{ margin: 6px 0; }
-
-.note{
-  background: var(--bg);
-  border: 1px dashed var(--border);
-  color: var(--muted);
-  padding: 10px 12px;
-  border-radius: 10px;
-  font-size: .95rem;
-}
+.person-role{ font-size: .98rem; color: var(--ink); }
+.person-affil{ font-size: .9rem; color: var(--muted); margin-top: 2px; }
 
 hr{ border:0; border-top:1px solid var(--border); margin: 28px 0; }
-
-/* link chips used inside descriptions if needed */
-.chips{ display:flex; flex-wrap:wrap; gap:6px; margin-top:8px;}
-.chip{
-  font-size:.8rem; color:#0b2239; background:#eef3fb; border:1px solid #dbe6fb;
-  padding:3px 8px; border-radius:999px;
-}
 </style>
+
 
 <div class="people-container">
 
