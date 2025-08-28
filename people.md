@@ -83,7 +83,34 @@ title: People
 .person-role{ font-size: .98rem; color: var(--ink); }
 .person-affil{ font-size: .9rem; color: var(--muted); margin-top: 2px; }
 
-hr{ border:0; border-top:1px solid var(--border); margin: 28px 0; }
+hr{ 
+  border: 0; 
+  border-top: 1px solid var(--border); 
+  margin: 32px 0; 
+  opacity: 0.6;
+}
+
+/* 添加一些微妙的视觉改进 */
+.person-card {
+  position: relative;
+}
+
+.person-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--brand), var(--accent));
+  border-radius: 14px 14px 0 0;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.person-card:hover::before {
+  opacity: 1;
+}
 </style>
 
 
@@ -148,7 +175,7 @@ hr{ border:0; border-top:1px solid var(--border); margin: 28px 0; }
     <!-- Prof. Laxima Niure Kandel -->
     <div class="person-card">
       <div class="person-photo">
-        <img src="/img/avatar-placeholder.jpg" alt="Prof. Laxima Niure Kandel">
+        <img src="/img/Avatar/NIUREKAL.jpg" alt="Prof. Laxima Niure Kandel">
       </div>
       <div class="person-body">
         <div class="person-name"><a href="https://faculty.erau.edu/Laxima.NiureKandel" target="_blank" rel="noopener">Prof. Laxima Niure Kandel</a></div>
@@ -161,7 +188,7 @@ hr{ border:0; border-top:1px solid var(--border); margin: 28px 0; }
     <div class="person-card">
       <div class="person-photo">
         <!-- 文件名里有空格会 404，临时用占位图；重命名后换回真实路径 -->
-        <img src="/img/avatar-placeholder.jpg" alt="Prof. Yulong Zou">
+        <img src="/img/Avatar/kn-YulongZou.png" alt="Prof. Yulong Zou">
       </div>
       <div class="person-body">
         <div class="person-name"><a href="https://scholar.google.com/citations?user=v9zFuDEAAAAJ&hl=en" target="_blank" rel="noopener">Prof. Yulong Zou</a></div>
