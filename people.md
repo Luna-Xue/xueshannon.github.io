@@ -93,6 +93,7 @@ hr{
 /* 添加一些微妙的视觉改进 */
 .person-card {
   position: relative;
+  overflow: hidden;
 }
 
 .person-card::before {
@@ -101,15 +102,57 @@ hr{
   top: 0;
   left: 0;
   right: 0;
-  height: 3px;
+  height: 4px;
   background: linear-gradient(90deg, var(--brand), var(--accent));
   border-radius: 14px 14px 0 0;
   opacity: 0;
-  transition: opacity 0.2s ease;
+  transition: opacity 0.3s ease;
 }
 
 .person-card:hover::before {
   opacity: 1;
+}
+
+/* 添加卡片内容的渐变背景效果 */
+.person-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, transparent 30%, rgba(31, 111, 235, 0.03) 100%);
+  border-radius: 0 14px 0 60px;
+  pointer-events: none;
+}
+
+/* 优化头像的阴影效果 */
+.person-photo {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* 添加响应式优化 */
+@media (max-width: 1200px) {
+  .people-grid {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .person-card {
+    padding: 16px;
+    gap: 14px;
+  }
+  
+  .person-photo {
+    width: 64px;
+    height: 64px;
+    flex: 0 0 64px;
+  }
+  
+  .section-header h2 {
+    font-size: 2rem;
+  }
 }
 </style>
 
