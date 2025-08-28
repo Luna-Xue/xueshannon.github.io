@@ -163,7 +163,7 @@ hr{ border:0; border-top:1px solid var(--border); margin: 28px 0; }
     <!-- Prof. Yulong Zou -->
     <div class="person-card">
       <div class="person-photo">
-        <img src="img/avatar-placeholder.jpg" alt="Prof. Yulong Zou"
+        <img src="img/Avatar/yulong zou.jpeg" alt="Prof. Yulong Zou"
              onerror="this.style.display='none'; this.parentElement.textContent='👨‍🏫';">
       </div>
       <div class="person-body">
@@ -215,7 +215,7 @@ hr{ border:0; border-top:1px solid var(--border); margin: 28px 0; }
     <!-- Prof. Yao Zheng -->
     <div class="person-card">
       <div class="person-photo">
-        <img src="img/avatar-placeholder.jpg" alt="Prof. Yao Zheng"
+        <img src="img/Avatar/yaozheng.png" alt="Prof. Yao Zheng"
              onerror="this.style.display='none'; this.parentElement.textContent='👨‍🏫';">
       </div>
       <div class="person-body">
@@ -228,7 +228,7 @@ hr{ border:0; border-top:1px solid var(--border); margin: 28px 0; }
     <!-- Prof. Moh Khalid Hasan -->
     <div class="person-card">
       <div class="person-photo">
-        <img src="img/avatar-placeholder.jpg" alt="Prof. Moh Khalid Hasan"
+        <img src="img/Avatar/Khalid.jpeg" alt="Prof. Moh Khalid Hasan"
              onerror="this.style.display='none'; this.parentElement.textContent='👨‍🏫';">
       </div>
       <div class="person-body">
