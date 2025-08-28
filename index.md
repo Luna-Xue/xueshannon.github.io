@@ -49,7 +49,7 @@ I am actively recruiting <b>highly motivated Ph.D. students</b> to join my group
 Please email me with:<br>
 1) your <b>CV</b>,<br>
 2) one-page <b>Research Interests Statement</b>,<br>
-3) any relevant publications or project experience (if available).
+3) any relevant publications or project experience recent years (if available).
 </div>
 <div style="font-size: 14px; margin-bottom: 8px;">
   <b>Email subject requirement:</b><br>
