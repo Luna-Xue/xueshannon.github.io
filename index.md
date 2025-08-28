@@ -41,16 +41,47 @@ My work integrates AI/ML-driven methodologies with advanced wireless techniques 
 
 ---
 
-#### Lab Opening
-<sub>
-I am actively recruiting **highly motivated Ph.D. students** to join my group at the University of Hawaiʻi at Mānoa, starting in **Spring 2026**. **Strong preference will be given to applicants with a Master’s degree (or current Master’s students) in EE/ECE/CS or relevant, however, outstanding undergraduate students with exceptional research or project experience will also be considered**. Please email me with: 1) your **CV**, 2) one page **Research Interests Statement**, and 3) any relevant publications or project experience (if available)  
-</sub>
-> **Email subject requirement:**  
-> Please use the following subject line:  
-> **`PhD Application – Your Name – [Research Area]`**  
-> Emails without this subject format are likely to be missed during filtering.
+<div class="lab-opening-box" style="background: #f5f8fa; border-left: 5px solid #1f6feb; padding: 18px 22px 14px 22px; border-radius: 8px; margin-bottom: 24px;">
 
----
+<h3 style="margin-top:0; margin-bottom: 10px; color: #1f6feb;">
+  <img src="../img/footsteps.png" height="28px" style="vertical-align:middle; margin-right:6px;"> Lab Openings: Ph.D. Recruitment
+</h3>
+
+<ul style="margin-bottom: 12px; font-size: 1.04em;">
+  <li>
+    <strong>Position:</strong> Ph.D. Student (Spring 2026 start)
+  </li>
+  <li>
+    <strong>Location:</strong> University of Hawaiʻi at Mānoa, Department of ECE
+  </li>
+  <li>
+    <strong>Eligibility:</strong>
+    <ul style="margin-top: 4px; margin-bottom: 4px;">
+      <li>Master’s degree (or current Master’s students) in EE/ECE/CS or related fields <span style="color:#1f6feb;">(strongly preferred)</span></li>
+      <li>Outstanding undergraduates with exceptional research/project experience are also welcome</li>
+    </ul>
+  </li>
+  <li>
+    <strong>How to Apply:</strong>
+    <ol style="margin-top: 4px; margin-bottom: 4px;">
+      <li>Send an email to <b>xxue[at]hawaii[dot]edu</b> with the following attachments:
+        <ul style="margin-top: 2px;">
+          <li><b>CV</b></li>
+          <li>1-page <b>Research Interests Statement</b></li>
+          <li>Relevant publications or project experience (if available)</li>
+        </ul>
+      </li>
+    </ol>
+  </li>
+  <li>
+    <strong>Email Subject Format:</strong>
+    <div style="background: #e6e9ee; border-radius: 4px; padding: 6px 10px; margin: 6px 0 0 0; font-family: monospace; font-size: 1em;">
+      PhD Application – Your Name – [Research Area]
+    </div>
+    <span style="color:#c0392b; font-size: 0.98em;">* Emails without this subject format may be missed during filtering.</span>
+  </li>
+</ul>
+</div>
 
 ## <img src="../img/research.png" height="35px"> Research Interests
 - **Wireless Communication:** 5G, Sub-6G, Next-G, O-RAN, AI-RAN
