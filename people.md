@@ -232,7 +232,7 @@ hr{ border:0; border-top:1px solid var(--border); margin: 28px 0; }
              onerror="this.style.display='none'; this.parentElement.textContent='👨‍🏫';">
       </div>
       <div class="person-body">
-        <div class="person-name">Prof. Moh Khalid Hasan</div>
+        <div class="person-name"><a https://www.jmu.edu/cise/people/faculty/hasan-moh-khalid.shtml" target="_blank" rel="noopener">Prof. Moh Khalid Hasan</a></div>
         <div class="person-role">Assistant Professor</div>
         <div class="person-affil">James Madison University</div>
       </div>
