@@ -32,7 +32,7 @@ title: People
 }
 .section-sub{
   margin-top: 4px;
-  font-size: 0.95rem;
+  font-size: 0.98rem;
   color: var(--muted);
 }
 
