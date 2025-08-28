@@ -262,6 +262,7 @@ hr{ border:0; border-top:1px solid var(--border); margin: 28px 0; }
           </a>
         </div>
         <div class="person-role">Group Project</div>
+        <div class="person-affil">Master, Undergraduate, and High School</div>
       </div>
     </div>
   </div>
