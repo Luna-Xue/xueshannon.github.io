@@ -5,17 +5,25 @@ subtitle:
 ---
 <meta property="og:image" content="{{ post.thumbnail }}">
 
+<style>
+/* 缩小项目标题字号 */
+.posts-list .post-title {
+  font-size: 1.3em;
+  margin-bottom: 0.3em;
+}
+</style>
+
 <div class="posts-list">
   {% for post in paginator.posts %}
   <article class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
-	  <h2 class="post-title">{{ post.title }}</h2>
-	
-	  {% if post.subtitle %}
-	  <h3 class="post-subtitle">
-	    {{ post.subtitle }}
-	  </h3>
-	  {% endif %}  
+      <h2 class="post-title">{{ post.title }}</h2>
+    
+      {% if post.subtitle %}
+      <h3 class="post-subtitle">
+        {{ post.subtitle }}
+      </h3>
+      {% endif %}  
     </a>
 
     <p class="post-meta">
@@ -24,7 +32,7 @@ subtitle:
   
     <div class="post-entry">
       {{ post.content | truncatewords: 50 | strip_html | xml_escape}}
-	  <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</a>
+      <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</a>
     </div>
   
    </article>
