@@ -5,12 +5,19 @@ layout: default
 <header class="header-post">
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-      <div class="post-heading">
-        <h1>{{ page.title }}</h1>
-        {% if page.subtitle %}
-        <h2 class="post-subheading">{{ page.subtitle }}</h2>
+      <div class="post-heading" style="display: flex; align-items: center; gap: 24px;">
+        {% if page.thumbnail and page.thumbnail != "" %}
+          <img src="{{ page.thumbnail | prepend: site.baseurl }}" alt="Project Key Image" style="max-width:120px; max-height:120px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-right: 18px;">
+        {% else %}
+          <img src="{{ '/img/default-project.png' | prepend: site.baseurl }}" alt="Project Key Image" style="max-width:120px; max-height:120px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-right: 18px;">
         {% endif %}
-        <span class="post-meta">Posted on {{ page.date | date: "%B %-d, %Y" }}</span>
+        <div>
+          <h1>{{ page.title }}</h1>
+          {% if page.subtitle %}
+          <h2 class="post-subheading">{{ page.subtitle }}</h2>
+          {% endif %}
+          <span class="post-meta">Posted on {{ page.date | date: "%B %-d, %Y" }}</span>
+        </div>
       </div>
      </div>
   </div>
