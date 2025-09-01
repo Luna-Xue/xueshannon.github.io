@@ -2,39 +2,29 @@
 layout: default
 ---
 
+{% if page.title %}
+<header class="header-page">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+	  <div class="page-heading">
+	    <h1>{{ page.title }}</h1>
+	    {% if page.subtitle %}
+	    <hr class="small">
+	    <span class="page-subheading">{{ page.subtitle }}</span>
+	    {% endif %}
+	  </div>
+    </div>
+  </div>
+</header>
+{% endif %}
+
 <div class="row">
   <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-    <div class="row" style="display: flex; align-items: flex-start;">
-      <!-- Left: Image -->
-      <div class="col-sm-4" style="padding-right: 0;">
-        {% if page.thumbnail and page.thumbnail != "" %}
-          <img src="{{ page.thumbnail | prepend: site.baseurl }}" alt="Page image" style="width:100%; max-width:100%; height:auto; display:block;">
-        {% else %}
-          <img src="{{ '/img/default-page.jpg' | prepend: site.baseurl }}" alt="Page image" style="width:100%; max-width:100%; height:auto; display:block;">
-        {% endif %}
-      </div>
-      <!-- Right: Title and Content -->
-      <div class="col-sm-8" style="padding-left: 0;">
-        {% if page.title %}
-        <header class="header-page" style="margin-bottom: 2em;">
-          <div class="page-heading">
-            <h1>{{ page.title }}</h1>
-            {% if page.subtitle %}
-            <hr class="small">
-            <span class="page-subheading">{{ page.subtitle }}</span>
-            {% endif %}
-          </div>
-        </header>
-        {% endif %}
-        <div class="page-content">
-          {{ content }}
-          {% if page.comments %}
-          <div class="disqus-comments">
-            {% include disqus.html %}
-          </div>
-          {% endif %}
-        </div>
-      </div>
+    {{ content }}
+	{% if page.comments %}
+    <div class="disqus-comments">
+	  {% include disqus.html %}
     </div>
+	{% endif %}
   </div>
 </div>
