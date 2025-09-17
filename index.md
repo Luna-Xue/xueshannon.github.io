@@ -306,9 +306,10 @@ Please email me with:<br>
 <div class="news-box">
   <div class="news-scroll">
     <!-- 项目列表 -->
-    <div class="new-item">[Aug, 2025] Looking for highly self-motivated PhD students!</div>
+    <div class="new-item">[Aug, 2025] <img src="../img/microphone.png" height="35px"> Looking for highly self-motivated PhD students!</div>
     <div class="new-item">[Aug, 2025] <img src="../img/fireworks.png" height="35px"> New paper submitted!</div>
     <div class="new-item">[Aug, 2025] I am here at Manoa!</div>
+    <div class="new-item">[Aug, 2025] Road trip from east coast to west coast!</div>
     <div class="new-item">[June, 2025] <strong><a href="https://xueshannon.github.io/2025-06-04-nsfoacsummerproject/">NSF Summer Project Traning</a></strong> start at SIT AISecLab.</div>
     <div class="new-item">[June, 2025] Passed my doctoral defense.</div>
     <div class="new-item">[May, 2025] <img src="../img/fireworks.png" height="35px"> I will join <span style="color:orange;"> University of Hawaii at Mānoa</span> Collage of Engineering, Department of Electrical&Computer Engineering as a <strong><span style="color:orange;">Tenure-Track Assistant Professor</span></strong>, 2025 Fall.</div> 
