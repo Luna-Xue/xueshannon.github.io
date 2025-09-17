@@ -307,6 +307,7 @@ Please email me with:<br>
   <div class="news-scroll">
     <!-- 项目列表 -->
     <div class="new-item">[Aug, 2025] Looking for highly self-motivated PhD students!</div>
+    <div class="new-item">[Aug, 2025] <img src="../img/fireworks.png" height="35px"> New paper submitted!</div>
     <div class="new-item">[Aug, 2025] I am here at Manoa!</div>
     <div class="new-item">[June, 2025] <strong><a href="https://xueshannon.github.io/2025-06-04-nsfoacsummerproject/">NSF Summer Project Traning</a></strong> start at SIT AISecLab.</div>
     <div class="new-item">[June, 2025] Passed my doctoral defense.</div>
