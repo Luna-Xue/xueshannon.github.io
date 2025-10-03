@@ -218,10 +218,23 @@ function render() {
   tbody.innerHTML = "";
 
   const sorted = [...confs].sort((a, b) => {
-    const dateA = parseDeadline(a['Submission Deadline'] || a.deadline) || new Date('2100-01-01');
-    const dateB = parseDeadline(b['Submission Deadline'] || b.deadline) || new Date('2100-01-01');
-    return dateA - dateB;
-  });
+  const now = new Date();
+  const da = parseDeadline(a['Submission Deadline'] || a.deadline);
+  const db = parseDeadline(b['Submission Deadline'] || b.deadline);
+
+  // 已截止？
+  const aClosed = da ? da < now : false; // 无截止日不当作 closed
+  const bClosed = db ? db < now : false;
+
+  // 先把未截止的排在前面，已截止的排在后面
+  if (aClosed !== bClosed) return aClosed ? 1 : -1;
+
+  // 同组内按时间先后（无日期的放到最后）
+  const ta = da ? da.getTime() : Number.POSITIVE_INFINITY;
+  const tb = db ? db.getTime() : Number.POSITIVE_INFINITY;
+  return ta - tb;
+});
+
 
   sorted.filter(c => {
     const name = c.name || c.Conference || '';
