@@ -308,7 +308,6 @@ Please email me with:<br>
 ## <img src="../img/hotnews.png" height="35px"> News
 <div class="news-box">
   <div class="news-scroll">
-    <!-- 项目列表 -->
     <div class="new-item">[Oct, 2025] <img src="../img/fireworks.png" height="35px"> Two papers are accepted by <a href="https://www.ieee-aiot.org/2025/">IEEE AIoT 2025</a>!</div>
     <div class="new-item">[Sept, 2025] 2025-2026 <a href="https://wbi-innovates.zohobackstage.com/afrlsdr">AFRL Software Design Radio (SDR) Challenge</a> kicks off. My student <strong>Saurabh Parkar</strong> will lead the <strong>Stevens</strong> team in collaboration with <strong>Yeshiva University</strong>.</div>
     <div class="new-item">[Aug, 2025] <img src="../img/microphone.png" height="35px"> Looking for highly self-motivated PhD students!</div>
