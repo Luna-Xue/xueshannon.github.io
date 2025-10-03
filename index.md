@@ -35,9 +35,9 @@ Address: 2540 Dole Street, Holmes Hall 436, Honolulu, HI 96822 USA
 ```
 
 ## <img src="../img/resume.png" height="35px"> About Me
- I am an Assistant Professor in the Department of Electrical and Computer Engineering at the University of Hawaii at Mānoa. My research lies at the intersection of wireless communication, cybersecurity, and artificial intelligence. Specifically, I focus on designing secure, intelligent, and efficient wireless systems for 5G, Sub-6G, NextG, and beyond.
+I am an Assistant Professor in the Department of Electrical and Computer Engineering at the University of Hawaii at Mānoa. My research lies at the intersection of wireless communication, cybersecurity, and artificial intelligence. 
 
-My work integrates AI/ML-driven methodologies with advanced wireless techniques such as Physical Layer Security (PLS), millimeter-wave (mmWave) sensing, and Integrated Sensing and Communication (ISAC) to enable real-time, contactless, and privacy-preserving applications. I also explore distributed IoT systems secured by confidential computing, as well as Open Radio Access Networks (O-RAN) with a focus on AI-native RAN architecture, security hardening, and standardization.
+My group builds secure, intelligent, and efficient wireless systems for 5G, Sub-6G, NextG, and beyond by combining AI/ML with advanced physical-layer techniques. We leverage mmWave sensing, Integrated Sensing and Communication (ISAC), and Physical-Layer Security (PLS) to enable real-time, contactless, and privacy-preserving applications. We prototype on O-RAN testbeds and edge IoT platforms, translating algorithms into deployable xApps/rApps, ISAC waveforms, and end-to-end demos. A growing thrust uses Generative AI as both a tool (data augmentation, waveform and beam co-design) and a threat (adversarial RF examples, LLM-driven control attacks) to harden wireless and CPS, and to advance biomedical sensing such as contactless vitals and activity monitoring.
 
 ---
 
@@ -61,10 +61,13 @@ Please email me with:<br>
 ---
 
 ## <img src="../img/research.png" height="35px"> Research Interests
-- **Wireless Communication:** 5G, Sub-6G, Next-G, O-RAN, AI-RAN
-- **Integrated Sensing and Communication** Sensing for healthcare, Smart city, UAVs, and Vehicles. Distributed devices in cutting-edge network systems
-- **Machine Learning:** Applied area, Federated Learning
-- **Security:** Physical Layer Security, Privacy preserving, Distributed security
+- **Wireless Systems and AI-Native RAN:** 5G, Sub-6G, NextG, O-RAN, AI-RAN; xApps/rApps for resource control and security analytics.
+- **ISAC and mmWave Sensing:** Contactless healthcare, smart cities, UAVs, and vehicles; scalable sensing with distributed devices in next-generation networks.
+- **Machine Learning for Wireless:** Applied ML and RL, federated and privacy-preserving learning, confidential computing at the edge.
+- **Generative AI for Comms and Security:** Data augmentation, waveform and beam co-design; adversarial RF, spoofing, safe data sharing, ISAC privacy, O-RAN analytics privacy.
+- **Security and Privacy:** Physical-Layer Security, authentication, anti-jamming and anti-spoofing, privacy-enhancing techniques for distributed IoT and CPS.
+- **Prototyping and Testbeds:** O-RAN stacks, ISAC prototypes, edge IoT platforms, CBRS and C-band experiments; end-to-end demos from algorithms to deployments.
+
 
 ---
 ## <img src="../img/footsteps.png" height="35px"> Experience
