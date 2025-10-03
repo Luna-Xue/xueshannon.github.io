@@ -120,188 +120,81 @@ Please email me with:<br>
 </div>
 
 <style>
-/* 时间轴容器 */
+/* === Compact Experience overrides === */
 .timeline-container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 10px 0;
+  max-width: 820px;
+  padding: 4px 0;
 }
 
-/* 时间轴主线 */
 .timeline {
-  position: relative;
-  padding-left: 40px;
+  padding-left: 28px;
 }
-
 .timeline::before {
-  content: '';
-  position: absolute;
-  left: 15px;
-  top: 0;
-  bottom: 0;
-  width: 2px;
-  background: #e0e0e0;
+  left: 12px;
 }
 
-/* 时间轴项目 */
 .timeline-item {
-  position: relative;
-  margin-bottom: 25px;
-  display: flex;
-  align-items: flex-start;
-  min-height: 80px;
-  padding-left: 65px;
+  margin-bottom: 14px;      /* ↓ 间距 */
+  min-height: 64px;         /* ↓ 高度 */
+  padding-left: 48px;       /* ↓ 左侧留白 */
 }
 
-/* 红点样式 */
 .timeline-dot {
-  position: absolute;
-  left: 14px;
-  top: 35px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: #ff6b6b;
-  border: 3px solid #fff;
-  box-shadow: 0 0 0 2px #ff6b6b;
-  z-index: 2;
-  transform: translateX(-50%);
+  left: 12px;
+  top: 26px;
+  width: 8px;               /* ↓ 点尺寸 */
+  height: 8px;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 1.5px #ff6b6b;
 }
 
-/* 图标样式 */
 .timeline-icon {
-  position: absolute;
-  left: 35px;
-  top: 25px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
-  z-index: 1;
+  left: 24px;
+  top: 18px;
+  width: 38px;              /* ↓ 图标圆尺寸 */
+  height: 38px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.12);
 }
-
 .school-icon {
-  width: 45px;
-  height: 45px;
-  object-fit: contain;
+  width: 34px;              /* ↓ 学校 logo 尺寸 */
+  height: 34px;
 }
 
-/* 内容区域 */
 .timeline-content {
-  flex: 1;
-  padding: 20px;
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 3px 12px rgba(0,0,0,0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
+  padding: 12px 14px;       /* ↓ 卡片内边距 */
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  line-height: 1.45;        /* ↓ 行距 */
 }
 
-.timeline-content:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
-}
-
-/* 日期样式 - 强调 */
 .timeline-date {
-  font-size: 14px;
-  color: #ff6b6b;
-  font-weight: 700;
-  margin-bottom: 8px;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
+  font-size: 12px;          /* ↓ 字号 */
+  margin-bottom: 4px;
+  letter-spacing: 0.3px;
 }
-
-/* 标题样式 - 最突出 */
 .timeline-title {
-  font-size: 19px;
-  font-weight: 800;
-  margin-bottom: 6px;
-  color: #2c3e50;
-  line-height: 1.3;
+  font-size: 16px;          /* ↓ 标题字号 */
+  margin-bottom: 4px;
 }
-
-/* 地点样式 - 次级信息 */
 .timeline-location {
-  font-size: 15px;
-  color: #7f8c8d;
-  margin-bottom: 12px;
-  font-style: italic;
-  display: flex;
-  align-items: center;
+  font-size: 13px;          /* ↓ 次级信息字号 */
+  margin-bottom: 8px;
 }
-
-/*.timeline-location:before {
-  content: "";
-  margin-right: 6px;
-  font-size: 14px;
-}*/
-
-/* 描述样式 - 详细内容 */
 .timeline-description {
-  font-size: 15px;
-  color: #555;
-  line-height: 1.6;
-  margin-top: 12px;
-  padding-top: 12px;
-  border-top: 1px solid #f1f1f1;
+  font-size: 13px;          /* ↓ 描述字号 */
+  margin-top: 8px;
+  padding-top: 8px;
 }
 
-/* 响应式设计 */
+/* 小屏下进一步压缩 */
 @media (max-width: 768px) {
-  .timeline {
-    padding-left: 20px;
-  }
-  
-  .timeline::before {
-    left: 10px;
-  }
-  
-  .timeline-item {
-    padding-left: 50px;
-    min-height: 70px;
-  }
-  
-  .timeline-dot {
-    left: 9px;
-    top: 30px;
-    transform: translateX(-50%);
-  }
-  
-  .timeline-icon {
-    left: 25px;
-    top: 20px;
-    width: 40px;
-    height: 40px;
-  }
-  
-  .school-icon {
-    width: 35px;
-    height: 35px;
-  }
-  
-  .timeline-content {
-    padding: 15px;
-  }
-  
-  .timeline-title {
-    font-size: 17px;
-  }
-  
-  .timeline-location {
-    font-size: 14px;
-  }
-  
-  .timeline-description {
-    font-size: 14px;
-    padding-top: 10px;
-    margin-top: 10px;
-  }
+  .timeline { padding-left: 16px; }
+  .timeline::before { left: 8px; }
+  .timeline-item { padding-left: 44px; }
+  .timeline-icon { left: 20px; }
 }
 </style>
+
 
 ---
 
