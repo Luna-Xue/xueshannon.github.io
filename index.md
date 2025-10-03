@@ -61,11 +61,11 @@ Please email me with:<br>
 ---
 
 ## <img src="../img/research.png" height="35px"> Research Interests
-- **Wireless Systems and AI-Native RAN:** 5G, Sub-6G, NextG, O-RAN, AI-RAN; xApps/rApps for resource control and security analytics.
-- **ISAC and mmWave Sensing:** Contactless healthcare, smart cities, UAVs, and vehicles; scalable sensing with distributed devices in next-generation networks.
+- **Wireless Systems:** 5G, Sub-6G, NextG, O-RAN/AI-RAN.
+- **ISAC and mmWave Sensing:** Contactless healthcare, smart cities, UAVs, and vehicles; scalable sensing with distributed devices in NextG.
 - **Machine Learning for Wireless:** Applied ML and RL, federated and privacy-preserving learning, confidential computing at the edge.
 - **Generative AI for Comms and Security:** Data augmentation, waveform and beam co-design; adversarial RF, spoofing, safe data sharing, ISAC privacy, O-RAN analytics privacy.
-- **Security and Privacy:** Physical-Layer Security, authentication, anti-jamming and anti-spoofing, privacy-enhancing techniques for distributed IoT and CPS.
+- **Security and Privacy:** Physical-Layer Security, authentication, privacy preserving techniques for distributed IoT and CPS.
 - **Prototyping and Testbeds:** O-RAN stacks, ISAC prototypes, edge IoT platforms, CBRS and C-band experiments; end-to-end demos from algorithms to deployments.
 
 
