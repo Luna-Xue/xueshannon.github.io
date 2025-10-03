@@ -6,6 +6,11 @@ title: Publications
 I can also be found on [Google Scholar](https://scholar.google.com/citations?user=rhcjOdQAAAAJ&hl=en).
 
 ## 2025
+<img src="../img/conference-paper.png" height="20px">
+<strong>X. Xue</strong>, S. Yu, S. Parkar and Y. Zheng, "ROISD: RIS and O-RAN Assisted Intelligent Sensing for UAV Detection," <strong>IEEE AIoT 2025</strong> - IEEE Annual Congress on Artificial Intelligence of Things, Osaka, Japan.[[Paper&#8594;]]()
+
+<img src="../img/conference-paper.png" height="20px">
+<strong>X. Xue</strong>, S. Parkar, S. Yu and Y. Zheng, "AI-Assisted Composite ISAC for mmWave Respiration Pattern Recognition," <strong>IEEE AIoT 2025</strong> - IEEE Annual Congress on Artificial Intelligence of Things, Osaka, Japan.[[Paper&#8594;]]()
 
 ## 2023 
 <img src="../img/journal-article.png" height="20px">
