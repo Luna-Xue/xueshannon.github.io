@@ -89,7 +89,15 @@
     .cell { text-align: left; padding: 2px 4px; white-space: normal; overflow: visible; text-overflow: initial; }
     .title { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 8px; }
     .title a { color: var(--accent); text-decoration: none; font-weight: 600; }
-    .title .actions { display: inline-flex; align-items: center; gap: 8px; }
+    .title .actions { display: inline-flex; gap: 6px; }
+    .icon-btn { border: 1px solid var(--border); background: transparent; color: var(--muted); padding: 6px 8px; border-radius: 10px; cursor: pointer; }
+    .icon-btn:hover { color: var(--accent); border-color: var(--accent); }
+
+    /* GitHub star fallback badge */
+    .gh-inline { display:inline-flex; align-items:center; }
+    .gh-inline .github-button, .gh-inline .gh-badge { margin-left: 8px; }
+    .gh-badge { display:inline-flex; align-items:center; gap:6px; font-size:12px; border:1px solid var(--border); border-radius:999px; padding:4px 8px; color:var(--muted); background:var(--card); }
+    .gh-badge .count { font-weight:600; color:var(--text); }
     .details { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 8px; }
     .detail { padding: 6px 8px; border: 1px dashed var(--border); border-radius: 10px; color: var(--muted); background: color-mix(in oklab, var(--card) 90%, transparent); }
     .detail b { color: var(--text); font-weight: 600; margin-right: 6px; }
@@ -133,10 +141,12 @@
       <div class="brand" aria-label="Site title">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12a8 8 0 1 1 16 0v6a2 2 0 0 1-2 2h-2v-8a4 4 0 1 0-8 0v8H6a2 2 0 0 1-2-2v-6Z" stroke="currentColor" stroke-width="1.5"/></svg>
         <h1>Conference Tracking</h1>
+        <span id="ghStar" class="gh-inline"></span>
         <span class="chip" title="Client‑side only">No‑backend</span>
       </div>
       <div class="field">
         <button id="themeBtn" class="btn" aria-label="Toggle dark mode">🌗 Theme</button>
+        
       </div>
     </div>
     <div class="toolbar" role="region" aria-label="Filters and actions">
@@ -224,7 +234,128 @@
       favs: new Set(JSON.parse(localStorage.getItem('favConfs') || '[]')),
     };
 
+    // ===== GitHub Star config (set your repo "owner/name") =====
+    var GH_REPO = ''; // e.g., "nexuseli18/conf-tracker"
+
     function saveFavs(){ localStorage.setItem('favConfs', JSON.stringify(Array.from(state.favs))); }
+
+    // ===== Classification =====
+    var CATS = ['Wireless & Communication','Security & Privacy','Networking & Systems'];
+
+    // Acronym -> Category dictionary (extend freely)
+    var CAT_BY_ACRONYM = (function(){
+      var map = {};
+      function put(list, cat){ for(var i=0;i<list.length;i++){ map[list[i]] = cat; } }
+      // Wireless only
+      put(['ICC','GLOBECOM','WCNC','VTC','PIMRC','INFOCOM-WIRELESS','IPSN','WoWMoM','CROWNCOM','Globecom','ICC Workshops'], 'Wireless & Communication');
+      // Security only
+      put(['S&P','OAKLAND','NDSS','CCS','USENIX SECURITY','RAID','PETS','ACSAC','CSF','EuroS&P','ASIACCS'], 'Security & Privacy');
+      // Net/Sys only
+      put(['SIGCOMM','NSDI','CoNEXT','CONEXT','ICNP','ICDCS','IMC','HOTNETS','SOSP','OSDI','EUROSYS','FAST','Middleware','CLOUD','SOCC','LANMAN'], 'Networking & Systems');
+      // Dual-tag series (Net/Sys + Wireless)
+      map['INFOCOM'] = ['Networking & Systems','Wireless & Communication'];
+      map['MOBICOM'] = ['Networking & Systems','Wireless & Communication'];
+      map['MOBIHOC'] = ['Networking & Systems','Wireless & Communication'];
+      map['SENSYS'] = ['Networking & Systems','Wireless & Communication'];
+      return map;
+    })();
+
+    // Keyword -> Category heuristics (lowercase)
+    var KEYWORDS = [
+      { words: ['security','privacy','crypt'], cat: 'Security & Privacy' },
+      { words: ['wireless','wlan','cellular','lte','5g','6g','communication','mimo','beamforming','wcnc','vtc'], cat: 'Wireless & Communication' },
+      { words: ['network','routing','switch','sdn','systems','distributed','cloud','datacenter','osdi','sosp','sigcomm','nsdi','icnp','icdcs','imc','conext','hotnets'], cat: 'Networking & Systems' }
+    ];
+
+    function extractAcronyms(name){
+      if(!name) return [];
+      var s = String(name).toUpperCase();
+      var arr = [];
+      // common patterns: "ACM SIGCOMM 2026", "IEEE ICC 2026", "USENIX Security", "IEEE S&P"
+      var mParen = s.match(/\(([A-Z&\.]{2,})\)/g) || [];
+      for(var i=0;i<mParen.length;i++){ arr.push(mParen[i].replace(/[()]/g,'')); }
+      // tokens of consecutive caps (len>=2) as possible acronyms
+      var toks = s.split(/[^A-Z0-9&\.]+/);
+      for(var j=0;j<toks.length;j++){ var t=toks[j]; if(t && /[A-Z]/.test(t) && t.length>=2) arr.push(t); }
+      // normalize special cases
+      for(var k=0;k<arr.length;k++){ if(arr[k]==='IEEE') arr[k]=''; if(arr[k]==='ACM') arr[k]=''; }
+      return arr.filter(function(x){ return x && x!=='IEEE' && x!=='ACM'; });
+    }
+
+    function inferCategoryFromAcronym(name){
+      var acs = extractAcronyms(name);
+      var out = [];
+      for(var i=0;i<acs.length;i++){
+        var a = acs[i];
+        var v = CAT_BY_ACRONYM[a];
+        if(v){
+          if(Array.isArray(v)) out = out.concat(v); else out.push(v);
+        } else {
+          if(a==='SP' || a==='S&P' || a==='OAKLAND') out.push('Security & Privacy');
+          if(a==='CONEXT') out.push('Networking & Systems');
+        }
+      }
+      // unique
+      var seen = {}; var uniq = [];
+      for(var k=0;k<out.length;k++){ var c=out[k]; if(c && !seen[c]){ seen[c]=1; uniq.push(c); } }
+      return uniq.length? uniq : null;
+    }
+
+    function inferCategoryFromKeywords(name){
+      var s = (name||'').toLowerCase();
+      for(var i=0;i<KEYWORDS.length;i++){
+        var rule = KEYWORDS[i];
+        for(var j=0;j<rule.words.length;j++){
+          if(s.indexOf(rule.words[j])!==-1) return rule.cat;
+        }
+      }
+      return null;
+    }
+
+    function normalizeCategory(cat){
+      if(!cat) return null;
+      var arr = Array.isArray(cat) ? cat : [cat];
+      var out = [];
+      for(var i=0;i<arr.length;i++){
+        var val = arr[i]; if(!val) continue;
+        for(var j=0;j<CATS.length;j++){
+          if(String(val).toLowerCase().indexOf(CATS[j].toLowerCase())!==-1){ out.push(CATS[j]); break; }
+        }
+      }
+      // unique
+      var seen = {}; var uniq = [];
+      for(var k=0;k<out.length;k++){ var v=out[k]; if(!seen[v]){ seen[v]=1; uniq.push(v); } }
+      return uniq.length? uniq : null;
+    }
+
+    function classifyConference(c){
+      var name = c.name || c.Conference || '';
+      var fromField = normalizeCategory(c.sub || c.category || c.CATEGORY);
+      var fromAcr = normalizeCategory(inferCategoryFromAcronym(name));
+      var fromKey = normalizeCategory(inferCategoryFromKeywords(name));
+      // Priority: explicit field (if valid) > acronym map > keyword map > fallback heuristic
+      var cats = fromField || fromAcr || fromKey;
+      if(!cats){
+        if(/security|privacy/i.test(name)) cats = ['Security & Privacy'];
+        else if(/wireless|communication|mobi|wcnc|vtc|5g|6g/i.test(name)) cats = ['Wireless & Communication'];
+        else cats = ['Networking & Systems'];
+      }
+      c.sub = cats; // ensure array of categories
+      return cats;
+    }
+
+    function autoClassifyAll(list){
+      for(var i=0;i<list.length;i++) classifyConference(list[i]);
+    }
+
+    function isKnownCategory(x){ return CATS.indexOf(x)>=0; }
+
+    function ensureCategories(){
+      for(var i=0;i<state.confs.length;i++){
+        var c = state.confs[i];
+        classifyConference(c);
+      }
+    }
 
     // Robust date sanitization: accepts "YYYY-MM-DD", "MMM DD, YYYY", ISO, and strips <strike>
     function cleanDateStr(s){
@@ -348,8 +479,9 @@
       var q = state.search.trim().toLowerCase();
       var rows = state.confs.filter(function(c){
         var name = (c.name || c.Conference || '').toLowerCase();
-        var sub = (c.sub || '').toLowerCase();
-        var okSub = state.subject === 'ALL' || sub.indexOf(state.subject.toLowerCase()) !== -1;
+        var subs = Array.isArray(c.sub) ? c.sub : (c.sub? [c.sub] : []);
+        var subsLower = subs.map(function(x){ return String(x).toLowerCase(); });
+        var okSub = state.subject === 'ALL' || subsLower.indexOf(state.subject.toLowerCase()) !== -1;
         var okSearch = !q || name.indexOf(q) !== -1 || ((c.Location||'').toLowerCase().indexOf(q) !== -1);
         var dl = daysLeft(c['Submission Deadline']||c.deadline);
         var okOpen = !state.onlyOpen || !dl.closed;
@@ -402,7 +534,12 @@
         title.setAttribute('aria-label', 'Open ' + name + ' website');
 
         meta.innerHTML = '';
-        if(c.sub){ var b1 = document.createElement('span'); b1.className='badge'; b1.textContent = c.sub; meta.appendChild(b1); }
+        if(c.sub){
+          var subs = Array.isArray(c.sub) ? c.sub : [c.sub];
+          for(var si=0; si<subs.length; si++){
+            var b = document.createElement('span'); b.className='badge'; b.textContent = subs[si]; meta.appendChild(b);
+          }
+        }
         if(c.ccf){ var b2 = document.createElement('span'); b2.className='badge'; b2.textContent = 'CCF ' + c.ccf; meta.appendChild(b2); }
 
         host.textContent = fmtHost(c['Start Date'], c['End Date']);
@@ -455,6 +592,7 @@
         if(!res.ok) throw new Error(res.status + ' ' + res.statusText);
         var data = await res.json();
         state.confs = Array.isArray(data) ? data : [];
+        ensureCategories();
         applyFilters();
       } catch (e) {
         console.error('Failed to load conferences:', e);
@@ -545,9 +683,50 @@
       }
     }
 
+    // Mount GitHub star button if configured
+    function mountGitHubStar(repo){
+      var slot = document.getElementById('ghStar');
+      if(!slot) return;
+      slot.innerHTML = '';
+      if(!repo || repo.indexOf('/') === -1) return; // require owner/name
+      // Primary: GitHub Buttons
+      var a = document.createElement('a');
+      a.className = 'github-button';
+      a.href = 'https://github.com/' + repo;
+      a.setAttribute('data-icon','octicon-star');
+      a.setAttribute('data-show-count','true');
+      a.setAttribute('aria-label','Star ' + repo + ' on GitHub');
+      a.textContent = 'Star';
+      slot.appendChild(a);
+      // inject script once
+      if(!document.getElementById('gh-buttons-js')){
+        var s = document.createElement('script');
+        s.id = 'gh-buttons-js'; s.async = true; s.defer = true; s.src = 'https://buttons.github.io/buttons.js';
+        document.body.appendChild(s);
+      }
+      // Fallback: if buttons fail, fetch stars count and render a badge
+      setTimeout(function(){
+        // if iframe not created, do API fallback
+        if(!slot.querySelector('iframe')){
+          try {
+            fetch('https://api.github.com/repos/' + repo, {cache:'no-store'})
+            .then(function(r){ return r.ok ? r.json() : null; })
+            .then(function(j){
+              if(!j) return;
+              slot.innerHTML = '';
+              var link = document.createElement('a'); link.href = 'https://github.com/' + repo; link.target = '_blank'; link.rel='noopener';
+              var badge = document.createElement('span'); badge.className = 'gh-badge'; badge.innerHTML = '⭐ Star <span class="count">' + (j.stargazers_count||0) + '</span>';
+              link.appendChild(badge); slot.appendChild(link);
+            });
+          } catch (e) { /* ignore */ }
+        }
+      }, 1200);
+    }
+
     // Init
     fetchData();
     runSelfTests();
+    mountGitHubStar(GH_REPO);
   </script>
 </body>
 </html>
