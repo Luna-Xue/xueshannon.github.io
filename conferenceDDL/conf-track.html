@@ -92,6 +92,8 @@
     .detail { padding: 6px 8px; border: 1px dashed var(--border); border-radius: 10px; color: var(--muted); background: color-mix(in oklab, var(--card) 90%, transparent); }
     .detail b { color: var(--text); font-weight: 600; margin-right: 6px; }
 
+    .badge { font-size: 12px; padding: 1px 7px; border-radius: 999px; border: 1px solid var(--border); color: var(--muted); }
+
     .countdown { font-weight: 700; }
     .countdown.green { color: var(--green); }
     .countdown.orange { color: var(--orange); }
@@ -177,6 +179,7 @@
     <section id="list" class="table-body" aria-live="polite"></section>
   </main>
 
+  <!-- Template: Notification on first row; second row holds Location/Host/Abstract/Submission -->
   <template id="row-tpl">
     <article class="row" role="article">
       <div class="cell title">
@@ -185,17 +188,17 @@
           <span class="meta"></span>
         </div>
         <div class="actions">
+          <span class="notif" title="Notification date">—</span>
           <span class="countdown">—</span>
           <button class="icon-btn fav" title="Toggle favorite" aria-label="Toggle favorite">☆</button>
           <button class="icon-btn ics" title="Add DDL to Calendar" aria-label="Add deadline to calendar">📅</button>
         </div>
       </div>
       <div class="details">
-        <div class="detail host"><b>Host:</b> <span class="v"></span></div>
         <div class="detail loc"><b>Location:</b> <span class="v"></span></div>
+        <div class="detail host"><b>Host:</b> <span class="v"></span></div>
         <div class="detail abs"><b>Abstract DDL:</b> <span class="v"></span></div>
         <div class="detail sub"><b>Submission DDL:</b> <span class="v"></span></div>
-        <div class="detail noti"><b>Notification:</b> <span class="v"></span></div>
       </div>
     </article>
   </template>
@@ -206,10 +209,10 @@
 
   <script>
     // ===== Utils =====
-    const $ = (sel, el=document) => el.querySelector(sel);
-    const $$ = (sel, el=document) => Array.from(el.querySelectorAll(sel));
+    var $ = function(sel, el){ return (el||document).querySelector(sel); };
+    var $$ = function(sel, el){ return Array.from((el||document).querySelectorAll(sel)); };
 
-    const state = {
+    var state = {
       confs: [],
       filtered: [],
       subject: 'ALL',
@@ -221,7 +224,7 @@
       favs: new Set(JSON.parse(localStorage.getItem('favConfs') || '[]')),
     };
 
-    function saveFavs(){ localStorage.setItem('favConfs', JSON.stringify([...state.favs])); }
+    function saveFavs(){ localStorage.setItem('favConfs', JSON.stringify(Array.from(state.favs))); }
 
     // Robust date sanitization: accepts "YYYY-MM-DD", "MMM DD, YYYY", ISO, and strips <strike>
     function cleanDateStr(s){
@@ -233,74 +236,93 @@
       if(!s) return null;
       s = cleanDateStr(s);
       // ISO or YYYY-MM-DD
-      const iso = Date.parse(s);
+      var iso = Date.parse(s);
       if(!Number.isNaN(iso)) return new Date(iso);
       // "Jan 05 2026" or "Jan 5, 2026"
-      const m = s.match(/^(\w{3,})\s(\d{1,2}),?\s(\d{4})$/);
-      if(m) return new Date(`${m[1]} ${m[2]}, ${m[3]}`);
+      var m = s.match(/^(\w{3,})\s(\d{1,2}),?\s(\d{4})$/);
+      if(m) return new Date(m[1] + ' ' + m[2] + ', ' + m[3]);
       return null;
     }
 
-    function fmtDate(d, opts={}){
+    function fmtDate(d, opts){
       if(!d) return '';
-      const tz = state.tz === 'auto' ? undefined : state.tz;
+      opts = opts || {};
+      var tz = state.tz === 'auto' ? undefined : state.tz;
+      var base = { year:'numeric', month:'short', day:'2-digit' };
+      // shallow merge base + opts
+      var all = { year: base.year, month: base.month, day: base.day };
+      for(var k in opts){ if(opts.hasOwnProperty(k)) all[k] = opts[k]; }
       try {
-        return d.toLocaleDateString('en-US', { year:'numeric', month:'short', day:'2-digit', timeZone: tz, ...opts });
-      } catch { return d.toLocaleDateString('en-US', { year:'numeric', month:'short', day:'2-digit' }); }
+        if(tz) all.timeZone = tz;
+        return d.toLocaleDateString('en-US', all);
+      } catch (e) {
+        return d.toLocaleDateString('en-US', base);
+      }
     }
 
     function fmtHost(start, end){
-      const s = parseDate(start), e = parseDate(end);
+      var s = parseDate(start), e = parseDate(end);
       if(!s || !e) return '';
-      const tz = state.tz === 'auto' ? undefined : state.tz;
-      const month = s.toLocaleDateString('en-US', { month:'short', timeZone: tz });
-      const sd = s.toLocaleDateString('en-US', { day:'2-digit', timeZone: tz });
-      const ed = e.toLocaleDateString('en-US', { day:'2-digit', timeZone: tz });
-      const year = s.toLocaleDateString('en-US', { year:'numeric', timeZone: tz });
-      return `${month} ${sd}–${ed}, ${year}`;
+      var tz = state.tz === 'auto' ? undefined : state.tz;
+      var month = s.toLocaleDateString('en-US', { month:'short', timeZone: tz });
+      var sd = s.toLocaleDateString('en-US', { day:'2-digit', timeZone: tz });
+      var ed = e.toLocaleDateString('en-US', { day:'2-digit', timeZone: tz });
+      var year = s.toLocaleDateString('en-US', { year:'numeric', timeZone: tz });
+      return month + ' ' + sd + '–' + ed + ', ' + year;
     }
 
     function daysLeft(deadStr){
-      const d = parseDate(deadStr);
+      var d = parseDate(deadStr);
       if(!d) return { text:'—', cls:'', closed:false, d:null };
-      const now = new Date();
-      const diffMs = d - now;
-      const closed = diffMs < 0;
-      if(closed) return { text:'Closed', cls:'red', closed:true, d };
-      const secTotal = Math.floor(diffMs / 1000);
-      const days = Math.floor(secTotal / 86400);
-      const hours = Math.floor((secTotal % 86400) / 3600);
-      const mins = Math.floor((secTotal % 3600) / 60);
-      const secs = secTotal % 60;
-      const pad2 = n => String(n).padStart(2, '0');
-      const text = `${days}d ${pad2(hours)}:${pad2(mins)}:${pad2(secs)}`;
-      const cls = days <= 20 ? 'orange' : 'green';
-      return { text, cls, closed:false, d };
+      var now = new Date();
+      var diffMs = d - now;
+      var closed = diffMs < 0;
+      if(closed) return { text:'Closed', cls:'red', closed:true, d: d };
+      var secTotal = Math.floor(diffMs / 1000);
+      var days = Math.floor(secTotal / 86400);
+      var hours = Math.floor((secTotal % 86400) / 3600);
+      var mins = Math.floor((secTotal % 3600) / 60);
+      var secs = secTotal % 60;
+      function pad2(n){ return String(n).padStart(2,'0'); }
+      var text = days + ' day ' + pad2(hours) + ' h ' + pad2(mins) + ' m ' + pad2(secs) + ' s';
+      var cls = 'green';
+      if(days <= 3) cls = 'red';
+      else if(days <= 20) cls = 'orange';
+      return { text: text, cls: cls, closed:false, d: d };
     }
 
-    function debounce(fn, wait=250){ let t; return (...args)=>{ clearTimeout(t); t=setTimeout(()=>fn(...args), wait); } }
+    function debounce(fn, wait){
+      wait = wait || 250;
+      var t;
+      return function(){
+        var args = arguments;
+        clearTimeout(t);
+        t = setTimeout(function(){ fn.apply(null, args); }, wait);
+      };
+    }
 
     function icsFor(conf){
-      const name = conf.name || conf.Conference || 'Conference';
-      const dlStr = conf['Submission Deadline'] || conf.deadline || '';
-      const d = parseDate(dlStr);
+      var name = conf.name || conf.Conference || 'Conference';
+      var dlStr = conf['Submission Deadline'] || conf.deadline || '';
+      var d = parseDate(dlStr);
       if(!d) return null;
-      const pad = n=> String(n).padStart(2,'0');
+      function pad(n){ return String(n).padStart(2,'0'); }
       // all-day event on deadline date in UTC
-      const y=d.getUTCFullYear(), m=pad(d.getUTCMonth()+1), day=pad(d.getUTCDate());
-      const DTSTART = `${y}${m}${day}`;
-      const UID = `${y}${m}${day}-${encodeURIComponent(name)}@conftracker`;
-      const desc = `Submission deadline for ${name}. ${conf.link?('Link: '+conf.link):''}`.trim();
-      const ics = `BEGIN:VCALENDAR\nVERSION:2.0\nPRODID:-//ConfTracker//EN\nCALSCALE:GREGORIAN\nMETHOD:PUBLISH\nBEGIN:VEVENT\nUID:${UID}\nDTSTAMP:${y}${m}${day}T000000Z\nDTSTART;VALUE=DATE:${DTSTART}\nSUMMARY:Submission DDL — ${name}\nDESCRIPTION:${desc.replace(/\n/g,' ')}\nEND:VEVENT\nEND:VCALENDAR`;
+      var y = d.getUTCFullYear(), m = pad(d.getUTCMonth()+1), day = pad(d.getUTCDate());
+      var DTSTART = '' + y + m + day;
+      var UID = '' + y + m + day + '-' + encodeURIComponent(name) + '@conftracker';
+      var desc = ('Submission deadline for ' + name + '. ' + (conf.link?('Link: '+conf.link):'')).trim();
+      var ics = 'BEGIN:VCALENDAR\nVERSION:2.0\nPRODID:-//ConfTracker//EN\nCALSCALE:GREGORIAN\nMETHOD:PUBLISH\nBEGIN:VEVENT\nUID:' + UID + '\nDTSTAMP:' + y + m + day + 'T000000Z\nDTSTART;VALUE=DATE:' + DTSTART + '\nSUMMARY:Submission DDL — ' + name + '\nDESCRIPTION:' + desc.replace(/\n/g,' ') + '\nEND:VEVENT\nEND:VCALENDAR';
       return new Blob([ics], { type: 'text/calendar' });
     }
 
     function toCSV(rows){
-      const header = ['Conference','Host Time','Location','Abstract DDL','Submission DDL','Notification','Days Left'];
-      const esc = s=> '"'+String(s??'').replaceAll('"','""')+'"';
-      const lines = [header.join(',')];
-      for(const r of rows){
-        const dl = daysLeft(r['Submission Deadline']||r.deadline);
+      var header = ['Conference','Host Time','Location','Abstract DDL','Submission DDL','Notification','Days Left'];
+      function esc(s){ s = (s==null?'' : String(s)); return '"' + s.replace(/"/g,'""') + '"'; }
+      var lines = [header.join(',')];
+      for(var i=0;i<rows.length;i++){
+        var r = rows[i];
+        var dl = daysLeft(r['Submission Deadline']||r.deadline);
         lines.push([
           r.name||r.Conference||'',
           fmtHost(r['Start Date'], r['End Date']),
@@ -315,29 +337,41 @@
     }
 
     // ===== Rendering =====
-    const $list = $('#list'), $tpl = $('#row-tpl'), $empty = $('#empty');
+    var $list = $('#list'), $tpl = $('#row-tpl'), $empty = $('#empty');
+
+    function ddlTs(c){
+      var d = parseDate(c['Submission Deadline']||c.deadline);
+      return d ? d.getTime() : null;
+    }
 
     function applyFilters(){
-      const q = state.search.trim().toLowerCase();
-      let rows = state.confs.filter(c => {
-        const name = (c.name || c.Conference || '').toLowerCase();
-        const sub = (c.sub || '').toLowerCase();
-        const okSub = state.subject === 'ALL' || sub.includes(state.subject.toLowerCase());
-        const okSearch = !q || name.includes(q) || (c.Location||'').toLowerCase().includes(q);
-        const dl = daysLeft(c['Submission Deadline']||c.deadline);
-        const okOpen = !state.onlyOpen || !dl.closed;
-        const okFav = !state.onlyFav || state.favs.has((c.link || c.name || c.Conference || ''));
+      var q = state.search.trim().toLowerCase();
+      var rows = state.confs.filter(function(c){
+        var name = (c.name || c.Conference || '').toLowerCase();
+        var sub = (c.sub || '').toLowerCase();
+        var okSub = state.subject === 'ALL' || sub.indexOf(state.subject.toLowerCase()) !== -1;
+        var okSearch = !q || name.indexOf(q) !== -1 || ((c.Location||'').toLowerCase().indexOf(q) !== -1);
+        var dl = daysLeft(c['Submission Deadline']||c.deadline);
+        var okOpen = !state.onlyOpen || !dl.closed;
+        var favKey = (c.link || c.name || c.Conference || '');
+        var okFav = !state.onlyFav || state.favs.has(favKey);
         return okSub && okSearch && okOpen && okFav;
       });
 
-      const keyers = {
-        'deadline-asc': c => parseDate(c['Submission Deadline']||c.deadline)?.getTime() ?? 9e15,
-        'deadline-desc': c => -(parseDate(c['Submission Deadline']||c.deadline)?.getTime() ?? 0),
-        'name-asc': c => (c.name||c.Conference||'').toLowerCase(),
-        'name-desc': c => '\uFFFF'+(c.name||c.Conference||'').toLowerCase(),
+      var keyers = {
+        'deadline-asc': function(c){ var t = ddlTs(c); return t==null? 9e15 : t; },
+        'deadline-desc': function(c){ var t = ddlTs(c); return t==null? 0 : -t; },
+        'name-asc': function(c){ return (c.name||c.Conference||'').toLowerCase(); },
+        'name-desc': function(c){ return '\uFFFF' + (c.name||c.Conference||'').toLowerCase(); }
       };
-      const keyer = keyers[state.sort] || keyers['deadline-asc'];
-      rows.sort((a,b)=>{ const dla = daysLeft(a['Submission Deadline']||a.deadline); const dlb = daysLeft(b['Submission Deadline']||b.deadline); if(dla.closed !== dlb.closed) return dla.closed ? 1 : -1; const ka = keyer(a); const kb = keyer(b); return ka>kb?1:ka<kb?-1:0; });
+      var keyer = keyers[state.sort] || keyers['deadline-asc'];
+      rows.sort(function(a,b){
+        var dla = daysLeft(a['Submission Deadline']||a.deadline);
+        var dlb = daysLeft(b['Submission Deadline']||b.deadline);
+        if(dla.closed !== dlb.closed) return dla.closed ? 1 : -1; // open first, closed last
+        var ka = keyer(a); var kb = keyer(b);
+        return ka>kb?1:ka<kb?-1:0;
+      });
 
       state.filtered = rows;
       renderList();
@@ -347,61 +381,66 @@
       $list.innerHTML = '';
       if(!state.filtered.length){ $empty.hidden = false; return; } else { $empty.hidden = true; }
 
-      const frag = document.createDocumentFragment();
-      for(const c of state.filtered){
-        const el = $tpl.content.cloneNode(true);
-        const title = $('.link', el);
-        const meta = $('.meta', el);
-        const host = $('.host .v', el);
-        const loc = $('.loc .v', el);
-        const abs = $('.abs .v', el);
-        const sub = $('.sub .v', el);
-        const noti = $('.noti .v', el);
-        const left = $('.countdown', el);
-        const favBtn = $('.fav', el);
-        const icsBtn = $('.ics', el);
+      var frag = document.createDocumentFragment();
+      for(var i=0;i<state.filtered.length;i++){
+        var c = state.filtered[i];
+        var el = $tpl.content.cloneNode(true);
+        var title = $('.link', el);
+        var meta = $('.meta', el);
+        var host = $('.host .v', el);
+        var loc = $('.loc .v', el);
+        var abs = $('.abs .v', el);
+        var sub = $('.sub .v', el);
+        var notiTop = $('.notif', el);
+        var left = $('.countdown', el);
+        var favBtn = $('.fav', el);
+        var icsBtn = $('.ics', el);
 
-        const name = c.name || c.Conference || '—';
+        var name = c.name || c.Conference || '—';
         title.textContent = name;
         title.href = c.link || '#';
-        title.setAttribute('aria-label', `Open ${name} website`);
+        title.setAttribute('aria-label', 'Open ' + name + ' website');
 
         meta.innerHTML = '';
-        if(c.sub) { const b = document.createElement('span'); b.className='badge'; b.textContent = c.sub; meta.appendChild(b); }
-        if(c.ccf) { const b = document.createElement('span'); b.className='badge'; b.textContent = `CCF ${c.ccf}`; meta.appendChild(b); }
+        if(c.sub){ var b1 = document.createElement('span'); b1.className='badge'; b1.textContent = c.sub; meta.appendChild(b1); }
+        if(c.ccf){ var b2 = document.createElement('span'); b2.className='badge'; b2.textContent = 'CCF ' + c.ccf; meta.appendChild(b2); }
 
         host.textContent = fmtHost(c['Start Date'], c['End Date']);
         loc.textContent = c.Location || '';
         abs.textContent = fmtDate(parseDate(c['Abstract Deadline']||''));
-        const subD = c['Submission Deadline'] || c.deadline || '';
+        var subD = c['Submission Deadline'] || c.deadline || '';
         sub.textContent = fmtDate(parseDate(subD));
-        noti.textContent = fmtDate(parseDate(c.Notification||''));
+        notiTop.textContent = fmtDate(parseDate(c.Notification||''));
 
-        const dl = daysLeft(subD);
-        left.textContent = dl.text; left.className = `countdown ${dl.cls}`;
+        var dl = daysLeft(subD);
+        left.textContent = dl.text; left.className = 'countdown ' + dl.cls;
 
         // Mark closed entries for gray style
-        const article = el.querySelector('.row');
+        var article = el.querySelector('.row');
         if(dl.closed){ article.classList.add('closed'); }
 
-        const favKey = c.link || c.name || c.Conference || '';
-        const favOn = state.favs.has(favKey);
+        var favKey = c.link || c.name || c.Conference || '';
+        var favOn = state.favs.has(favKey);
         favBtn.textContent = favOn ? '★' : '☆';
-        favBtn.ariaPressed = String(favOn);
-        favBtn.addEventListener('click', ()=>{
-          if(state.favs.has(favKey)) state.favs.delete(favKey); else state.favs.add(favKey);
-          saveFavs(); applyFilters();
-        });
+        favBtn.setAttribute('aria-pressed', String(favOn));
+        favBtn.addEventListener('click', function(key){
+          return function(){
+            if(state.favs.has(key)) state.favs.delete(key); else state.favs.add(key);
+            saveFavs(); applyFilters();
+          };
+        }(favKey));
 
-        icsBtn.addEventListener('click', ()=>{
-          const blob = icsFor(c);
-          if(!blob){ alert('No valid submission deadline to add.'); return; }
-          const url = URL.createObjectURL(blob);
-          const a = document.createElement('a');
-          a.href = url; a.download = `${(name||'conf').replace(/[^a-z0-9]+/gi,'_')}_submission_ddl.ics`;
-          document.body.appendChild(a); a.click(); a.remove();
-          setTimeout(()=>URL.revokeObjectURL(url), 2000);
-        });
+        icsBtn.addEventListener('click', function(conf, nm){
+          return function(){
+            var blob = icsFor(conf);
+            if(!blob){ alert('No valid submission deadline to add.'); return; }
+            var url = URL.createObjectURL(blob);
+            var a = document.createElement('a');
+            a.href = url; a.download = (nm||'conf').replace(/[^a-z0-9]+/gi,'_') + '_submission_ddl.ics';
+            document.body.appendChild(a); a.click(); a.remove();
+            setTimeout(function(){ URL.revokeObjectURL(url); }, 2000);
+          };
+        }(c, name));
 
         frag.appendChild(el);
       }
@@ -410,11 +449,11 @@
 
     // ===== Data =====
     async function fetchData(){
-      const url = 'https://raw.githubusercontent.com/nexuseli18/conf-tracker/refs/heads/master/conferences.json';
+      var url = 'https://raw.githubusercontent.com/nexuseli18/conf-tracker/refs/heads/master/conferences.json';
       try {
-        const res = await fetch(url, { cache:'no-store' });
+        var res = await fetch(url, { cache:'no-store' });
         if(!res.ok) throw new Error(res.status + ' ' + res.statusText);
-        const data = await res.json();
+        var data = await res.json();
         state.confs = Array.isArray(data) ? data : [];
         applyFilters();
       } catch (e) {
@@ -424,56 +463,58 @@
     }
 
     // ===== Events =====
-    $('#search').addEventListener('input', debounce(e=>{ state.search = e.target.value; applyFilters(); }, 120));
-    $('#subject').addEventListener('change', e=>{ state.subject = e.target.value; applyFilters(); });
-    $('#sort').addEventListener('change', e=>{ state.sort = e.target.value; applyFilters(); });
-    $('#onlyOpen').addEventListener('change', e=>{ state.onlyOpen = e.target.checked; applyFilters(); });
-    $('#onlyFav').addEventListener('change', e=>{ state.onlyFav = e.target.checked; applyFilters(); });
-    $('#exportCsv').addEventListener('click', ()=>{
-      const blob = toCSV(state.filtered);
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement('a');
+    $('#search').addEventListener('input', debounce(function(e){ state.search = e.target.value; applyFilters(); }, 120));
+    $('#subject').addEventListener('change', function(e){ state.subject = e.target.value; applyFilters(); });
+    $('#sort').addEventListener('change', function(e){ state.sort = e.target.value; applyFilters(); });
+    $('#onlyOpen').addEventListener('change', function(e){ state.onlyOpen = e.target.checked; applyFilters(); });
+    $('#onlyFav').addEventListener('change', function(e){ state.onlyFav = e.target.checked; applyFilters(); });
+    $('#exportCsv').addEventListener('click', function(){
+      var blob = toCSV(state.filtered);
+      var url = URL.createObjectURL(blob);
+      var a = document.createElement('a');
       a.href = url; a.download = 'conferences.csv';
       document.body.appendChild(a); a.click(); a.remove();
-      setTimeout(()=>URL.revokeObjectURL(url), 1500);
+      setTimeout(function(){ URL.revokeObjectURL(url); }, 1500);
     });
 
     // Timezone default: if running in Hawaiʻi, default to Pacific/Honolulu; else auto.
-    const hawaiiTZ = 'Pacific/Honolulu';
-    const tzGuess = Intl.DateTimeFormat().resolvedOptions().timeZone || 'auto';
+    var hawaiiTZ = 'Pacific/Honolulu';
+    var tzGuess = Intl.DateTimeFormat().resolvedOptions().timeZone || 'auto';
     if(tzGuess === hawaiiTZ){ $('#tz').value = hawaiiTZ; state.tz = hawaiiTZ; } else { state.tz = 'auto'; }
-    $('#tz').addEventListener('change', e=>{ state.tz = e.target.value; applyFilters(); });
+    $('#tz').addEventListener('change', function(e){ state.tz = e.target.value; applyFilters(); });
 
     // Keyboard focus for search
-    window.addEventListener('keydown', (e)=>{
+    window.addEventListener('keydown', function(e){
       if((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k'){ e.preventDefault(); $('#search').focus(); }
     });
 
     // Theme toggle
-    const themeBtn = $('#themeBtn');
-    const themeKey = 'confTheme';
-    const savedTheme = localStorage.getItem(themeKey);
+    var themeBtn = $('#themeBtn');
+    var themeKey = 'confTheme';
+    var savedTheme = localStorage.getItem(themeKey);
     if(savedTheme) document.documentElement.setAttribute('data-theme', savedTheme);
-    themeBtn.addEventListener('click', ()=>{
-      const cur = document.documentElement.getAttribute('data-theme');
-      const next = cur === 'dark' ? '' : 'dark';
+    themeBtn.addEventListener('click', function(){
+      var cur = document.documentElement.getAttribute('data-theme');
+      var next = cur === 'dark' ? '' : 'dark';
       if(next) document.documentElement.setAttribute('data-theme', next); else document.documentElement.removeAttribute('data-theme');
       localStorage.setItem(themeKey, next);
     });
 
     // Live countdown refresh (every second)
-    setInterval(()=>{
-      $$('#list .row').forEach((row, idx)=>{
-        const c = state.filtered[idx];
-        if(!c) return;
-        const dl = daysLeft(c['Submission Deadline']||c.deadline);
-        const el = row.querySelector('.countdown');
-        if(el){ el.textContent = dl.text; el.className = `countdown ${dl.cls}`; }
+    setInterval(function(){
+      var rows = $$('#list .row');
+      for(var i=0;i<rows.length;i++){
+        var row = rows[i];
+        var c = state.filtered[i];
+        if(!c) continue;
+        var dl = daysLeft(c['Submission Deadline']||c.deadline);
+        var el = row.querySelector('.countdown');
+        if(el){ el.textContent = dl.text; el.className = 'countdown ' + dl.cls; }
         if(dl.closed) row.classList.add('closed');
-      });
+      }
     }, 1000);
 
-    // ===== Developer smoke tests (non-intrusive) =====
+    // ===== Developer smoke tests (console only) =====
     function runSelfTests(){
       try {
         console.groupCollapsed('%cConfTracker tests','color:#3a86ff');
@@ -481,16 +522,19 @@
         console.assert(parseDate('1970-01-01') instanceof Date, 'parseDate(YYYY-MM-DD) should work');
         console.assert(parseDate('Jan 05, 2030') instanceof Date, 'parseDate(MMM DD, YYYY) should work');
         console.assert(parseDate('Jan 5 2030') instanceof Date, 'parseDate(MMM D YYYY) should work');
-        // daysLeft future format
-        const future = new Date(Date.now() + 36*3600*1000).toISOString().slice(0,10);
-        const dlF = daysLeft(future);
-        console.assert(/\dd \d{2}:\d{2}:\d{2}/.test(dlF.text), 'daysLeft should format as Xd HH:MM:SS');
-        console.assert(dlF.closed === false, 'daysLeft for future should not be closed');
-        // daysLeft closed
-        const dlP = daysLeft('1970-01-01');
+        // daysLeft future format & color thresholds
+        var f3 = new Date(Date.now() + 2*24*3600*1000).toISOString().slice(0,10); // <=3 days
+        var f10 = new Date(Date.now() + 10*24*3600*1000).toISOString().slice(0,10); // <=20 days
+        var f30 = new Date(Date.now() + 30*24*3600*1000).toISOString().slice(0,10); // >20 days
+        var dl3 = daysLeft(f3), dl10 = daysLeft(f10), dl30 = daysLeft(f30);
+        console.assert(/\d+ day \d{2} h \d{2} m \d{2} s/.test(dl3.text), 'daysLeft format ok');
+        console.assert(dl3.cls==='red' && dl10.cls==='orange' && dl30.cls==='green', 'color thresholds ok');
+        // closed
+        var dlP = daysLeft('1970-01-01');
         console.assert(dlP.closed === true && dlP.text === 'Closed', 'daysLeft should mark closed');
         // sorting closed last
-        const mock = [{deadline: future, name:'A'}, {deadline: '1970-01-01', name:'B'}];
+        var future = f30;
+        var mock = [{deadline: future, name:'A'}, {deadline: '1970-01-01', name:'B'}];
         state.confs = mock;
         state.subject = 'ALL'; state.search=''; state.onlyOpen=false; state.onlyFav=false; state.sort='deadline-asc';
         applyFilters();
