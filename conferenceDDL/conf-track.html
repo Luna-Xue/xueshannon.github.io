@@ -84,7 +84,6 @@
 
     .row { display: grid; grid-template-columns: 1fr; align-items: start; gap: 10px; padding: 14px; border: 1px solid var(--border); border-radius: 12px; background: var(--card); box-shadow: var(--shadow); margin-top: 12px; transition: transform .06s ease; width: min(var(--card-max), calc(100% - 32px)); }
     .row:hover { transform: translateY(-1px); }
-    .row:hover { transform: translateY(-1px); }
 
     .cell { text-align: left; padding: 2px 4px; white-space: normal; overflow: visible; text-overflow: initial; }
     .title { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 8px; }
@@ -146,7 +145,6 @@
       </div>
       <div class="field">
         <button id="themeBtn" class="btn" aria-label="Toggle dark mode">🌗 Theme</button>
-        
       </div>
     </div>
     <div class="toolbar" role="region" aria-label="Filters and actions">
@@ -189,7 +187,7 @@
     <section id="list" class="table-body" aria-live="polite"></section>
   </main>
 
-  <!-- Template: Notification on first row; second row holds Location/Host/Abstract/Submission -->
+  <!-- Template: Notification on first row; second row holds Location/Host/Submission/Note (Abstract info goes into Note) -->
   <template id="row-tpl">
     <article class="row" role="article">
       <div class="cell title">
@@ -207,8 +205,8 @@
       <div class="details">
         <div class="detail loc"><b>Location:</b> <span class="v"></span></div>
         <div class="detail host"><b>Host:</b> <span class="v"></span></div>
-        <div class="detail abs"><b>Abstract DDL:</b> <span class="v"></span></div>
         <div class="detail sub"><b>Submission DDL:</b> <span class="v"></span></div>
+        <div class="detail note" hidden><b>Note:</b> <span class="v"></span></div>
       </div>
     </article>
   </template>
@@ -303,6 +301,10 @@
 
     function inferCategoryFromKeywords(name){
       var s = (name||'').toLowerCase();
+      // Special case: INFOCOM textual name without acronym
+      if(s.indexOf('infocom')!==-1 || s.indexOf('international conference on computer communications')!==-1){
+        return ['Networking & Systems','Wireless & Communication'];
+      }
       for(var i=0;i<KEYWORDS.length;i++){
         var rule = KEYWORDS[i];
         for(var j=0;j<rule.words.length;j++){
@@ -468,6 +470,16 @@
     }
 
     // ===== Rendering =====
+    function buildSearchText(c){
+      var parts = [];
+      var nm = (c.name || c.Conference || '');
+      parts.push(nm);
+      if(c.Location) parts.push(c.Location);
+      // include common acronyms derived from name so typing "INFOCOM" matches expanded names
+      var acs = extractAcronyms(nm);
+      for(var i=0;i<acs.length;i++) parts.push(acs[i]);
+      return parts.join(' ').toLowerCase();
+    }
     var $list = $('#list'), $tpl = $('#row-tpl'), $empty = $('#empty');
 
     function ddlTs(c){
@@ -478,11 +490,11 @@
     function applyFilters(){
       var q = state.search.trim().toLowerCase();
       var rows = state.confs.filter(function(c){
-        var name = (c.name || c.Conference || '').toLowerCase();
+        var hay = buildSearchText(c);
         var subs = Array.isArray(c.sub) ? c.sub : (c.sub? [c.sub] : []);
         var subsLower = subs.map(function(x){ return String(x).toLowerCase(); });
         var okSub = state.subject === 'ALL' || subsLower.indexOf(state.subject.toLowerCase()) !== -1;
-        var okSearch = !q || name.indexOf(q) !== -1 || ((c.Location||'').toLowerCase().indexOf(q) !== -1);
+        var okSearch = !q || hay.indexOf(q) !== -1;
         var dl = daysLeft(c['Submission Deadline']||c.deadline);
         var okOpen = !state.onlyOpen || !dl.closed;
         var favKey = (c.link || c.name || c.Conference || '');
@@ -521,7 +533,7 @@
         var meta = $('.meta', el);
         var host = $('.host .v', el);
         var loc = $('.loc .v', el);
-        var abs = $('.abs .v', el);
+        var noteV = $('.note .v', el);
         var sub = $('.sub .v', el);
         var notiTop = $('.notif', el);
         var left = $('.countdown', el);
@@ -544,7 +556,16 @@
 
         host.textContent = fmtHost(c['Start Date'], c['End Date']);
         loc.textContent = c.Location || '';
-        abs.textContent = fmtDate(parseDate(c['Abstract Deadline']||''));
+        var absStr = c['Abstract Deadline']||'';
+        var absDate = parseDate(absStr);
+        var noteBox = el.querySelector('.note');
+        if(absDate){
+          noteBox.hidden = false;
+          noteV.textContent = 'Abstract DDL: ' + fmtDate(absDate);
+        } else {
+          noteBox.hidden = true;
+          noteV.textContent = '';
+        }
         var subD = c['Submission Deadline'] || c.deadline || '';
         sub.textContent = fmtDate(parseDate(subD));
         notiTop.textContent = fmtDate(parseDate(c.Notification||''));
@@ -667,6 +688,16 @@
         var dl3 = daysLeft(f3), dl10 = daysLeft(f10), dl30 = daysLeft(f30);
         console.assert(/\d+ day \d{2} h \d{2} m \d{2} s/.test(dl3.text), 'daysLeft format ok');
         console.assert(dl3.cls==='red' && dl10.cls==='orange' && dl30.cls==='green', 'color thresholds ok');
+        // search text should include acronym so "infocom" matches full name
+        var st = buildSearchText({ name: 'International Conference on Computer Communications (INFOCOM) 2026', Location: 'Honolulu' });
+        console.assert(st.indexOf('infocom')!==-1, 'buildSearchText should include extracted acronym');
+        // classification tests (additional)
+        var dual = classifyConference({ name: 'IEEE INFOCOM 2026' });
+        console.assert(Array.isArray(dual) && dual.indexOf('Networking & Systems')!==-1 && dual.indexOf('Wireless & Communication')!==-1, 'INFOCOM should have dual tags');
+        var dual2 = classifyConference({ name: 'ACM MobiCom 2026' });
+        console.assert(Array.isArray(dual2) && dual2.indexOf('Networking & Systems')!==-1 && dual2.indexOf('Wireless & Communication')!==-1, 'MobiCom should have dual tags');
+        var single = classifyConference({ name: 'IEEE ICDCS 2026' });
+        console.assert(Array.isArray(single) && single.length===1 && single[0]==='Networking & Systems', 'ICDCS should be single-tag Net/Sys');
         // closed
         var dlP = daysLeft('1970-01-01');
         console.assert(dlP.closed === true && dlP.text === 'Closed', 'daysLeft should mark closed');
