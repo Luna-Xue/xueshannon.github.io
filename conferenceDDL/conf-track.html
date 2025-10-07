@@ -132,6 +132,16 @@
       .grid-sm { display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px; }
       .countdown { justify-self: end; }
     }
+  
+    /* ===== Lightweight UI variant ===== */
+    html[data-ui="lite"] body { background: var(--bg) !important; }
+    html[data-ui="lite"] .row { box-shadow: none; border-radius: 8px; border-color: var(--border); padding: 10px; margin-top: 8px; }
+    html[data-ui="lite"] .row:hover { transform: none; }
+    html[data-ui="lite"] .table-body { padding: 8px; }
+    html[data-ui="lite"] .detail { border-style: solid; background: transparent; padding: 4px 6px; border-radius: 8px; }
+    html[data-ui="lite"] .badge { border-color: var(--border); }
+    html[data-ui="lite"] .toolbar .btn, html[data-ui="lite"] .toolbar select, html[data-ui="lite"] .toolbar input[type="search"] { height: 32px; border-radius: 8px; }
+    html[data-ui="lite"] .brand h1 { font-weight: 600; }
   </style>
 </head>
 <body>
@@ -145,6 +155,7 @@
       </div>
       <div class="field">
         <button id="themeBtn" class="btn" aria-label="Toggle dark mode">🌗 Theme</button>
+        <button id="uiBtn" class="btn" aria-pressed="false" title="Toggle lightweight UI">🪶 Lite</button>
       </div>
     </div>
     <div class="toolbar" role="region" aria-label="Filters and actions">
@@ -263,6 +274,14 @@
       { words: ['security','privacy','crypt'], cat: 'Security & Privacy' },
       { words: ['wireless','wlan','cellular','lte','5g','6g','communication','mimo','beamforming','wcnc','vtc'], cat: 'Wireless & Communication' },
       { words: ['network','routing','switch','sdn','systems','distributed','cloud','datacenter','osdi','sosp','sigcomm','nsdi','icnp','icdcs','imc','conext','hotnets'], cat: 'Networking & Systems' }
+    ];
+
+    // Common search aliases: map long names or variants -> well-known acronyms
+    var SEARCH_ALIASES = [
+      { alias: 'infocom', tests: ['infocom','international conference on computer communications'] },
+      { alias: 'mobicom', tests: ['mobi com','mobicom'] },
+      { alias: 'mobihoc', tests: ['mobi hoc','mobihoc'] },
+      { alias: 'sensys', tests: ['sensys','sensor systems','acm sensys'] },
     ];
 
     function extractAcronyms(name){
@@ -473,11 +492,19 @@
     function buildSearchText(c){
       var parts = [];
       var nm = (c.name || c.Conference || '');
+      var nmLower = nm.toLowerCase();
       parts.push(nm);
       if(c.Location) parts.push(c.Location);
-      // include common acronyms derived from name so typing "INFOCOM" matches expanded names
+      // include acronym tokens extracted from name
       var acs = extractAcronyms(nm);
       for(var i=0;i<acs.length;i++) parts.push(acs[i]);
+      // include aliases inferred from long-form names
+      for(var j=0;j<SEARCH_ALIASES.length;j++){
+        var item = SEARCH_ALIASES[j];
+        for(var k=0;k<item.tests.length;k++){
+          if(nmLower.indexOf(item.tests[k]) !== -1){ parts.push(item.alias); break; }
+        }
+      }
       return parts.join(' ').toLowerCase();
     }
     var $list = $('#list'), $tpl = $('#row-tpl'), $empty = $('#empty');
@@ -659,6 +686,24 @@
       localStorage.setItem(themeKey, next);
     });
 
+    // Lightweight UI toggle
+    var uiBtn = $('#uiBtn');
+    var uiKey = 'confUiMode';
+    var savedUi = localStorage.getItem(uiKey);
+    if(savedUi === 'lite'){
+      document.documentElement.setAttribute('data-ui','lite');
+      uiBtn.setAttribute('aria-pressed','true');
+      uiBtn.textContent = '🪶 Lite On';
+    }
+    uiBtn.addEventListener('click', function(){
+      var cur = document.documentElement.getAttribute('data-ui');
+      var next = cur === 'lite' ? '' : 'lite';
+      if(next) document.documentElement.setAttribute('data-ui', next); else document.documentElement.removeAttribute('data-ui');
+      localStorage.setItem(uiKey, next);
+      uiBtn.setAttribute('aria-pressed', next === 'lite' ? 'true' : 'false');
+      uiBtn.textContent = next === 'lite' ? '🪶 Lite On' : '🪶 Lite';
+    });
+
     // Live countdown refresh (every second)
     setInterval(function(){
       var rows = $$('#list .row');
@@ -690,7 +735,10 @@
         console.assert(dl3.cls==='red' && dl10.cls==='orange' && dl30.cls==='green', 'color thresholds ok');
         // search text should include acronym so "infocom" matches full name
         var st = buildSearchText({ name: 'International Conference on Computer Communications (INFOCOM) 2026', Location: 'Honolulu' });
-        console.assert(st.indexOf('infocom')!==-1, 'buildSearchText should include extracted acronym');
+        console.assert(st.indexOf('infocom')!==-1, 'buildSearchText should include acronym/alias for INFOCOM');
+        // alias coverage: long-form without acronym must also include alias
+        var st2 = buildSearchText({ name: 'International Conference on Computer Communications 2026', Location: 'Honolulu' });
+        console.assert(st2.indexOf('infocom')!==-1, 'alias: long-form INFOCOM should include "infocom" in search text');
         // classification tests (additional)
         var dual = classifyConference({ name: 'IEEE INFOCOM 2026' });
         console.assert(Array.isArray(dual) && dual.indexOf('Networking & Systems')!==-1 && dual.indexOf('Wireless & Communication')!==-1, 'INFOCOM should have dual tags');
